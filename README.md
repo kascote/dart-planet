@@ -1,2 +1,3 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+## RSS feed aggregator
+
+Simple utility to administer a feed agregator, a.k.a [planet](https://en.wikipedia.org/wiki/Planet_(software))

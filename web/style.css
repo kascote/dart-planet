@@ -1,0 +1,221 @@
+ *,
+ ::before,
+ ::after {
+   box-sizing: border-box;
+   background-repeat: no-repeat;
+ }
+
+ ::before,
+ ::after {
+   text-decoration: inherit;
+   vertical-align: inherit;
+ }
+
+ :root {
+   color-scheme: light dark;
+   --content-width: 72rem;
+   --color-base: 32deg 57% 95%;
+   --color-surface: 35deg 100% 98%;
+   --color-overlay: 33deg 43% 91%;
+   --color-muted: 257deg 9% 61%;
+   --color-subtle: 248deg 12% 52%;
+   --color-text: 248deg 19% 40%;
+   --color-love: 343deg 35% 55%;
+   --color-gold: 35deg 81% 56%;
+   --color-rose: 3deg 53% 67%;
+   --color-pine: 197deg 53% 34%;
+   --color-foam: 189deg 30% 48%;
+   --color-iris: 268deg 21% 57%;
+ }
+
+ @media (prefers-color-scheme: dark) {
+   :root {
+     --color-base: 249deg 22% 12%;
+     --color-surface: 247deg 23% 15%;
+     --color-overlay: 248deg 25% 18%;
+     --color-muted: 249deg 12% 47%;
+     --color-subtle: 248deg 15% 61%;
+     --color-text: 245deg 50% 91%;
+     --color-love: 343deg 76% 68%;
+     --color-gold: 35deg 88% 72%;
+     --color-rose: 2deg 55% 83%;
+     --color-pine: 197deg 49% 38%;
+     --color-foam: 189deg 43% 73%;
+     --color-iris: 267deg 57% 78%
+   }
+ }
+
+ html,
+ body {
+   border: none;
+   margin: 0;
+   padding: 0
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ address,
+ big,
+ cite,
+ code,
+ em,
+ font,
+ img,
+ small,
+ strike,
+ sub,
+ sup,
+ li,
+ ol,
+ ul,
+ fieldset,
+ form,
+ label,
+ legend,
+ button,
+ table,
+ caption,
+ tr,
+ th,
+ td {
+   border: none;
+   font-size: inherit;
+   line-height: inherit;
+   margin: 0;
+   padding: 0;
+   text-align: inherit
+ }
+
+ blockquote::before,
+ blockquote::after {
+   content: ""
+ }
+
+ html {
+   font-size: 62.5%;
+   scroll-behavior: smooth
+ }
+
+ @media(prefers-reduced-motion:reduce) {
+   html {
+     scroll-behavior: auto
+   }
+ }
+
+ body {
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+   font-size: 1.8rem;
+   line-height: 1.5;
+   word-wrap: break-word;
+   color: hsl(var(--color-text));
+   background: hsl(var(--color-base));
+   font-weight: 400;
+   padding: 0 1rem;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+ }
+
+ a {
+   text-decoration: none;
+   color: hsl(var(--color-text) / 0.9);
+ }
+
+ a:hover:visited,
+ a:visited {
+   color: hsl(var(--color-pine));
+ }
+
+ a:hover {
+   text-decoration: underline;
+   color: hsl(var(--color-text));
+ }
+
+ .container {
+   max-width: 70ch;
+   margin: 0px auto;
+ }
+
+ .feed {
+   margin-top: 2rem;
+   padding-bottom: 2rem;
+ }
+
+ .feed h2 {
+   font-size: 2.5rem;
+   padding: 0.2rem 0.5rem;
+   color: hsl(var(--color-rose));
+   font-weight: 400;
+ }
+
+ .feed h2 a,
+ .feed h2 a:visited {
+   color: hsl(var(--color-rose));
+   text-decoration-color: hsl(var(--color-love));
+ }
+
+ .feed-item {
+   display: flex;
+   flex-direction: row;
+   padding: 0.5rem;
+   border-radius: 4px;
+   align-items: top;
+ }
+
+ .feed-item:hover {
+   background-color: hsl(var(--color-surface));
+ }
+
+ .feed-item .item {
+   flex: 1;
+   margin-right: 1rem;
+ }
+
+ .feed-item time {
+   color: hsl(var(--color-subtle));
+   font-size: 1rem;
+   margin-right: 0.5rem;
+   margin-top: 0.8rem;
+   min-width: 25px;
+ }
+
+ .feed-item .share:before {
+   content: ' ';
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='20' height='20' viewBox='0 0 227.2 227.2'%3E%3Cpath fill='%23403d52' d='M176 141c-13 0-25 7-33 16l-51-29a43 43 0 0 0 0-29l51-29a43 43 0 1 0-8-13L84 86a43 43 0 1 0 0 55l51 29-2 14a43 43 0 1 0 43-43zm0-126a28 28 0 1 1 0 56 28 28 0 0 1 0-56zM51 141a28 28 0 1 1 0-55 28 28 0 0 1 0 55zm125 71a28 28 0 1 1 0-56 28 28 0 0 1 0 56z' /%3E%3C/svg%3E");
+   background-position: bottom;
+   cursor: pointer;
+   display: block;
+   width: 25px;
+   height: 25px;
+ }
+
+ .feed-item .share:hover:before {
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='20' height='20' viewBox='0 0 227.2 227.2'%3E%3Cpath fill='%23e0def4' d='M176 141c-13 0-25 7-33 16l-51-29a43 43 0 0 0 0-29l51-29a43 43 0 1 0-8-13L84 86a43 43 0 1 0 0 55l51 29-2 14a43 43 0 1 0 43-43zm0-126a28 28 0 1 1 0 56 28 28 0 0 1 0-56zM51 141a28 28 0 1 1 0-55 28 28 0 0 1 0 55zm125 71a28 28 0 1 1 0-56 28 28 0 0 1 0 56z' /%3E%3C/svg%3E");
+ }
+
+ .feed-item .feed-item-description {
+   color: hsl(var(--color-subtle));
+   font-size: 1.5rem;
+ }
+
+ .hide {
+   display: none;
+ }
+
+ .notification {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   padding: 1rem;
+   background-color: hsl(var(--color-overlay));
+   color: hsl(var(--color-text));
+   font-size: 1.5rem;
+   text-align: center;
+   z-index: 100;
+ }

@@ -1,0 +1,8 @@
+.DS_Store
+.dart_tool/
+.vscode/
+dart-planet.code-workspace
+
+todo.md
+bin/dart_planet.db
+web/index.html

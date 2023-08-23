@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" itemscope id="page_home" itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{planetName}}</title>
+  <link rel="canonical" href="{{planetUrl}}" />
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="manifest" href="manifest.json" />
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="256x256" />
+  <meta name="keywords" content="{{keywords}}" />
+  <meta name="description" content="{{description}}" />
+  <meta property="og:site_name" content="{{planetName}}" />
+  <meta property="og:title" content="{{planetName}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{planetUrl}}" />
+  <meta property="og:description" content="{{description}}" />
+  <meta name="twitter:title" content="{{plantName}}" />
+  <meta name="twitter:description" content="{{description}}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="planet-rendered" content="{{dateRendered}}" />
+</head>
+
+<body>
+  <div id="container" class="container">{{ content }}</div>
+
+  <div class="notification hide">
+    <p>Link copied to clipboard.</p>
+  </div>
+
+  <script async>
+    function notify() {
+      const notification = document.querySelector('.notification');
+      notification.classList.remove('hide');
+      setTimeout(() => notification.classList.add('hide'), 2000);
+    }
+
+    function copyUrl(evt) {
+      const t = evt.target;
+      if (!t.classList.contains('share')) {
+        return;
+      }
+
+      if (navigator.clipboard) {
+        evt.preventDefault();
+        navigator.clipboard.writeText(t.previousElementSibling.children[0].href).then(() => {
+          notify();
+        }).catch(err => {
+          console.error('Failed to copy: ', err);
+        });
+      }
+    }
+
+    document.getElementsByTagName('body')[0].addEventListener('click', copyUrl);
+  </script>
+</body>
+
+</html>

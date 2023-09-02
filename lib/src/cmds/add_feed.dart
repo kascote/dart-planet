@@ -6,8 +6,8 @@ import '../shared/exit_code.dart';
 class AddFeedCmd extends BaseCommand {
   AddFeedCmd() {
     argParser
-      ..addOption('url', abbr: 'u', help: 'feed url', mandatory: true)
-      ..addOption('handle', abbr: 'a', help: 'handle to identify the feed', mandatory: true)
+      ..addOption('url', abbr: 'u', help: 'url to add', mandatory: true)
+      ..addOption('handle', abbr: 'j', help: 'handle to identify the feed', mandatory: true)
       ..addOption('baseUrl', abbr: 'b', help: 'base url that reference to the web site', mandatory: true);
   }
 

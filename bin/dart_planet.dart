@@ -12,8 +12,7 @@ Future<void> main(List<String> arguments) async {
   });
 
   final cmd = CommandRunner<int>('dplanet', 'Dart Planet CLI')
-    ..addCommand(AddFeedCmd())
-    ..addCommand(UpdateFeedCmd())
+    ..addCommand(FeedCmd())
     ..addCommand(GenerateCmd())
     ..addCommand(CacheCmd());
 

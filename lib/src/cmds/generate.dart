@@ -4,7 +4,7 @@ class GenerateCmd extends BaseCommand {
   @override
   final name = 'generate';
   @override
-  final description = 'generate planet';
+  final description = 'generate the planet';
 
   @override
   Future<int> run() async {

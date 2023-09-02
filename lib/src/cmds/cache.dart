@@ -6,7 +6,7 @@ import '../shared/exit_code.dart';
 class CacheCmd extends BaseCommand {
   CacheCmd() {
     argParser
-      ..addOption('handle', abbr: 'a', help: 'handle to clear cache')
+      ..addOption('handle', abbr: 'j', help: 'feed handle to clear cache')
       ..addFlag('zap', abbr: 'z', help: 'clear cache for all feeds', negatable: false);
   }
 

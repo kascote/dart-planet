@@ -6,8 +6,8 @@ import '../shared/exit_code.dart';
 class UpdateFeedCmd extends BaseCommand {
   UpdateFeedCmd() {
     argParser
-      ..addOption('handle', abbr: 'a', help: 'feed handle to update')
-      ..addFlag('x', abbr: 'x', help: 'update all feeds', negatable: false);
+      ..addOption('handle', abbr: 'j', help: 'feed handle to update')
+      ..addFlag('all', abbr: 'a', help: 'update all feeds', negatable: false);
   }
 
   @override
@@ -21,16 +21,16 @@ class UpdateFeedCmd extends BaseCommand {
 
     final args = argResults!;
     final handle = args['handle'] as String?;
-    final updateAll = args['x'] as bool? ?? false;
+    final updateAll = args['all'] as bool? ?? false;
 
     if (handle != null && updateAll) {
-      stderr.writeln('Error: --handle and --x are mutually exclusive');
+      stderr.writeln('Error: --handle and --all are mutually exclusive');
       printUsage();
       return ExitCode.usageError.code;
     }
 
     if (handle == null && !updateAll) {
-      stderr.writeln('Error: either --handle or --x must be specified');
+      stderr.writeln('Error: either --handle or --all must be specified');
       printUsage();
       return ExitCode.usageError.code;
     }

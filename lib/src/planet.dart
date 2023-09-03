@@ -122,7 +122,7 @@ class Planet {
     }
 
     log.finer('> ${feed.name}: ${feedUpdated!.items.length}');
-    await clearErrors(feed);
+    await clearErrorsAndActivate(feed);
     await upsertItems(feed.id, feedUpdated, today);
 
     return Future.value(ExitCode.success.code);
@@ -291,7 +291,7 @@ class Planet {
   }
 
   /// Clears the error count for a feed
-  Future<void> clearErrors(Feed feed) async {
+  Future<void> clearErrorsAndActivate(Feed feed) async {
     return db.updateFeedTable(
       FeedsCompanion(
         id: Value(feed.id),
@@ -299,5 +299,24 @@ class Planet {
         active: const Value(1),
       ),
     );
+  }
+
+  Future<int> clearFeedErrors(String handle) async {
+    final feed = await db.getFeedByHandle(handle);
+    if (feed == null) {
+      log.severe('Feed handle not found: [$handle]');
+      return Future.value(ExitCode.error.code);
+    }
+
+    return clearErrorsAndActivate(feed).then((_) => ExitCode.success.code).catchError((_) => ExitCode.error.code);
+  }
+
+  Future<int> clearAllFeedErrors() async {
+    final feeds = await db.getInActiveFeeds();
+    for (final feed in feeds) {
+      await clearErrorsAndActivate(feed);
+    }
+
+    return ExitCode.success.code;
   }
 }

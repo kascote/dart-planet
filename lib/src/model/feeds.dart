@@ -102,6 +102,10 @@ class PlanetDB extends _$PlanetDB {
   Future<void> updateFeedTable(FeedsCompanion feed) {
     return (update(feeds)..where((t) => t.id.equals(feed.id.value))).write(feed);
   }
+
+  Future<List<Feed>> getInActiveFeeds() async {
+    return (select(feeds)..where((tbl) => tbl.active.equals(0))).get();
+  }
 }
 
 LazyDatabase _openConnection() {

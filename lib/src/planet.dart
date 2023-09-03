@@ -12,7 +12,7 @@ import './shared/fetch_cache.dart';
 import './shared/fetcher.dart';
 import 'config.dart';
 
-final log = Logger('PlanetLogger');
+final log = Logger('planet');
 
 /// Feed Planet
 ///
@@ -40,7 +40,7 @@ class Planet {
   Future<int> addFeed(Uri url, String handle, String? baseUrl) async {
     log.finest('addFeed: $url, $handle');
     if (await db.feedExists(url.toString())) {
-      log.severe('Feed already exists');
+      log.warning('Feed already exists');
       return Future.value(ExitCode.alreadyExists.code);
     }
 
@@ -76,11 +76,11 @@ class Planet {
     final feed = await db.getFeedByHandle(handle);
 
     if (feed == null) {
-      log.severe('Feed handle not found: [$handle]');
+      log.warning('Feed handle not found: [$handle]');
       return Future.value(ExitCode.error.code);
     }
 
-    return _updateFeedInner(feed, today);
+    return _updateFeed(feed, today);
   }
 
   /// Update all the active feeds
@@ -90,17 +90,17 @@ class Planet {
   Future<int> updateFeeds() async {
     final today = DateTime.now().toUtc().toIso8601String();
     final feeds = await db.getActiveFeeds();
-    log.fine('feeds to update: ${feeds.length}');
+    log.finest('feeds to update: ${feeds.length}');
 
     for (final feed in feeds) {
-      await _updateFeedInner(feed, today);
+      await _updateFeed(feed, today);
     }
 
     return Future.value(ExitCode.success.code);
   }
 
   // actual function that will update the feed
-  Future<int> _updateFeedInner(Feed feed, String today) async {
+  Future<int> _updateFeed(Feed feed, String today) async {
     final (rc, feedUpdated, cache) = await fetchFeed(Uri.parse(feed.xmlLink), feed.cache);
     if (rc > 0) return Future.value(rc);
 
@@ -121,9 +121,9 @@ class Planet {
       );
     }
 
+    log.finer('> ${feed.name}: ${feedUpdated!.items.length}');
     await clearErrors(feed);
-    await upsertItems(feed.id, feedUpdated!, today);
-    log.fine('> ${feed.name} ${feedUpdated.items.length}');
+    await upsertItems(feed.id, feedUpdated, today);
 
     return Future.value(ExitCode.success.code);
   }
@@ -134,7 +134,7 @@ class Planet {
       if (item.guid == null || item.guid!.trim().isEmpty) {
         // if there is no guid, we will use the title as guid
         if (item.title == null || item.title!.trim().isEmpty) {
-          log.finest('skipping item without guid and title');
+          log.warning('skipping item without guid and title. feedId: $feedId');
           continue;
         }
         item.guid = item.title;
@@ -210,12 +210,12 @@ class Planet {
   /// Tries to retrieve a feed using the url and the cache values if they exists
   Future<(int, UniversalFeed?, FetchCache?)> fetchFeed(Uri url, String cacheStr) async {
     final fetcher = Fetcher(log: log);
-    log.finer('fetching $url, cache: $cacheStr cacheParsed: ${FetchCache.fromString(cacheStr)}');
+    log.finest('fetching $url');
     final response = await fetcher.fetch(url, FetchCache.fromString(cacheStr));
 
     if (response.result != FetchResultType.success) {
       if (response.result == FetchResultType.notModified) {
-        log.finer('not modified');
+        log.finest('not modified');
         return Future.value((ExitCode.notModified.code, null, null));
       }
       log.severe('Error fetching feed: ${response.message}');
@@ -223,11 +223,8 @@ class Planet {
       return Future.value((ExitCode.error.code, null, response.cache));
     }
 
-    log.finer('fetched... parsing...');
-
     try {
       final feed = UniversalFeed.parseFromString(response.body);
-      log.finer('parsed');
       return Future.value((ExitCode.success.code, feed, response.cache));
     } catch (e) {
       await markError(url.toString());

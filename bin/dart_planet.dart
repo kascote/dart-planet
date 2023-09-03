@@ -8,7 +8,7 @@ import 'package:logging/logging.dart';
 Future<void> main(List<String> arguments) async {
   Logger.root.level = Level.INFO;
   Logger.root.onRecord.listen((record) {
-    stderr.writeln('${record.level.name}: ${record.time}: ${record.message}');
+    stderr.writeln('${record.level.name.toLowerCase()}: ${record.message}');
   });
 
   final cmd = CommandRunner<int>('dplanet', 'Dart Planet CLI')

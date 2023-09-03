@@ -7,11 +7,24 @@ import 'package:logging/logging.dart';
 import '../model/feeds.dart';
 import '../shared/exit_code.dart';
 
+final log = Logger('planet');
 typedef PlanetCallback = Future<int> Function(Planet planet);
+const logLevels = {
+  'error': Level.SEVERE,
+  'warning': Level.WARNING,
+  'info': Level.INFO,
+  'debug': Level.FINEST,
+};
 
 class BaseCommand extends Command<int> {
   BaseCommand() {
-    argParser.addFlag('verbose', abbr: 'v', negatable: false, help: 'Verbose output');
+    argParser.addOption(
+      'verbose',
+      abbr: 'v',
+      help: 'Verbose output',
+      defaultsTo: 'info',
+      allowed: ['error', 'warning', 'info', 'debug'],
+    );
   }
 
   @override
@@ -22,9 +35,9 @@ class BaseCommand extends Command<int> {
 
   @override
   Future<int> run() async {
-    if (argResults!['verbose'] as bool) {
-      Logger.root.level = Level.ALL;
-    }
+    Logger.root.level = logLevels[argResults!['verbose'] as String] ?? Level.INFO;
+
+    log.info('started ${DateTime.now()}');
     return Future.value(0);
   }
 

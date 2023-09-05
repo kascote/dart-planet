@@ -25,7 +25,38 @@
 </head>
 
 <body>
-  <div id="container" class="container">{{ content }}</div>
+  <div class="layout">
+    <header class="header sidebar">
+      <p>Dart</p>
+      <a href="#">Medium Blog</a>
+      <a href="#">Reddit</a>
+      <a href="#">Dart Lang</a>
+      <a href="#">Github Weekly</a>
+      <a href="#">Weekly Updates</a>
+      <a href="#">Google Group Announce</a>
+      <a href="#">Stack Overflow</a>
+
+      <p>Flutter</p>
+      <a href="#">Medium Blog</a>
+      <a href="#">Reddit</a>
+      <a href="#">Widget of the Week</a>
+    </header>
+    <div id="container" class="container">{{ content }}</div>
+    <aside class="aside sidebar">
+      <p>Dart</p>
+      <a href="https://dart.dev/guides/whats-new" target="_blank">Release Notes</a>
+      <a href="https://dart.dev/language" target="_blank">Language Tour</a>
+      <a href="https://dart.dev/effective-dart" target="_blank">Effective Dart</a>
+      <a href="https://dart.dev/guides/libraries/library-tour" target="_blank">Library Tour</a>
+      <a href="https://dart.dev/tools/linter-rules" target="_blank">Linter Rules</a>
+      <a href="https://api.dart.dev/" target="_blank">API Reference</a>
+
+      <p>Flutter</p>
+      <a href="https://docs.flutter.dev/release/release-notes" target="_blank">Release Notes</a>
+      <a href="https://docs.flutter.dev" target="_blank">Documentation</a>
+      <a href="https://api.flutter.dev/" target="_blank">API Reference</a>
+    </aside>
+  </div>
 
   <div class="notification hide">
     <p>Link copied to clipboard.</p>

@@ -61,6 +61,7 @@ Future<String> contentGenerator(PlanetDB db, List<GetLastFeedItemsResult> items)
     ''');
     ii++;
   } // while
+  sb.writeln('</div></div>');
 
   return sb.toString();
 }

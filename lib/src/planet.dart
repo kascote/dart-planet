@@ -10,6 +10,7 @@ import './model/feeds.dart';
 import './shared/exit_code.dart';
 import './shared/fetch_cache.dart';
 import './shared/fetcher.dart';
+import './shared/utils.dart';
 import 'config.dart';
 
 final log = Logger('planet');
@@ -301,6 +302,7 @@ class Planet {
     );
   }
 
+  /// Clear the error count for a feed and activate it
   Future<int> clearFeedErrors(String handle) async {
     final feed = await db.getFeedByHandle(handle);
     if (feed == null) {
@@ -311,12 +313,40 @@ class Planet {
     return clearErrorsAndActivate(feed).then((_) => ExitCode.success.code).catchError((_) => ExitCode.error.code);
   }
 
+  /// Clear the error count for all the feeds and activate them
   Future<int> clearAllFeedErrors() async {
     final feeds = await db.getInActiveFeeds();
     for (final feed in feeds) {
       await clearErrorsAndActivate(feed);
     }
 
+    return ExitCode.success.code;
+  }
+
+  void _printFeed(List<Feed> feeds) {
+    for (final feed in feeds) {
+      stdout.writeln(
+        '${feed.name.take(38).padRight(40)} - ${feed.handle.padRight(25)} - ${feed.active} - ${feed.errors} - ${feed.xmlLink}',
+      );
+    }
+  }
+
+  /// List all the feeds
+  /// if handle is not null, list only the feed with that handle
+  Future<int> listFeed({String? handle}) async {
+    _printFeed(await db.getFeeds(handle: handle));
+    return ExitCode.success.code;
+  }
+
+  /// List Feeds with Error
+  /// List all the feeds with errors
+  Future<int> listFeedsWithError() async {
+    _printFeed(await db.getFeedsWithError());
+    return ExitCode.success.code;
+  }
+
+  Future<int> listFeedsDisabled() async {
+    _printFeed(await db.getInActiveFeeds(actives: false));
     return ExitCode.success.code;
   }
 }

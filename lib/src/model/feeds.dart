@@ -103,8 +103,22 @@ class PlanetDB extends _$PlanetDB {
     return (update(feeds)..where((t) => t.id.equals(feed.id.value))).write(feed);
   }
 
-  Future<List<Feed>> getInActiveFeeds() async {
-    return (select(feeds)..where((tbl) => tbl.active.equals(0))).get();
+  Future<List<Feed>> getInActiveFeeds({bool actives = true}) async {
+    final active = actives ? 1 : 0;
+    return (select(feeds)..where((tbl) => tbl.active.equals(active))).get();
+  }
+
+  Future<List<Feed>> getFeeds({String? handle}) {
+    final query = select(feeds);
+    if (handle != null) {
+      query.where((tbl) => tbl.handle.equals(handle));
+    }
+    query.orderBy([(u) => OrderingTerm(expression: u.name)]);
+    return query.get();
+  }
+
+  Future<List<Feed>> getFeedsWithError() async {
+    return (select(feeds)..where((tbl) => tbl.errors.isNotValue(0))).get();
   }
 }
 

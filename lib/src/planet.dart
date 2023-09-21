@@ -74,12 +74,8 @@ class Planet {
   Future<int> updateFeed(String handle) async {
     log.finest('updateFeed: $handle');
     final today = DateTime.now().toUtc().toIso8601String();
-    final feed = await db.getFeedByHandle(handle);
-
-    if (feed == null) {
-      log.warning('Feed handle not found: [$handle]');
-      return Future.value(ExitCode.error.code);
-    }
+    final feed = await _getFeedByHandle(handle);
+    if (feed == null) return Future.value(ExitCode.error.code);
 
     return _updateFeed(feed, today);
   }
@@ -246,10 +242,7 @@ class Planet {
     final feeds = await db.getActiveFeeds();
     for (final feed in feeds) {
       await db.updateFeedTable(
-        FeedsCompanion(
-          id: Value(feed.id),
-          cache: const Value(''),
-        ),
+        FeedsCompanion(id: Value(feed.id), cache: const Value('')),
       );
     }
 
@@ -257,17 +250,11 @@ class Planet {
   }
 
   Future<int> clearCache(String handle) async {
-    final feed = await db.getFeedByHandle(handle);
-    if (feed == null) {
-      log.severe('Feed handle not found: [$handle]');
-      return Future.value(ExitCode.error.code);
-    }
+    final feed = await _getFeedByHandle(handle);
+    if (feed == null) return Future.value(ExitCode.error.code);
 
     await db.updateFeedTable(
-      FeedsCompanion(
-        id: Value(feed.id),
-        cache: const Value(''),
-      ),
+      FeedsCompanion(id: Value(feed.id), cache: const Value('')),
     );
 
     return ExitCode.success.code;
@@ -304,11 +291,8 @@ class Planet {
 
   /// Clear the error count for a feed and activate it
   Future<int> clearFeedErrors(String handle) async {
-    final feed = await db.getFeedByHandle(handle);
-    if (feed == null) {
-      log.severe('Feed handle not found: [$handle]');
-      return Future.value(ExitCode.error.code);
-    }
+    final feed = await _getFeedByHandle(handle);
+    if (feed == null) return Future.value(ExitCode.error.code);
 
     return clearErrorsAndActivate(feed).then((_) => ExitCode.success.code).catchError((_) => ExitCode.error.code);
   }
@@ -345,8 +329,30 @@ class Planet {
     return ExitCode.success.code;
   }
 
+  /// List feeds disabled
   Future<int> listFeedsDisabled() async {
     _printFeed(await db.getInActiveFeeds(actives: false));
     return ExitCode.success.code;
+  }
+
+  /// Disable a feed by handle
+  Future<int> disableFeed(String handle) async {
+    final rc = await db.disableFeed(handle);
+    if (!rc) {
+      log.severe('Feed handle not found: [$handle]');
+      return ExitCode.error.code;
+    }
+    return ExitCode.success.code;
+  }
+
+  /// get feed by handle
+  Future<Feed?> _getFeedByHandle(String handle) async {
+    final feed = await db.getFeedByHandle(handle);
+    if (feed == null) {
+      log.severe('Feed handle not found: [$handle]');
+      return null;
+    }
+
+    return feed;
   }
 }

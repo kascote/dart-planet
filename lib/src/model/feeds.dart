@@ -99,6 +99,16 @@ class PlanetDB extends _$PlanetDB {
     return (select(feeds)..where((tbl) => tbl.active.equals(1))).get();
   }
 
+  Future<bool> disableFeed(String handle) async {
+    final feed = await getFeedByHandle(handle);
+    if (feed == null) return false;
+
+    await updateFeedTable(
+      FeedsCompanion(id: Value(feed.id), active: const Value(0)),
+    );
+    return true;
+  }
+
   Future<void> updateFeedTable(FeedsCompanion feed) {
     return (update(feeds)..where((t) => t.id.equals(feed.id.value))).write(feed);
   }

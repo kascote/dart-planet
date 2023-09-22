@@ -52,6 +52,7 @@ class Planet {
     final feedId = await db.into(db.feeds).insert(
           FeedsCompanion.insert(
             name: feed!.title ?? '',
+            displayName: const Value(''),
             htmlLink: feed.htmlLink?.href ?? '',
             xmlLink: url.toString(),
             handle: handle,

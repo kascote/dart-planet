@@ -15,6 +15,7 @@ part 'feeds.g.dart';
 class Feeds extends Table {
   IntColumn get id => integer().autoIncrement()();
   TextColumn get name => text().named('name')();
+  TextColumn get displayName => text().named('display_name').withDefault(const Constant(''))();
   TextColumn get htmlLink => text().named('html_link')();
   TextColumn get xmlLink => text().named('xml_link')();
   TextColumn get handle => text().named('handle')();
@@ -123,7 +124,7 @@ class PlanetDB extends _$PlanetDB {
     if (handle != null) {
       query.where((tbl) => tbl.handle.equals(handle));
     }
-    query.orderBy([(u) => OrderingTerm(expression: u.name)]);
+    query.orderBy([(u) => OrderingTerm(expression: u.order)]);
     return query.get();
   }
 

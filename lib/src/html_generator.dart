@@ -37,9 +37,10 @@ Future<String> contentGenerator(PlanetDB db, List<GetLastFeedItemsResult> items)
       final feedLink =
           item.feeds.htmlLink.startsWith('http') ? item.feeds.htmlLink : '${item.feeds.baseUrl}${item.feeds.htmlLink}';
 
+      final feedName = item.feeds.displayName.isEmpty ? item.feeds.name : item.feeds.displayName;
       sb.write('''
       <div class="feed">
-        <h2><a href="$feedLink" target="_blank">${item.feeds.name}</a></h2>
+        <h2><a name="${item.feeds.handle}" href="$feedLink" target="_blank">$feedName</a></h2>
         <div class="feed-items">
       ''');
     }

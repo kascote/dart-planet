@@ -22,6 +22,14 @@ class $FeedsTable extends Feeds with TableInfo<$FeedsTable, Feed> {
   late final GeneratedColumn<String> name = GeneratedColumn<String>(
       'name', aliasedName, false,
       type: DriftSqlType.string, requiredDuringInsert: true);
+  static const VerificationMeta _displayNameMeta =
+      const VerificationMeta('displayName');
+  @override
+  late final GeneratedColumn<String> displayName = GeneratedColumn<String>(
+      'display_name', aliasedName, false,
+      type: DriftSqlType.string,
+      requiredDuringInsert: false,
+      defaultValue: const Constant(''));
   static const VerificationMeta _htmlLinkMeta =
       const VerificationMeta('htmlLink');
   @override
@@ -99,6 +107,7 @@ class $FeedsTable extends Feeds with TableInfo<$FeedsTable, Feed> {
   List<GeneratedColumn> get $columns => [
         id,
         name,
+        displayName,
         htmlLink,
         xmlLink,
         handle,
@@ -129,6 +138,12 @@ class $FeedsTable extends Feeds with TableInfo<$FeedsTable, Feed> {
           _nameMeta, name.isAcceptableOrUnknown(data['name']!, _nameMeta));
     } else if (isInserting) {
       context.missing(_nameMeta);
+    }
+    if (data.containsKey('display_name')) {
+      context.handle(
+          _displayNameMeta,
+          displayName.isAcceptableOrUnknown(
+              data['display_name']!, _displayNameMeta));
     }
     if (data.containsKey('html_link')) {
       context.handle(_htmlLinkMeta,
@@ -207,6 +222,8 @@ class $FeedsTable extends Feeds with TableInfo<$FeedsTable, Feed> {
           .read(DriftSqlType.int, data['${effectivePrefix}id'])!,
       name: attachedDatabase.typeMapping
           .read(DriftSqlType.string, data['${effectivePrefix}name'])!,
+      displayName: attachedDatabase.typeMapping
+          .read(DriftSqlType.string, data['${effectivePrefix}display_name'])!,
       htmlLink: attachedDatabase.typeMapping
           .read(DriftSqlType.string, data['${effectivePrefix}html_link'])!,
       xmlLink: attachedDatabase.typeMapping
@@ -243,6 +260,7 @@ class $FeedsTable extends Feeds with TableInfo<$FeedsTable, Feed> {
 class Feed extends DataClass implements Insertable<Feed> {
   final int id;
   final String name;
+  final String displayName;
   final String htmlLink;
   final String xmlLink;
   final String handle;
@@ -258,6 +276,7 @@ class Feed extends DataClass implements Insertable<Feed> {
   const Feed(
       {required this.id,
       required this.name,
+      required this.displayName,
       required this.htmlLink,
       required this.xmlLink,
       required this.handle,
@@ -275,6 +294,7 @@ class Feed extends DataClass implements Insertable<Feed> {
     final map = <String, Expression>{};
     map['id'] = Variable<int>(id);
     map['name'] = Variable<String>(name);
+    map['display_name'] = Variable<String>(displayName);
     map['html_link'] = Variable<String>(htmlLink);
     map['xml_link'] = Variable<String>(xmlLink);
     map['handle'] = Variable<String>(handle);
@@ -294,6 +314,7 @@ class Feed extends DataClass implements Insertable<Feed> {
     return FeedsCompanion(
       id: Value(id),
       name: Value(name),
+      displayName: Value(displayName),
       htmlLink: Value(htmlLink),
       xmlLink: Value(xmlLink),
       handle: Value(handle),
@@ -315,6 +336,7 @@ class Feed extends DataClass implements Insertable<Feed> {
     return Feed(
       id: serializer.fromJson<int>(json['id']),
       name: serializer.fromJson<String>(json['name']),
+      displayName: serializer.fromJson<String>(json['displayName']),
       htmlLink: serializer.fromJson<String>(json['htmlLink']),
       xmlLink: serializer.fromJson<String>(json['xmlLink']),
       handle: serializer.fromJson<String>(json['handle']),
@@ -335,6 +357,7 @@ class Feed extends DataClass implements Insertable<Feed> {
     return <String, dynamic>{
       'id': serializer.toJson<int>(id),
       'name': serializer.toJson<String>(name),
+      'displayName': serializer.toJson<String>(displayName),
       'htmlLink': serializer.toJson<String>(htmlLink),
       'xmlLink': serializer.toJson<String>(xmlLink),
       'handle': serializer.toJson<String>(handle),
@@ -353,6 +376,7 @@ class Feed extends DataClass implements Insertable<Feed> {
   Feed copyWith(
           {int? id,
           String? name,
+          String? displayName,
           String? htmlLink,
           String? xmlLink,
           String? handle,
@@ -368,6 +392,7 @@ class Feed extends DataClass implements Insertable<Feed> {
       Feed(
         id: id ?? this.id,
         name: name ?? this.name,
+        displayName: displayName ?? this.displayName,
         htmlLink: htmlLink ?? this.htmlLink,
         xmlLink: xmlLink ?? this.xmlLink,
         handle: handle ?? this.handle,
@@ -386,6 +411,7 @@ class Feed extends DataClass implements Insertable<Feed> {
     return (StringBuffer('Feed(')
           ..write('id: $id, ')
           ..write('name: $name, ')
+          ..write('displayName: $displayName, ')
           ..write('htmlLink: $htmlLink, ')
           ..write('xmlLink: $xmlLink, ')
           ..write('handle: $handle, ')
@@ -403,14 +429,29 @@ class Feed extends DataClass implements Insertable<Feed> {
   }
 
   @override
-  int get hashCode => Object.hash(id, name, htmlLink, xmlLink, handle, order,
-      stale, errors, active, createdAt, updatedAt, kind, cache, baseUrl);
+  int get hashCode => Object.hash(
+      id,
+      name,
+      displayName,
+      htmlLink,
+      xmlLink,
+      handle,
+      order,
+      stale,
+      errors,
+      active,
+      createdAt,
+      updatedAt,
+      kind,
+      cache,
+      baseUrl);
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
       (other is Feed &&
           other.id == this.id &&
           other.name == this.name &&
+          other.displayName == this.displayName &&
           other.htmlLink == this.htmlLink &&
           other.xmlLink == this.xmlLink &&
           other.handle == this.handle &&
@@ -428,6 +469,7 @@ class Feed extends DataClass implements Insertable<Feed> {
 class FeedsCompanion extends UpdateCompanion<Feed> {
   final Value<int> id;
   final Value<String> name;
+  final Value<String> displayName;
   final Value<String> htmlLink;
   final Value<String> xmlLink;
   final Value<String> handle;
@@ -443,6 +485,7 @@ class FeedsCompanion extends UpdateCompanion<Feed> {
   const FeedsCompanion({
     this.id = const Value.absent(),
     this.name = const Value.absent(),
+    this.displayName = const Value.absent(),
     this.htmlLink = const Value.absent(),
     this.xmlLink = const Value.absent(),
     this.handle = const Value.absent(),
@@ -459,6 +502,7 @@ class FeedsCompanion extends UpdateCompanion<Feed> {
   FeedsCompanion.insert({
     this.id = const Value.absent(),
     required String name,
+    this.displayName = const Value.absent(),
     required String htmlLink,
     required String xmlLink,
     required String handle,
@@ -483,6 +527,7 @@ class FeedsCompanion extends UpdateCompanion<Feed> {
   static Insertable<Feed> custom({
     Expression<int>? id,
     Expression<String>? name,
+    Expression<String>? displayName,
     Expression<String>? htmlLink,
     Expression<String>? xmlLink,
     Expression<String>? handle,
@@ -499,6 +544,7 @@ class FeedsCompanion extends UpdateCompanion<Feed> {
     return RawValuesInsertable({
       if (id != null) 'id': id,
       if (name != null) 'name': name,
+      if (displayName != null) 'display_name': displayName,
       if (htmlLink != null) 'html_link': htmlLink,
       if (xmlLink != null) 'xml_link': xmlLink,
       if (handle != null) 'handle': handle,
@@ -517,6 +563,7 @@ class FeedsCompanion extends UpdateCompanion<Feed> {
   FeedsCompanion copyWith(
       {Value<int>? id,
       Value<String>? name,
+      Value<String>? displayName,
       Value<String>? htmlLink,
       Value<String>? xmlLink,
       Value<String>? handle,
@@ -532,6 +579,7 @@ class FeedsCompanion extends UpdateCompanion<Feed> {
     return FeedsCompanion(
       id: id ?? this.id,
       name: name ?? this.name,
+      displayName: displayName ?? this.displayName,
       htmlLink: htmlLink ?? this.htmlLink,
       xmlLink: xmlLink ?? this.xmlLink,
       handle: handle ?? this.handle,
@@ -555,6 +603,9 @@ class FeedsCompanion extends UpdateCompanion<Feed> {
     }
     if (name.present) {
       map['name'] = Variable<String>(name.value);
+    }
+    if (displayName.present) {
+      map['display_name'] = Variable<String>(displayName.value);
     }
     if (htmlLink.present) {
       map['html_link'] = Variable<String>(htmlLink.value);
@@ -600,6 +651,7 @@ class FeedsCompanion extends UpdateCompanion<Feed> {
     return (StringBuffer('FeedsCompanion(')
           ..write('id: $id, ')
           ..write('name: $name, ')
+          ..write('displayName: $displayName, ')
           ..write('htmlLink: $htmlLink, ')
           ..write('xmlLink: $xmlLink, ')
           ..write('handle: $handle, ')
@@ -1103,7 +1155,7 @@ abstract class _$PlanetDB extends GeneratedDatabase {
   late final $FeedItemTable feedItem = $FeedItemTable(this);
   Selectable<GetLastFeedItemsResult> getLastFeedItems() {
     return customSelect(
-        'SELECT sub.*,"feeds"."id" AS "nested_0.id", "feeds"."name" AS "nested_0.name", "feeds"."html_link" AS "nested_0.html_link", "feeds"."xml_link" AS "nested_0.xml_link", "feeds"."handle" AS "nested_0.handle", "feeds"."order" AS "nested_0.order", "feeds"."stale" AS "nested_0.stale", "feeds"."errors" AS "nested_0.errors", "feeds"."active" AS "nested_0.active", "feeds"."created_at" AS "nested_0.created_at", "feeds"."updated_at" AS "nested_0.updated_at", "feeds"."kind" AS "nested_0.kind", "feeds"."cache" AS "nested_0.cache", "feeds"."base_url" AS "nested_0.base_url" FROM (SELECT row_number()OVER (PARTITION BY feed ORDER BY feed, updated_at DESC RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW EXCLUDE NO OTHERS) AS rnk, * FROM feed_item) AS sub,feeds WHERE feeds.id == sub.feed AND feeds.active = 1 AND sub.rnk <= 10 ORDER BY feeds."order"',
+        'SELECT sub.*,"feeds"."id" AS "nested_0.id", "feeds"."name" AS "nested_0.name", "feeds"."display_name" AS "nested_0.display_name", "feeds"."html_link" AS "nested_0.html_link", "feeds"."xml_link" AS "nested_0.xml_link", "feeds"."handle" AS "nested_0.handle", "feeds"."order" AS "nested_0.order", "feeds"."stale" AS "nested_0.stale", "feeds"."errors" AS "nested_0.errors", "feeds"."active" AS "nested_0.active", "feeds"."created_at" AS "nested_0.created_at", "feeds"."updated_at" AS "nested_0.updated_at", "feeds"."kind" AS "nested_0.kind", "feeds"."cache" AS "nested_0.cache", "feeds"."base_url" AS "nested_0.base_url" FROM (SELECT row_number()OVER (PARTITION BY feed ORDER BY feed, updated_at DESC RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW EXCLUDE NO OTHERS) AS rnk, * FROM feed_item) AS sub,feeds WHERE feeds.id == sub.feed AND feeds.active = 1 AND sub.rnk <= 10 ORDER BY feeds."order"',
         variables: [],
         readsFrom: {
           feedItem,

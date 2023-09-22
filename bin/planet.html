@@ -22,10 +22,25 @@
   <meta name="twitter:description" content="{{description}}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="planet-rendered" content="{{dateRendered}}" />
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "website",
+    "name": "{{planetName}}",
+    "url": "{{planetUrl}}",
+    "description": "{{description}}",
+    "about": {
+      "@type": "{{planetName}}",
+      "description": "{{description}}"
+    }
+  }
+  </script>
+
 </head>
 
 <body>
   <div class="layout">
+    <h1>Dart Planet</h1>
     <header class="header sidebar">
       <p>Dart</p>
       <a href="#">Medium Blog</a>
@@ -44,18 +59,27 @@
     <div id="container" class="container">{{ content }}</div>
     <aside class="aside sidebar">
       <p>Dart</p>
-      <a href="https://dart.dev/guides/whats-new" target="_blank">Release Notes</a>
-      <a href="https://dart.dev/language" target="_blank">Language Tour</a>
-      <a href="https://dart.dev/effective-dart" target="_blank">Effective Dart</a>
-      <a href="https://dart.dev/guides/libraries/library-tour" target="_blank">Library Tour</a>
-      <a href="https://dart.dev/tools/linter-rules" target="_blank">Linter Rules</a>
-      <a href="https://api.dart.dev/" target="_blank">API Reference</a>
+      <a href="https://dart.dev/guides/whats-new?utm_source=dart-planet" target="_blank">Release Notes</a>
+      <a href="https://dart.dev/language?utm_source=dart-planet" target="_blank">Language Tour</a>
+      <a href="https://dart.dev/effective-dart?utm_source=dart-planet" target="_blank">Effective Dart</a>
+      <a href="https://dart.dev/guides/libraries/library-tour?utm_source=dart-planet" target="_blank">Library Tour</a>
+      <a href="https://dart.dev/tools/linter-rules?utm_source=dart-planet" target="_blank">Linter Rules</a>
+      <a href="https://api.dart.dev/?utm_source=dart-planet" target="_blank">API Reference</a>
 
       <p>Flutter</p>
-      <a href="https://docs.flutter.dev/release/release-notes" target="_blank">Release Notes</a>
-      <a href="https://docs.flutter.dev" target="_blank">Documentation</a>
-      <a href="https://api.flutter.dev/" target="_blank">API Reference</a>
+      <a href="https://docs.flutter.dev/release/release-notes?utm_source=dart-planet" target="_blank">Release Notes</a>
+      <a href="https://docs.flutter.dev?utm_source=dart-planet" target="_blank">Documentation</a>
+      <a href="https://api.flutter.dev/?utm_source=dart-planet" target="_blank">API Reference</a>
     </aside>
+    <footer class="footer">
+      <small>
+        <a href="https://github.com/kascote/dart-planet" target="_blank">Source Code</a>
+        |
+        <a href="https://github.com/kascote/dart-planet/issues" target="_blank">Report Issue</a>
+        |
+        <a href="https://github.com/kascote/dart-planet/issues" target="_blank">Suggestions</a>
+      </small>
+    </footer>
   </div>
 
   <div class="notification hide">

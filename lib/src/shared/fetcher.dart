@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
+import 'package:http/retry.dart';
 import 'package:http_parser/http_parser.dart';
 import 'package:logging/logging.dart';
 import 'package:windows1251/windows1251.dart';
@@ -9,21 +10,31 @@ import 'package:windows1251/windows1251.dart';
 import './fetch_cache.dart';
 import './utils.dart';
 
-// import 'package:http/retry.dart';
-
 /// encoders supported locally by this implementation
 const Map<String, Encoding> localEncoders = {'windows-1251': Windows1251Codec()};
 
 /// default user agent
 const userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:106.0) Gecko/20100101 Firefox/106.0';
 
+/// http retry codes
+const retryCodes = {408, 429, 500, 502, 503, 504, 522, 524, 599};
+
 /// Fetcher implementation
 class Fetcher extends http.BaseClient {
-  final http.Client _inner;
+  late final http.Client _inner;
   Logger? log;
 
   /// Fetcher constructor
-  Fetcher({http.Client? inner, this.log}) : _inner = inner ?? http.Client();
+  Fetcher({http.Client? inner, this.log}) {
+    _inner = inner ?? _retryClient();
+  }
+
+  http.Client _retryClient() {
+    return RetryClient(
+      http.Client(),
+      when: (r) => retryCodes.contains(r.statusCode),
+    );
+  }
 
   ///
   Future<FetcherResponse> fetch(Uri uri, FetchCache? cache) async {

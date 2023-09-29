@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/usr/bin/bash
 
 CWD="$(dirname "${BASH_SOURCE}")"
 source "$CWD/_global.sh"
 
-$CWD/$BIN/$EXEC generate > $CWD/$WEB/index.html
+$CWD/$BIN/$EXEC generate > $CWD/../index.html

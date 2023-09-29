@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 CWD="$(dirname "${BASH_SOURCE}")"
 source "$CWD/_global.sh"

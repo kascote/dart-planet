@@ -612,9 +612,10 @@ packages:
   universal_feed:
     dependency: "direct main"
     description:
-      path: "../universal-feed"
-      relative: true
-    source: path
+      name: universal_feed
+      sha256: "8c74b46e252b5557032aa4dc7c56744c913fac61cc59ba0896c180881b09419a"
+      url: "https://pub.dev"
+    source: hosted
     version: "0.4.0"
   very_good_analysis:
     dependency: "direct dev"

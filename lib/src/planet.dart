@@ -356,4 +356,22 @@ class Planet {
 
     return feed;
   }
+
+  /// Purge all the feeds
+  Future<int> purgeAllFeeds() async {
+    final feeds = await db.getActiveFeeds();
+    for (final feed in feeds) {
+      await db.purgeFeed(feed);
+    }
+
+    return ExitCode.success.code;
+  }
+
+  /// Purge a feed by handle
+  Future<int> purgeFeed(String handle) async {
+    final feed = await _getFeedByHandle(handle);
+    if (feed == null) return Future.value(ExitCode.error.code);
+
+    return db.purgeFeed(feed).then((_) => ExitCode.success.code).catchError((_) => ExitCode.error.code);
+  }
 }

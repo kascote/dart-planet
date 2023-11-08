@@ -131,6 +131,18 @@ class PlanetDB extends _$PlanetDB {
   Future<List<Feed>> getFeedsWithError() async {
     return (select(feeds)..where((tbl) => tbl.errors.isNotValue(0))).get();
   }
+
+  Future<void> purgeFeed(Feed feed) async {
+    final items = await (select(feedItem)
+          ..where((tbl) => tbl.feed.equals(feed.id))
+          ..orderBy([(u) => OrderingTerm(expression: u.updatedAt, mode: OrderingMode.desc)]))
+        .get();
+
+    if (items.length <= 10) return;
+
+    final ids = items.sublist(10).map((e) => e.id).toList();
+    await (delete(feedItem)..where((tbl) => tbl.id.isIn(ids))).go();
+  }
 }
 
 LazyDatabase _openConnection() {

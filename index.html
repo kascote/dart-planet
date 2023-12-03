@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Dart Planet" />
   <meta name="twitter:description" content="One-Stop Dart/Flutter News" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="planet-rendered" content="2023-12-02T19:00:06.019900" />
+  <meta name="planet-rendered" content="2023-12-03T05:00:06.936566" />
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -154,6 +154,15 @@
         <h2><a name="dart-reddit" href="https://www.reddit.com/r/dartlang/" target="_blank">/r/dartlang</a></h2>
         <div class="feed-items">
           <div class="feed-item">
+      <time datetime="2023-12-02T22:10:22.000Z" title="2023-12-02T22:10:22.000Z">6h</time>
+      <div class="item">
+        <a href="https://www.reddit.com/r/dartlang/comments/189eglw/using_shared_map_for_concurrency_in_dart/" target="_blank">Using `shared_map` for Concurrency in Dart</a>
+        
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
       <time datetime="2023-12-01T15:11:15.000Z" title="2023-12-01T15:11:15.000Z">1d</time>
       <div class="item">
         <a href="https://www.reddit.com/r/dartlang/comments/188e81u/speeding_up_hashset_hashmap_and_loops_in_dart/" target="_blank">Speeding up HashSet, HashMap and loops in Dart</a>
@@ -234,20 +243,68 @@
       <div class="share" title="copy url"></div>
     </div>
     
-    <div class="feed-item">
-      <time datetime="2023-11-25T13:13:49.000Z" title="2023-11-25T13:13:49.000Z">7d</time>
-      <div class="item">
-        <a href="https://www.reddit.com/r/dartlang/comments/183jhus/any_way_to_create_a_byte_buffer_thats_not/" target="_blank">Any way to create a byte buffer that's not zero-inited?</a>
-        
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
 </div></div>
       <div class="feed">
         <h2><a name="dart-so" href="https://stackoverflow.com/questions/tagged/?tagnames=dart+-flutter&sort=active" target="_blank">Dart SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
+      <time datetime="2023-12-02T23:43:10.000Z" title="2023-12-02T23:43:10.000Z">5h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77592589/compiler-does-not-warn-for-type-null-is-not-a-subtype-of-type-bool" target="_blank">Compiler does not warn for type 'Null' is not a subtype of type 'bool'</a>
+        <div class="feed-item-description">Compiler does not warn for this:
+class Foo {
+  void commit(bool data){
+  }
+}
+void main() {
+  final foo = Foo();
+  final data = null;
+  foo.commit(data); // runtime error: type 'Null' is not a subtype of type 'bool'
+}
+
+
+Is this intended in the design ? What is the motive behind it ?
+Dart 3.1.4 versio</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-02T22:20:20.000Z" title="2023-12-02T22:20:20.000Z">6h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77592405/how-can-i-avoid-this-rendering-gap-in-dart" target="_blank">How can I avoid this rendering gap in Dart?</a>
+        <div class="feed-item-description">I have the following Dart code:
+[...]
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+          title: const Text(APP_BAR_TITLE,
+              style: TextStyle(fontFamily: 'custom', fontSize: 24)),
+          backgroundColor: Colors.orange),
+      body: SingleChildSc</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-02T19:24:46.000Z" title="2023-12-02T19:24:46.000Z">9h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77591883/is-there-something-like-vector3-for-integers-in-dart" target="_blank">Is there something like Vector3 for integers in Dart?</a>
+        <div class="feed-item-description">In the vector_math_64 library we have the Vector3 class. Which contains coordinates x, y and z as doubles. Is there something similar for integers?
+I could implement my own class:
+class Coordinates {
+  int x, y, z;
+
+  Coordinate(this.x, this.y, this.z);
+}
+
+
+But I don't want to lose all those valuabl</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
       <time datetime="2016-07-13T14:16:06.000Z" title="2016-07-13T14:16:06.000Z">7Y</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/38354210/dart-runtimetype-checking-in-switch-statement" target="_blank">Dart runtimeType checking in switch statement</a>
@@ -296,7 +353,7 @@ Ideally, I would like an automatic inherited doc (as dart does in vscode), above
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-11-30T02:39:25.000Z" title="2023-11-30T02:39:25.000Z">2d</time>
+      <time datetime="2023-11-30T02:39:25.000Z" title="2023-11-30T02:39:25.000Z">3d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77575559/how-to-create-an-independent-copy-of-a-nested-map-with-dynamic-data-in-flutter-d" target="_blank">How to Create an Independent Copy of a Nested Map with Dynamic Data in Flutter-Dart?</a>
         <div class="feed-item-description">In my Flutter-Dart project, I have a map (myMap) that contains nested lists and maps, and these nested structures can further contain lists or maps. The data within these structures is dynamic, originating from a server, making it challenging to anticipate their lengths or values. An illustrative ex</div>
@@ -357,74 +414,12 @@ Ideally I'd like to end up with a my-plugin.js that can be </div>
       <div class="share" title="copy url"></div>
     </div>
     
-    <div class="feed-item">
-      <time datetime="2023-11-28T07:46:19.000Z" title="2023-11-28T07:46:19.000Z">4d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77562063/dart-test-how-to-execute-setup-if-a-loop-before-test-is-used-based-on-the-d" target="_blank">dart_test: how to execute `setUp` if a loop before `test` is used based on the data assigned in `setUp`?</a>
-        <div class="feed-item-description">The problem is in this code:
-void main() {
-  late List data;
-
-  setUp(() async {
-    data = [11, 22, 33];
-  });
-  
-  int counter = 0;
-  for (final d in data) { // error
-    test('data', () {
-      expect(d, data[counter++]);
-    });
-  }
-}
-
-error:
-Local 'data' has not been initialized.
-
-How can we sp</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-11-29T01:42:25.000Z" title="2023-11-29T01:42:25.000Z">3d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77568116/get-only-subdirectories" target="_blank">Get only subdirectories</a>
-        <div class="feed-item-description">How to get only a list of subdirectories within a directory?
-import 'dart:io';
-
-void main() async {
-  // Get the system temp directory.
-  var systemTempDir = Directory.systemTemp;
-
-  // List directory contents, not recursing into sub-directories,
-  // not following symbolic links.
-  await for (var e</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2018-11-28T21:28:09.000Z" title="2018-11-28T21:28:09.000Z">5Y</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/53528390/protobuf-dart-generation-on-mac-os-doesnt-find-protoc-gen-dart" target="_blank">Protobuf dart generation on Mac OS doesn't find protoc-gen-dart</a>
-        <div class="feed-item-description">I've installed protoc with homebrew and try to generate dart code with proto files. 
-When I tried a simple case like protoc --dart_out=. test.proto 
-it give me: 
-
-protoc-gen-dart: program not found or is not executable
---dart_out: protoc-gen-dart: Plugin failed with status code 1.
-
-But protoc-gen-da</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
 </div></div>
       <div class="feed">
         <h2><a name="dart-announce" href="https://groups.google.com/a/dartlang.org/g/announce" target="_blank">Dart Announcements</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2023-12-01T00:00:00.000Z" title="2023-12-01T00:00:00.000Z">1d</time>
+      <time datetime="2023-12-01T00:00:00.000Z" title="2023-12-01T00:00:00.000Z">2d</time>
       <div class="item">
         <a href="https://groups.google.com/a/dartlang.org/g/announce/c/42d_2LDYzs8" target="_blank">Breaking change #54002: Modify the 'UP' algorithm to handle intersection types earlier</a>
         
@@ -433,7 +428,7 @@ But protoc-gen-da</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-11-30T00:00:00.000Z" title="2023-11-30T00:00:00.000Z">2d</time>
+      <time datetime="2023-11-30T00:00:00.000Z" title="2023-11-30T00:00:00.000Z">3d</time>
       <div class="item">
         <a href="https://groups.google.com/a/dartlang.org/g/announce/c/1BOFe_oJ020" target="_blank">Breaking change 54201: dart2js will not minify Invocation.memberName in noSuchMethod</a>
         
@@ -612,7 +607,44 @@ But protoc-gen-da</div>
         <h2><a name="dart-ghw" href="http://mshibanami.github.io/GitHubTrendingRSS" target="_blank">Dart Weekly Package</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2023-12-02T05:00:01.098653Z" title="2023-12-02T05:00:01.098653Z">14h</time>
+      <time datetime="2023-12-03T05:00:01.443971Z" title="2023-12-03T05:00:01.443971Z">5s</time>
+      <div class="item">
+        <a href="https://github.com/aleksanderwozniak/table_calendar" target="_blank">aleksanderwozniak/table_calendar</a>
+        <div class="feed-item-description">Highly customizable, feature-packed calendar widget for FlutterTableCalendar 
+  
+Highly customizable, feature-packed calendar widget for Flutter. 
+ 
+  
+   
+    
+    
+   
+  
+  
+   
+   TableCalendar with custom styles 
+   TableCalendar with custom builders 
+   
+  
+ 
+Features 
+ 
+ Extensive, yet easy to</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-03T05:00:01.443971Z" title="2023-12-03T05:00:01.443971Z">5s</time>
+      <div class="item">
+        <a href="https://github.com/CarGuo/gsy_github_app_flutter" target="_blank">CarGuo/gsy_github_app_flutter</a>
+        <div class="feed-item-description">Flutter 超完整的开源项目，功能丰富，适合学习和日常使用。GSYGithubApp系列的优势：我们目前已经拥有Flutter、Weex、ReactNative、kotlin 四个版本。 功能齐全，项目框架内技术涉及面广，完成度高，持续维护，配套文章，适合全面学习，对比参考。跨平台的开源Github客户端App，更好的体验，更丰富的功能，旨在更好的日常管理和维护个人Github，提供更好更方便的驾车体验Σ(￣。￣ﾉ)ﾉ。同款Weex版本 ： https://github.com/CarGuo/GSYGithubAppWeex 、同款React Native版本 ： https://gith</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-02T05:00:01.098653Z" title="2023-12-02T05:00:01.098653Z">1d</time>
       <div class="item">
         <a href="https://github.com/jamesblasco/modal_bottom_sheet" target="_blank">jamesblasco/modal_bottom_sheet</a>
         <div class="feed-item-description">Flutter | Create advanced modal bottom sheets. Material, Cupertino or your own style 
@@ -626,33 +658,7 @@ Sheet is a new package that reimplements the modal bottom sheet behavior from sc
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-02T05:00:01.098653Z" title="2023-12-02T05:00:01.098653Z">14h</time>
-      <div class="item">
-        <a href="https://github.com/Sangwan5688/BlackHole" target="_blank">Sangwan5688/BlackHole</a>
-        <div class="feed-item-description">A Music Player App made with Flutter 
-BlackHole 
-An Open-Source Music Player App for all your needs! 
-     
-Don't forget to ⭐ the repo 
-   
-Download 
-     
-Translations 
- 
- Turkish 🇹🇷 
- Spanish 🇪🇸 
- Russian 🇷🇺 
- French 🇫🇷 
- Portuguese 🇧🇷 
- Japanese 🇯🇵 
- Belarusian 🇧🇾 
- Indonesian 🇮🇩 </div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-02T05:00:01.098653Z" title="2023-12-02T05:00:01.098653Z">14h</time>
+      <time datetime="2023-12-02T05:00:01.098653Z" title="2023-12-02T05:00:01.098653Z">1d</time>
       <div class="item">
         <a href="https://github.com/flutter/plugins" target="_blank">flutter/plugins</a>
         <div class="feed-item-description">Plugins for Flutter maintained by the Flutter teamFlutter plugins 
@@ -675,7 +681,7 @@ This repo is a companion repo to the mai</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-01T05:00:01.486165Z" title="2023-12-01T05:00:01.486165Z">1d</time>
+      <time datetime="2023-12-01T05:00:01.486165Z" title="2023-12-01T05:00:01.486165Z">2d</time>
       <div class="item">
         <a href="https://github.com/cph-cachet/flutter-plugins" target="_blank">cph-cachet/flutter-plugins</a>
         <div class="feed-item-description">A collection of Flutter plugins developed by CACHETCACHET Flutter plugins 
@@ -685,7 +691,7 @@ This repo contains the source code for Flutter first-party plugins developed by 
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-11-29T05:00:01.581455Z" title="2023-11-29T05:00:01.581455Z">3d</time>
+      <time datetime="2023-11-29T05:00:01.581455Z" title="2023-11-29T05:00:01.581455Z">4d</time>
       <div class="item">
         <a href="https://github.com/JideGuru/FlutterEbookApp" target="_blank">JideGuru/FlutterEbookApp</a>
         <div class="feed-item-description">A simple Flutter app to Read and Download eBooks.📖📖 OpenLeaf (Flutter eBook App)  
@@ -749,23 +755,6 @@ Widget build(context) {
         <div class="feed-item-description">Riveo page curl effect in flutterriveo_page_curl 
 Overview 
 riveo_page_curl is a Flutter project aiming to replicate the unique page curl effect utilized in the Riveo app for project deletion. Dive into the shader code in shaders/page_curl.frag and explore the interesting Flutter logic within projec</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-11-08T00:22:44.422444Z" title="2023-11-08T00:22:44.422444Z">3w</time>
-      <div class="item">
-        <a href="https://github.com/samolego/Canta" target="_blank">samolego/Canta</a>
-        <div class="feed-item-description">Uninstall any Android app without root (Shizuku)!Canta 
- 
-Uninstall any app without root! Powered by Shizuku. 
- 
-Uses universal debloat list for badges. Please read the guide on how recommendations are chosen . 
-Note: Supports only Android &gt;= 9.0 (SDK &gt;= 28). 
-How-to 
- 
- install Shizuku &amp; </div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
@@ -869,7 +858,25 @@ How-to
         <h2><a name="flutter-reddit" href="https://www.reddit.com/r/FlutterDev/" target="_blank">/r/FlutterDev</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2023-12-02T18:59:17.000Z" title="2023-12-02T18:59:17.000Z">49s</time>
+      <time datetime="2023-12-02T23:10:48.000Z" title="2023-12-02T23:10:48.000Z">5h</time>
+      <div class="item">
+        <a href="https://www.reddit.com/r/FlutterDev/comments/189fp85/building_a_driving_theory_mobile_app_with_flutter/" target="_blank">Building a driving theory mobile app with Flutter</a>
+        
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-02T22:28:41.000Z" title="2023-12-02T22:28:41.000Z">6h</time>
+      <div class="item">
+        <a href="https://www.reddit.com/r/FlutterDev/comments/189etv7/what_should_i_do/" target="_blank">What should I do?</a>
+        
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-02T18:59:17.000Z" title="2023-12-02T18:59:17.000Z">10h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/189ah58/i_wrote_morphy_for_flutter_and_dart_a_few_years/" target="_blank">I wrote Morphy for Flutter and Dart a few years ago. It is a class code generation too (json, copywith etc). I've updated it recently for Dart 3, added it to the pub store and enabled json serialization. Here is a short video series to explain how it works. Let me know if it is helpful.</a>
         
@@ -878,7 +885,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-02T17:04:11.000Z" title="2023-12-02T17:04:11.000Z">1h</time>
+      <time datetime="2023-12-02T17:04:11.000Z" title="2023-12-02T17:04:11.000Z">11h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/18981am/how_is_flutter_ios_performance_in_dec_2023/" target="_blank">how is flutter iOS performance in Dec 2023?</a>
         
@@ -887,7 +894,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-02T15:51:17.000Z" title="2023-12-02T15:51:17.000Z">3h</time>
+      <time datetime="2023-12-02T15:51:17.000Z" title="2023-12-02T15:51:17.000Z">13h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/1896iys/looking_for_cool_projects_ideas_to_build_with/" target="_blank">Looking for cool projects ideas to build with Flutter/Dart</a>
         
@@ -896,7 +903,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-02T15:03:30.000Z" title="2023-12-02T15:03:30.000Z">3h</time>
+      <time datetime="2023-12-02T15:03:30.000Z" title="2023-12-02T15:03:30.000Z">13h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/1895kfa/two_years_of_flutter_with_my_startup_ask_away/" target="_blank">Two Years of Flutter with my startup: Ask away</a>
         
@@ -905,7 +912,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-02T11:32:02.000Z" title="2023-12-02T11:32:02.000Z">7h</time>
+      <time datetime="2023-12-02T11:32:02.000Z" title="2023-12-02T11:32:02.000Z">17h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/1891v7h/push_to_play_store_help_need/" target="_blank">Push to play store help need</a>
         
@@ -914,7 +921,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-02T10:17:57.000Z" title="2023-12-02T10:17:57.000Z">8h</time>
+      <time datetime="2023-12-02T10:17:57.000Z" title="2023-12-02T10:17:57.000Z">18h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/1890sfq/awesome_animations_flutter_tutorial/" target="_blank">Awesome Animations • Flutter Tutorial</a>
         
@@ -923,7 +930,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-02T04:47:56.000Z" title="2023-12-02T04:47:56.000Z">14h</time>
+      <time datetime="2023-12-02T04:47:56.000Z" title="2023-12-02T04:47:56.000Z">1d</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/188vwok/implementing_facebook_login_with_flutter_android/" target="_blank">Implementing Facebook Login with Flutter | Android, iOS</a>
         
@@ -932,27 +939,9 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-02T04:17:49.000Z" title="2023-12-02T04:17:49.000Z">14h</time>
+      <time datetime="2023-12-02T04:17:49.000Z" title="2023-12-02T04:17:49.000Z">1d</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/188vdu9/native_notify_review/" target="_blank">Native notify review</a>
-        
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-02T03:50:49.000Z" title="2023-12-02T03:50:49.000Z">15h</time>
-      <div class="item">
-        <a href="https://www.reddit.com/r/FlutterDev/comments/188ux14/flutter_stripe_inetgration/" target="_blank">Flutter Stripe inetgration</a>
-        
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-02T00:07:09.000Z" title="2023-12-02T00:07:09.000Z">18h</time>
-      <div class="item">
-        <a href="https://www.reddit.com/r/FlutterDev/comments/188qhkl/did_you_move_from_rn_to_flutter_tell_me_about/" target="_blank">Did you move from RN to Flutter? Tell me about your experiences!</a>
         
       </div>
       <div class="share" title="copy url"></div>
@@ -963,141 +952,134 @@ How-to
         <h2><a name="flutter-so" href="https://stackoverflow.com/questions/tagged/?tagnames=flutter&sort=active" target="_blank">Flutter SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2021-07-29T07:53:35.000Z" title="2021-07-29T07:53:35.000Z">2Y</time>
+      <time datetime="2023-11-12T03:40:25.000Z" title="2023-11-12T03:40:25.000Z">3w</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/68572148/adding-graph-in-pdf-using-flutter" target="_blank">Adding graph in pdf using flutter</a>
-        <div class="feed-item-description">I am working on project which requires to add bar chart in the pdf(if possible customizable pdf). I am trying to add using below code but it didn't work
- void _printScreen() {
-      doc.addPage(pw.MultiPage(
-          pageFormat: PdfPageFormat.letter
-              .copyWith(marginBottom: 1.5 * PdfPa</div>
+        <a href="https://stackoverflow.com/questions/77467652/how-to-properly-add-request-fields-to-a-dart-multipartrequest" target="_blank">How to properly add request fields to a Dart MultipartRequest</a>
+        <div class="feed-item-description">I have a flutter app in which I normally use http request post from a model to a go API like this.
+if (dateRequired != null) {
+  data['date_required'] = dateRequired?.formatDbDate();
+} else {
+  data['date_required'] = null;
+}
+
+However, I want to upload files and decode json data at the same time. Th</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2021-12-12T01:24:12.000Z" title="2021-12-12T01:24:12.000Z">1Y</time>
+      <time datetime="2020-05-19T11:08:44.000Z" title="2020-05-19T11:08:44.000Z">3Y</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/70320263/error-the-term-flutterfire-is-not-recognized-as-the-name-of-a-cmdlet-functio" target="_blank">Error "The term 'flutterfire' is not recognized as the name of a cmdlet, function, script file, or operable program"</a>
-        <div class="feed-item-description">I'm trying to install flutterfire_cli in my root project, so I typed this command:
-FirebaseFirestore firestore = FirebaseFirestore.instance;
+        <a href="https://stackoverflow.com/questions/61889572/how-to-ignore-a-lint-rule-for-entire-file-in-flutter" target="_blank">How to ignore a lint rule for entire file in Flutter?</a>
+        <div class="feed-item-description">I am able to ignore the rule for individual variables like this:
 
-After that, this is the console session (PowerShell):
-cd C:\Users\PC\Desktop\eventually
-dart pub global activate flutterfire_cli
+class Class {
+  // ignore: prefer_final_fields
+  var _count = 0;
 
-Output:
-Package flutterfire_</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2019-01-11T00:51:39.000Z" title="2019-01-11T00:51:39.000Z">4Y</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/54138959/google-sign-in-backend-verification" target="_blank">Google Sign-In: backend verification</a>
-        <div class="feed-item-description">I have Google Sign-in working on my app: the relevant code is roughly:
-
-var acc = await signInService.signIn();
-var auth = await acc.authentication;
-var token = auth.idToken;
+  // ignore: prefer_final_fields
+  var _count2 = 0;
+}
 
 
-This gives me a nice long token, which I then pass to my backend with an HTTP POST (this is working fine), and then try to </div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-02T17:25:39.000Z" title="2023-12-02T17:25:39.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77591438/trying-to-run-first-flutter-app-but-showing-a-red-screen-error-below-is-the-e" target="_blank">trying to run first flutter app but showing a red screen error .. below is the error showing on terminal</a>
-        <div class="feed-item-description">//error  is showing like this
-    /C:/src/flutter/flutter/packages/flutter/lib/src/services/asset_bundle.dart: Error: The control character U+0000 can only be used in strings and comments.
-    /C:/src/flutter/flutter/packages/flutter/lib/src/services/asset_manifest.dart: Error: The control character</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-02T17:52:06.000Z" title="2023-12-02T17:52:06.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77591551/i-got-error-when-i-try-using-firebase-with-flutter" target="_blank">I got error when i try using firebase with flutter</a>
-        <div class="feed-item-description">I have this error:
-Launching lib\main.dart on RMX1911 in debug mode...
-Building with Flutter multidex support enabled.
-√  Built build\app\outputs\flutter-apk\app-debug.apk.
-E/flutter (25041): [ERROR:flutter/runtime/dart_vm_initializer.cc(41)] Unhandled Exception: PlatformException(null-error, Host p</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-02T16:55:32.000Z" title="2023-12-02T16:55:32.000Z">2h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77591307/flutter-logistics-requires-sdk-version-2-12-0-3-2-2-version-solving-failed" target="_blank">Flutter- logistics requires SDK version >=2.12.0 <3.2.2, version solving failed. exit code 1</a>
-        <div class="feed-item-description">I am working on a Flutter logistics application, that basically tracks products.
-But, I am facing an issue in my pubspec.yaml file
-The Code inside pubspec.yaml
-name: logistics
-description: A new Flutter project.
+I want to use something like this but it doesn't work. How can I ignore the lint for entire class?
 
-# The following defines the version and build number for your application.
-# A version </div>
+// ignore: p</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-02T17:11:34.000Z" title="2023-12-02T17:11:34.000Z">1h</time>
+      <time datetime="2023-11-30T05:41:16.000Z" title="2023-11-30T05:41:16.000Z">2d</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77591384/flutter-macos-failed-to-distribute-invalid-code-signing-entitlements" target="_blank">Flutter macOS - failed to Distribute - Invalid Code Signing Entitlements</a>
-        <div class="feed-item-description">I am trying to distribute my Flutter macOS app, but it fails systematically.
-The application works perfectly locally (in both Debug &amp; Release modes).
-My application uses the com.apple.developer.aps-environment entitlement (Push Notifications).
-I set this entitlement to "production" everywhere (D</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-02T17:08:41.000Z" title="2023-12-02T17:08:41.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77591364/need-help-catching-firebase-user-permission-error-on-flutter" target="_blank">Need help catching firebase user permission error on flutter</a>
-        <div class="feed-item-description">I am really confused about this permission-denied exception that is being thrown but I cannot catch it no matter what I do.
-Here is my function:
-Future uploadDataToStorage(String user, String jsonData) async {
-try {
- final now = DateTime.now();
- final formatter = DateFormat.yMMMMd().add_jm();
- final</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-02T10:03:01.000Z" title="2023-12-02T10:03:01.000Z">8h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77589886/xcode-didnt-launch-the-right-application" target="_blank">Xcode didn't launch the right application</a>
-        <div class="feed-item-description">I've upgraded my system to use Xcode 15 and iOS 17. Since this upgrade i discover a weird behavior on one of my project and not the others.
-flutter run -t lib/entrypoints/generations/main.dart --flavor generations
+        <a href="https://stackoverflow.com/questions/77576144/platformexception-on-firebase-initializeapp" target="_blank">PlatformException on Firebase.InitializeApp</a>
+        <div class="feed-item-description">I'm having problem starting Firebase after migrating to SDK 33 and Gradle 8.
+Error:
 
-As you can see on the following image, I've run my app using the 'generations' flavor</div>
+PlatformException (PlatformException(channel-error, Unable to
+establish connection on channel., null, null))
+
+Part of the code:
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initi</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2020-10-15T22:47:47.000Z" title="2020-10-15T22:47:47.000Z">3Y</time>
+      <time datetime="2022-02-28T11:15:39.000Z" title="2022-02-28T11:15:39.000Z">1Y</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/64380649/backdropfilter-doesnt-run-flutter" target="_blank">BackDropFilter doesn't run (Flutter)</a>
-        <div class="feed-item-description">I'm programming a simple validation screen, and I decided to use BackDropFilter to use some blur, but it doesn't work, it says that ImageFilter isn't defined.
-import 'package:flutter/material.dart';
-import '../constants.dart';
+        <a href="https://stackoverflow.com/questions/71294190/how-to-read-local-json-file-in-flutter" target="_blank">how to read local json file in flutter</a>
+        <div class="feed-item-description">I am trying to read a local json file named "catalog.json" I wrote all the nessessary codes but it's showing this error "lateinitializationError: Field 'catalogdata' has not been initialized."
+then i tried by initializing the 'catalogdata' variable but then it shows that 'catalogdata' variable is em</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2022-06-08T13:20:53.000Z" title="2022-06-08T13:20:53.000Z">1Y</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/72546430/firebase-storage-image-is-not-showing-on-flutter-web-desktop" target="_blank">Firebase storage image is not showing on flutter web desktop</a>
+        <div class="feed-item-description">So I am using firebase for my flutter web project but the image is not showing on the desktop version and showing on android chrome. using firebase hosting and domain so cros access I think should not be a problem or is it. I dont know
+desktop:
 
-class ValidationScreen extends StatelessWidget {
-  @override
-  Widget bu</div>
+mobile:</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-05-19T20:57:15.000Z" title="2023-05-19T20:57:15.000Z">6M</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/76292388/shimmer-effect-causes-exception-on-rebuilds-in-flutter" target="_blank">Shimmer effect causes Exception on rebuilds in Flutter</a>
+        <div class="feed-item-description">I followed the official tutorial by the Flutter team for creating a shimmer effect: Create a shimmer loading effect
+I copied most of the code into a file and updated some lines with e.g. custom colors:
+LinearGradient scGradient(BuildContext context) {
+  SCThemeData theme = SCTheme.of(context);
+
+  re</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-03T00:23:56.000Z" title="2023-12-03T00:23:56.000Z">4h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77592655/how-to-fromjson-tojson-of-geopoints-or-custom-datatypes-in-flutter-using-freezed" target="_blank">How to fromJSON/toJSON of Geopoints or custom datatypes in Flutter using Freezed and Firebase (Have always build errors)</a>
+        <div class="feed-item-description">this is my first post here and for a student project, so I am very sorry if my format of questioning is incorrect. I created a minimal repo and run the build to recreate my error. The Goel is to create places including geopoints by flutter forms and save tehm in firebase as well as call GeoPoints fr</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-11-30T20:55:28.000Z" title="2023-11-30T20:55:28.000Z">2d</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77581649/flutter-injectable-is-broken-unhandled-exception-bad-state-getit-object-fact" target="_blank">Flutter injectable is broken: Unhandled Exception: Bad state: GetIt: Object/factory with type ConcreteTest is not registered inside GetIt</a>
+        <div class="feed-item-description">I just discovered injectable. Love it, but I can't use environments. If I remove environments, everything works fine. I have tried to get it to work for the past 3 days but no luck. I believe the package breaks when newer Flutter and/or Dart. Or am I doing something wrong?
+Creating a new Flutter pro</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2021-02-17T14:50:31.000Z" title="2021-02-17T14:50:31.000Z">2Y</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/66244349/propagate-click-behind-a-widget" target="_blank">Propagate click behind a widget</a>
+        <div class="feed-item-description">I have a Stack with two widgets inside.
+I'm trying to detect the click on the bottom widget of the Stack, which is behind the top one.
+I am using HitTestBehavior.translucent, but it only work if the GestureDetector doesn't have any child.
+This is a simplified version of what i need in my app. I have</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-06-15T19:39:14.000Z" title="2023-06-15T19:39:14.000Z">5M</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/76485032/creating-a-custom-shape-for-slider-thumb-in-flutter-slider-and-rangeslider" target="_blank">Creating a custom shape for Slider Thumb in Flutter (Slider and RangeSlider)</a>
+        <div class="feed-item-description">I'm currently working on a Flutter project and I need assistance with creating a custom shape for the Slider Thumb. I have both a regular Slider and a RangeSlider in my app, and I would like to customize the appearance of the thumb for both of them.
+To provide a clear understanding of the issue, I h</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
@@ -1107,6 +1089,15 @@ class ValidationScreen extends StatelessWidget {
         <h2><a name="flutter-wotw" href="https://youtube.com" target="_blank">Widget of the Week</a></h2>
         <div class="feed-items">
           <div class="feed-item">
+      <time datetime="2023-03-10T18:26:42.000Z" title="2023-03-10T18:26:42.000Z">8M</time>
+      <div class="item">
+        <a href="https://www.youtube.com/watch?v=qEZf2q4W20g" target="_blank">flutter_lints (Package of the Week)</a>
+        <div class="feed-item-description">When you see your Dart code underlined in squigglies, it means that the Dart analyzer has spotted possible improvements in your code, called lints. When you use flutter create to create a new project, it automatically includes a package called flutter_lints, a ruleset intended to help you follow bes</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
       <time datetime="2023-08-02T17:00:19.000Z" title="2023-08-02T17:00:19.000Z">4M</time>
       <div class="item">
         <a href="https://www.youtube.com/watch?v=Fna-xqrA160" target="_blank">Firebase Analytics (Package of the Week)</a>
@@ -1230,19 +1221,6 @@ pub.dev → https://goo.gle/451BROH
 Learn more → https://goo.gle/2ycqV6L 
 
 G</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-02-22T20:00:09.000Z" title="2023-02-22T20:00:09.000Z">9M</time>
-      <div class="item">
-        <a href="https://www.youtube.com/watch?v=YBRkVCRP1Gw" target="_blank">RawMagnifier (Widget of the Week)</a>
-        <div class="feed-item-description">Do your users need to see parts of your app bigger? Make your app more accessible with a custom magnifier! 
-
-Learn more about the RawMagnifier widget → https://goo.gle/3kqvhzh 
-
-This video is also subtitled in Chinese, Indonesian, Japanese, Korean, Portuguese, Spanish, Arabic, Brazilian Portuguese, </div>
       </div>
       <div class="share" title="copy url"></div>
     </div>

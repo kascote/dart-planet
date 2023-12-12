@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Dart Planet" />
   <meta name="twitter:description" content="One-Stop Dart/Flutter News" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="planet-rendered" content="2023-12-11T19:00:23.569776" />
+  <meta name="planet-rendered" content="2023-12-12T05:00:07.016477" />
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -154,7 +154,7 @@
         <h2><a name="dart-reddit" href="https://www.reddit.com/r/dartlang/" target="_blank">/r/dartlang</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2023-12-11T12:16:42.000Z" title="2023-12-11T12:16:42.000Z">6h</time>
+      <time datetime="2023-12-11T12:16:42.000Z" title="2023-12-11T12:16:42.000Z">16h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/dartlang/comments/18ft8sw/framework_agnostic_http_router/" target="_blank">Framework Agnostic HTTP Router</a>
         
@@ -181,7 +181,7 @@
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-09T01:24:02.000Z" title="2023-12-09T01:24:02.000Z">2d</time>
+      <time datetime="2023-12-09T01:24:02.000Z" title="2023-12-09T01:24:02.000Z">3d</time>
       <div class="item">
         <a href="https://www.reddit.com/r/dartlang/comments/18e238y/cicd_tutorials_for_dartflutter/" target="_blank">CI/CD tutorials for Dart/Flutter</a>
         
@@ -190,7 +190,7 @@
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-08T21:13:14.000Z" title="2023-12-08T21:13:14.000Z">2d</time>
+      <time datetime="2023-12-08T21:13:14.000Z" title="2023-12-08T21:13:14.000Z">3d</time>
       <div class="item">
         <a href="https://www.reddit.com/r/dartlang/comments/18dwuka/can_someone_explain_me_this_sorcery/" target="_blank">Can someone explain me this sorcery ?</a>
         
@@ -208,7 +208,7 @@
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-07T21:18:13.000Z" title="2023-12-07T21:18:13.000Z">3d</time>
+      <time datetime="2023-12-07T21:18:13.000Z" title="2023-12-07T21:18:13.000Z">4d</time>
       <div class="item">
         <a href="https://www.reddit.com/r/dartlang/comments/18d5wbi/anyhow_v120_migration_to_rust_core/" target="_blank">Anyhow v1.2.0: Migration to rust_core</a>
         
@@ -248,23 +248,47 @@
         <h2><a name="dart-so" href="https://stackoverflow.com/questions/tagged/?tagnames=dart+-flutter&sort=active" target="_blank">Dart SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2023-12-11T18:27:42.000Z" title="2023-12-11T18:27:42.000Z">32m</time>
+      <time datetime="2023-12-12T01:48:41.000Z" title="2023-12-12T01:48:41.000Z">3h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77641639/telegram-successful-payment-on-teledart" target="_blank">telegram successful_payment on teledart? [closed]</a>
-        <div class="feed-item-description">teledart.onPreCheckoutQuery().listen((event) async { 
-    await teledart.answerPreCheckoutQuery(event.id, true);
-  });
+        <a href="https://stackoverflow.com/questions/77643267/dart-does-not-know-that-a-variable-is-not-null" target="_blank">dart does not know that a variable is not null [duplicate]</a>
+        <div class="feed-item-description">Dart code:
+if (v != null) {
+  v.add(5);
+}
 
-Its work, but SUCCESSFUL_PAYMENT?
-no work
-  teledart.onMessage(entityType: 'successful_payment', keyword: 'successful_payment').listen((event) async {
-    print(event.successful_pa</div>
+v is not null because of the if condition.
+but dart compiler complains that v can be null, and need to use v!.
+if (v != null) {
+  v!.add(5);
+}
+
+But the following code:
+if (v is TypeFoo) {
+   execute(v as TypeFoo);
+}
+
+Here the compiler is smart, and says tha</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-11T18:12:50.000Z" title="2023-12-11T18:12:50.000Z">47m</time>
+      <time datetime="2023-12-11T18:27:42.000Z" title="2023-12-11T18:27:42.000Z">10h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77641639/telegram-successful-payment-on-teledart" target="_blank">telegram successful_payment on teledart? [closed]</a>
+        <div class="feed-item-description">This is working:
+ teledart.onPreCheckoutQuery().listen((event) async { 
+    await teledart.answerPreCheckoutQuery(event.id, true);
+  });
+
+But the check for SUCCESSFUL_PAYMENT is not working.  How do I fix it?
+  teledart.onMessage(entityType: 'successful_payment', keyword: 'successful_payment').liste</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-11T18:12:50.000Z" title="2023-12-11T18:12:50.000Z">10h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77641562/estou-com-o-seguinte-problema-no-projeto-do-aplicativo-flutter-city-guide-1-9" target="_blank">Estou com o seguinte problema no projeto do aplicativo Flutter City Guide 1.9 [closed]</a>
         <div class="feed-item-description">AO INICIAR O PUB GET, ELE ME RETORNA O SEGUINTE ERRO
@@ -404,25 +428,6 @@ templates.html
       <div class="share" title="copy url"></div>
     </div>
     
-    <div class="feed-item">
-      <time datetime="2017-02-11T12:54:07.000Z" title="2017-02-11T12:54:07.000Z">6Y</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/42176092/dartlang-wait-more-than-one-future" target="_blank">Dartlang wait more than one future</a>
-        <div class="feed-item-description">I want to do something after a lot of future functions are done, but I do not know how to write the code in dart?
-the code is like this:
-for (var d in data) {
-  d.loadData().then()
-}
-// when all loaded
-// do something here
-
-but I don't want to wait for them one by one:
-for (var d in data) {
-  await </div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
 </div></div>
       <div class="feed">
         <h2><a name="dart-announce" href="https://groups.google.com/a/dartlang.org/g/announce" target="_blank">Dart Announcements</a></h2>
@@ -522,7 +527,7 @@ for (var d in data) {
         <h2><a name="dart-wiki" href="https://github.com/dart-lang/sdk/wiki" target="_blank">Dart Sdk Wiki</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2023-12-11T13:51:34.000Z" title="2023-12-11T13:51:34.000Z">5h</time>
+      <time datetime="2023-12-11T13:51:34.000Z" title="2023-12-11T13:51:34.000Z">15h</time>
       <div class="item">
         <a href="https://github.com/dart-lang/sdk/wiki/Archived-Builds" target="_blank">Archived Builds</a>
         
@@ -616,7 +621,17 @@ for (var d in data) {
         <h2><a name="dart-ghw" href="http://mshibanami.github.io/GitHubTrendingRSS" target="_blank">Dart Weekly Package</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2023-12-08T05:00:01.784087Z" title="2023-12-08T05:00:01.784087Z">3d</time>
+      <time datetime="2023-12-12T05:00:01.986317Z" title="2023-12-12T05:00:01.986317Z">5s</time>
+      <div class="item">
+        <a href="https://github.com/mapbox/mapbox-maps-flutter" target="_blank">mapbox/mapbox-maps-flutter</a>
+        <div class="feed-item-description">Mapbox Maps SDK Flutter Plugin 
+The Mapbox Maps SDK Flutter Plugin is an officially developed solution from Mapbox that enables use of our latest Maps SDK product (v10.13.0). It is currently in beta, but can be used in production. The plugin allows developers to embed highly customized maps using a </div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-08T05:00:01.784087Z" title="2023-12-08T05:00:01.784087Z">4d</time>
       <div class="item">
         <a href="https://github.com/GetStream/stream-chat-flutter" target="_blank">GetStream/stream-chat-flutter</a>
         <div class="feed-item-description">Flutter Chat SDK - Build your own chat app experience using Dart, Flutter and the Stream Chat Messaging API.Official Flutter packages for Stream Chat 
@@ -746,23 +761,6 @@ riveo_page_curl is a Flutter project aiming to replicate the unique page curl ef
       <div class="share" title="copy url"></div>
     </div>
     
-    <div class="feed-item">
-      <time datetime="2023-11-08T00:22:44.422444Z" title="2023-11-08T00:22:44.422444Z">1M</time>
-      <div class="item">
-        <a href="https://github.com/samolego/Canta" target="_blank">samolego/Canta</a>
-        <div class="feed-item-description">Uninstall any Android app without root (Shizuku)!Canta 
- 
-Uninstall any app without root! Powered by Shizuku. 
- 
-Uses universal debloat list for badges. Please read the guide on how recommendations are chosen . 
-Note: Supports only Android &gt;= 9.0 (SDK &gt;= 28). 
-How-to 
- 
- install Shizuku &amp; </div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
 </div></div>
       <div class="feed">
         <h2><a name="flutter-blog" href="https://medium.com/flutter?source=rss----4da7dfd21a33---4" target="_blank">Flutter Blog</a></h2>
@@ -862,7 +860,7 @@ How-to
         <h2><a name="flutter-reddit" href="https://www.reddit.com/r/FlutterDev/" target="_blank">/r/FlutterDev</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2023-12-11T18:51:04.000Z" title="2023-12-11T18:51:04.000Z">9m</time>
+      <time datetime="2023-12-11T18:51:04.000Z" title="2023-12-11T18:51:04.000Z">10h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/18g0vyj/anyone_in_the_boston_area/" target="_blank">Anyone in the Boston Area?</a>
         
@@ -871,7 +869,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-11T17:23:42.000Z" title="2023-12-11T17:23:42.000Z">1h</time>
+      <time datetime="2023-12-11T17:23:42.000Z" title="2023-12-11T17:23:42.000Z">11h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/18fzr9f/volunteer_software_developer_position_with/" target="_blank">Volunteer Software Developer Position with Superstars</a>
         
@@ -880,7 +878,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-11T15:28:20.000Z" title="2023-12-11T15:28:20.000Z">3h</time>
+      <time datetime="2023-12-11T15:28:20.000Z" title="2023-12-11T15:28:20.000Z">13h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/18fx34f/flutter_on_tv_or_auto/" target="_blank">Flutter on TV or Auto</a>
         
@@ -889,7 +887,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-11T14:15:37.000Z" title="2023-12-11T14:15:37.000Z">4h</time>
+      <time datetime="2023-12-11T14:15:37.000Z" title="2023-12-11T14:15:37.000Z">14h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/18fvhxj/joyful_cross_platform_development_with_clojuredart/" target="_blank">Joyful Cross platform Development with ClojureDart</a>
         
@@ -898,7 +896,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-11T12:54:17.000Z" title="2023-12-11T12:54:17.000Z">6h</time>
+      <time datetime="2023-12-11T12:54:17.000Z" title="2023-12-11T12:54:17.000Z">16h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/18ftwfj/svg_icons_visible_on_emulator_but_not_on_real/" target="_blank">SVG Icons Visible on Emulator but Not on Real Device – Any Solutions?</a>
         
@@ -907,7 +905,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-11T12:50:30.000Z" title="2023-12-11T12:50:30.000Z">6h</time>
+      <time datetime="2023-12-11T12:50:30.000Z" title="2023-12-11T12:50:30.000Z">16h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/18ftu2h/breaking_down_it_salaries_job_market_report_for/" target="_blank">Breaking Down IT Salaries: Job Market Report for Germany and Switzerland!</a>
         
@@ -916,7 +914,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-11T12:48:08.000Z" title="2023-12-11T12:48:08.000Z">6h</time>
+      <time datetime="2023-12-11T12:48:08.000Z" title="2023-12-11T12:48:08.000Z">16h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/18ftsjv/has_anyone_configured_azure_devops_pipeline_for/" target="_blank">Has anyone configured Azure DevOps pipeline for iOS app with extensions?</a>
         
@@ -925,7 +923,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-11T11:35:19.000Z" title="2023-12-11T11:35:19.000Z">7h</time>
+      <time datetime="2023-12-11T11:35:19.000Z" title="2023-12-11T11:35:19.000Z">17h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/18fskdi/are_there_ressources_for_web_hooks_in_flutter/" target="_blank">Are there ressources for Web Hooks in flutter ?</a>
         
@@ -934,7 +932,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-11T06:35:56.000Z" title="2023-12-11T06:35:56.000Z">12h</time>
+      <time datetime="2023-12-11T06:35:56.000Z" title="2023-12-11T06:35:56.000Z">22h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/18foaiy/flutter_mock_interview/" target="_blank">Flutter | Mock Interview</a>
         
@@ -943,7 +941,7 @@ How-to
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-11T06:26:05.000Z" title="2023-12-11T06:26:05.000Z">12h</time>
+      <time datetime="2023-12-11T06:26:05.000Z" title="2023-12-11T06:26:05.000Z">22h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/18fo585/flutterflow/" target="_blank">FlutterFlow</a>
         
@@ -956,86 +954,6 @@ How-to
         <h2><a name="flutter-so" href="https://stackoverflow.com/questions/tagged/?tagnames=flutter&sort=active" target="_blank">Flutter SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2023-12-11T17:50:26.000Z" title="2023-12-11T17:50:26.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77641446/crash-when-compiling-rangeerror-index-invalid-value-only-valid-value-is-0" target="_blank">Crash when compiling: RangeError (index): Invalid value: Only valid value is 0: 1</a>
-        <div class="feed-item-description">I am getting this exception I searched on stackoverflow but the solutions I found didn't work for me.
-I faced this error:
-Unhandled exception:
-Crash when compiling:
-RangeError (index): Invalid value: Only valid value is 0: 1
-
-#0      List.[] (dart:core-patch/growable_array.dart:264:36)
-#1      Class</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-11-22T12:21:41.000Z" title="2023-11-22T12:21:41.000Z">2w</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77529904/willpopscope-is-deprecated-in-flutter" target="_blank">WillPopScope is deprecated in Flutter</a>
-        <div class="feed-item-description">'WillPopScope' is deprecated and shouldn't be used. Use PopScope instead. This feature was deprecated after v3.12.0-1.0.pre
-WillPopScope(
-  onWillPop: () async {
-    // your logic        
-    return false;
-  },
-)</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-11T18:46:25.000Z" title="2023-12-11T18:46:25.000Z">13m</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77641738/debugging-google-fitness-permissions-as-if-downloaded-from-play-store" target="_blank">Debugging Google Fitness Permissions as if Downloaded from Play Store</a>
-        <div class="feed-item-description">I've been working on an application with an iOS and Android build and (successfully) requested activity recognition permissions from the Google Play Console. I even released a closed track build and was able to ask user for access and retrieve fitness data as expected. However, I get "Access Denied!</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-11T18:42:35.000Z" title="2023-12-11T18:42:35.000Z">17m</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77641716/how-to-short-listmapstring-dynamic-based-on-timestamp" target="_blank">How to short List<Map<String,dynamic>> based on TimeStamp</a>
-        <div class="feed-item-description">I'm receiving two streams of document data from firestore DB.and putting them in separate lists (List A and B). then combine these lists into another list (List C).
-This list (List C) has List&gt;. Each Map contains Key SavedDate as a TimeStamp object. I want to sort this list in descending order ba</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-11T15:57:42.000Z" title="2023-12-11T15:57:42.000Z">3h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77640804/delay-before-displaying-unicode-character-in-flutter" target="_blank">Delay before displaying unicode character in Flutter</a>
-        <div class="feed-item-description">I'm noticing a small delay in my Flutter code when displaying a Unicode character. With my demo code, there is a delay of a few milliseconds, but in a bigger code with more widgets to load, sometimes it can take half a second up to a whole second.
-Is that a known problem? If so, is there also a know</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-05T17:44:46.000Z" title="2023-12-05T17:44:46.000Z">6d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77608263/google-maps-api-flutterflow-need-help-fixing-this-page-cant-load-google-map" target="_blank">Google Maps API (FlutterFlow): need help fixing "this page can't load Google Maps correctly"</a>
-        <div class="feed-item-description">I try to build a tracking app using Google Maps and I can't visualize it properly because I get this legend "this page can't load Google Maps correctly". It's been many days since I started trying to fix this problem and I haven't find any correct answer here or in internet
-How can it be that even h</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-11T16:35:43.000Z" title="2023-12-11T16:35:43.000Z">2h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77641043/making-a-camera-activity-load-faster-in-flutter" target="_blank">Making a camera activity load faster in flutter</a>
-        <div class="feed-item-description">I have this barcodeScannerView. How can I set it so the camera will load instantly, like in this video?
-Even if I don't check for permission, it takes 2 seconds to load the camera. It shows a white screen, then a second of black and then the camera, which is a bad user experience. I want the user to</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
       <time datetime="2021-05-07T20:20:19.000Z" title="2021-05-07T20:20:19.000Z">2Y</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/67441215/flutter-dart-get-list-of-string-from-list-of-objects" target="_blank">Flutter Dart get list of string from list of objects</a>
@@ -1058,42 +976,123 @@ how to get List names f</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-11T18:22:47.000Z" title="2023-12-11T18:22:47.000Z">37m</time>
+      <time datetime="2023-12-12T04:15:44.000Z" title="2023-12-12T04:15:44.000Z">44m</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77641619/i-trying-to-use-flutter-bloc-pattern-but-i-am-facing-some-issue-which-is-taping" target="_blank">I trying to use Flutter Bloc Pattern But I am facing some issue which is taping login button twice is setting the email and password value null</a>
-        <div class="feed-item-description">This is the state class Code
-class SignInState {
-  String email;
-  String password;
-  bool passwordVisible;
-
-  SignInState(
-      {this.email = "", this.password = "", this.passwordVisible = false});
-
-  List get props =&gt; [this.email, this.password, this.passwordVisible];
-
-  SignInState copyWith(
-</div>
+        <a href="https://stackoverflow.com/questions/77643657/how-to-place-an-icon-next-to-the-last-word-of-the-first-line-in-a-flutter-row" target="_blank">How to place an icon next to the last word of the first line in a Flutter Row?</a>
+        <div class="feed-item-description">I am working with a Flutter Row whose children are a text and an icon. The text is too long to fit in a single row, and the icon is placed to the left of the Row. I want the icon to be placed next to the last word of the first line, or the longest line of the text, and not be separated.
+This is how </div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-03T12:19:16.000Z" title="2023-12-03T12:19:16.000Z">1w</time>
+      <time datetime="2023-12-11T06:46:31.000Z" title="2023-12-11T06:46:31.000Z">22h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77594254/flutter-for-web-back-forward-button-problem" target="_blank">Flutter for web: back/forward button problem</a>
-        <div class="feed-item-description">I am facing the following problem:
-I have a StatefulWidget which can generate different view in case of state change:
-class _HomePageState extends State {
-  bool _changed = false;
+        <a href="https://stackoverflow.com/questions/77637872/nwpathmonitor-thread-1-exc-bad-access-code-1-address-0x0" target="_blank">NWPathMonitor Thread 1: EXC_BAD_ACCESS (code=1, address=0x0)</a>
+        <div class="feed-item-description">I am facing an issue when I try to run the app on my real iOS device. Please help me solve my problem. I've tried many ways to fix it, such as changing the Minimum Deployment Target from 11.0 to 12.0.
 
-  @override
-  Widget build(BuildContext context) {
-    return changed ? View2() : View1();
-  }
-}
+Things that need to be considered
+I researched this error and found it might be caused by the pack</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-11T08:56:59.000Z" title="2023-12-11T08:56:59.000Z">20h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77638427/list-not-updating-after-item-added" target="_blank">List not updating after item added</a>
+        <div class="feed-item-description">In page A, I'm calling an API to get list data from server , then add it into list.
+Page A code
+Widget build(BuildContext context) { 
 
-If I change a state _</div>
+ValueNotifier list = useState([]);
+
+useEffect(() {
+  WidgetsBinding.instance.addPostFrameCallback((_) {
+    context
+        .read()
+        .getAgentVehiclesList(
+  </div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-12T04:11:43.000Z" title="2023-12-12T04:11:43.000Z">48m</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77643645/how-to-fetch-images-from-the-firestore-in-offline-mode" target="_blank">How to fetch images from the Firestore in offline mode</a>
+        <div class="feed-item-description">I have uploaded the image to the Firebase storage and saved the URL in the Firestore DB. I want to fetch that image and display it in the UI even when the device is offline.
+I did some research but could not find a correct and direct answer. Could anyone help with this problem?
+Thanks in advance.</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-12T03:55:03.000Z" title="2023-12-12T03:55:03.000Z">1h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77643608/assertion-failed-tilewidth-leadingsize-width-tilewidth-0-0-leading-wi" target="_blank">Assertion failed: tileWidth != leadingSize.width || tileWidth == 0.0 "Leading widget consumes entire tile width</a>
+        <div class="feed-item-description">I'm trying to display text in a template chatModel() on the screen but I'm getting rendering issues.
+I tried to nest the List builder in a sized box with a specific width and height and the whole page stopped rendering. I also tried the shrinkwrap attribute but I got the same result. This is the cod</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-12T03:41:14.000Z" title="2023-12-12T03:41:14.000Z">1h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77643575/continuous-location-tracking-and-generating-local-notification-even-after-termin" target="_blank">Continuous location tracking and generating local notification even after termination of application in ios (Flutter)</a>
+        <div class="feed-item-description">I am developing a flutter app to do geofencing and generating local notifications even when the app is in background or terminated. I use background_services, flutter_local_notification, geolocator packages to achieve this on android. But I don't know the way to do this in ios and i don't even know </div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-11T20:32:02.000Z" title="2023-12-11T20:32:02.000Z">8h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77642258/what-is-activityref-while-creating-a-provider" target="_blank">What is ActivityRef while creating a Provider</a>
+        <div class="feed-item-description">The code below is from the article 'Make your first provider/network request' in Riverpod documentation.
+//activity.dart
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'activity.dart';
+
+// Necessary for code-gener</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2018-07-14T05:15:57.000Z" title="2018-07-14T05:15:57.000Z">5Y</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/51335483/flutter-keyboard-makes-textfield-hide" target="_blank">Flutter Keyboard makes textfield hide</a>
+        <div class="feed-item-description">I'm new to flutter. I've added a form with a text field and when I clicked the textfield and keyboard comes, the textfield goes up.
+
+This is my code : 
+
+Widget build(BuildContext context) {
+
+MediaQueryData mediaQuery = MediaQuery.of(context);
+return new Scaffold(
+  body:  new Container(
+      color:</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-12T01:50:25.000Z" title="2023-12-12T01:50:25.000Z">3h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77643274/flutter-navigation-page-radius" target="_blank">flutter Navigation page Radius</a>
+        <div class="feed-item-description">How to make the page curved and consistent with the screen during page redirection?
+image
+return SlideTransition(
+            position: offsetAnimation,
+            child: ClipRRect(
+              borderRadius: animation.value == 1
+                  ? BorderRadius.zero
+                  : const Bord</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>

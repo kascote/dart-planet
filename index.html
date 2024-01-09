@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Dart Planet" />
   <meta name="twitter:description" content="One-Stop Dart/Flutter News" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="planet-rendered" content="2024-01-09T05:00:08.250742" />
+  <meta name="planet-rendered" content="2024-01-09T12:00:05.611330" />
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -154,6 +154,27 @@
         <h2><a name="dart-so" href="https://stackoverflow.com/questions/tagged/?tagnames=dart+-flutter&sort=active" target="_blank">Dart SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
+      <time datetime="2024-01-09T10:08:27.000Z" title="2024-01-09T10:08:27.000Z">1h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77785897/how-to-manipulate-a-constructor-parameter-before-both-assigning-it-to-a-final-va" target="_blank">How to manipulate a constructor parameter before both assigning it to a final variable and passing it to a super constructor?</a>
+        <div class="feed-item-description">Consider this code:
+class Parent {
+  final List bytes;
+  Parent(this.bytes);
+}
+
+class Child extends Parent {
+  final String name;
+  
+  Child(String s) : name = s.trim(), super(s.trim().codeUnits);
+}
+
+Basically, Child accepts a String as constructor parameter. What I want to do is to trim it, store i</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
       <time datetime="2024-01-03T23:47:15.000Z" title="2024-01-03T23:47:15.000Z">5d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77755188/dart-equivalent-of-multiple-inheritance-of-pure-virtual-interfaces" target="_blank">DART equivalent of multiple inheritance of pure virtual interfaces</a>
@@ -222,7 +243,7 @@ const objectA = MyClass(1, </div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-03T08:09:40.000Z" title="2024-01-03T08:09:40.000Z">5d</time>
+      <time datetime="2024-01-03T08:09:40.000Z" title="2024-01-03T08:09:40.000Z">6d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77750466/answer-shows-different-even-though-the-output-is-coming-correctly" target="_blank">Answer shows different even though the output is coming correctly</a>
         <div class="feed-item-description">I was practicing some leetcode and I am pretty new to it. So, there is this problem where you need to shift the 0s to the right. I wrote the code and the output is coming as expected but the results yields [].
@@ -311,29 +332,6 @@ class C extends A {
 
 I have an abstract class A.
 Class B implements A. Therefore it overrides </div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2022-07-17T14:31:53.000Z" title="2022-07-17T14:31:53.000Z">1Y</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/73012662/how-to-change-property-names-when-serializing-with-dart-json-serializable" target="_blank">How to change property names when serializing with dart json_serializable?</a>
-        <div class="feed-item-description">Here is a json file person.json
-{
-  "first_name": "John",
-  "last_name": "Doe"
-}
-
-Here is the Person class
-import 'package:json_annotation/json_annotation.dart';
-
-part 'person.g.dart';
-
-@JsonSerializable()
-class Person {
-  /// The generated code assumes these values exist in JSON.
-  final String fir</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
@@ -763,129 +761,123 @@ This repo contains the source code for Flutter first-party plugins developed by 
         <h2><a name="flutter-so" href="https://stackoverflow.com/questions/tagged/?tagnames=flutter&sort=active" target="_blank">Flutter SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-01-09T03:57:10.000Z" title="2024-01-09T03:57:10.000Z">1h</time>
+      <time datetime="2024-01-09T11:58:35.000Z" title="2024-01-09T11:58:35.000Z">1m</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77784290/how-to-view-html-files-on-the-android-and-web-platform-in-flutter" target="_blank">how to view html files on the android and web platform in flutter?</a>
-        <div class="feed-item-description">I'm creating a flutter project that can run on android &amp; web platform.
-I'm having problem with viewing html on web platform.
-I used a plugin webview_flutter to view html on android platform but this plugin doesn't support web platform.
-import 'package:webview_flutter/webview_flutter.dart';
+        <a href="https://stackoverflow.com/questions/77786597/flutter-app-user-authentication-is-working-but-data-not-store-in-the-firestore-b" target="_blank">Flutter app user authentication is working but data not store in the firestore but sometime ago it was working fine now its showing exception</a>
+        <div class="feed-item-description">Below exception showing in the debug console:
+Error getting App Check token; using placeholder token instead. Error: com.google.firebase.FirebaseException: No AppCheckProvider installed.
+I want to store the data in the firestore.</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-01-09T08:52:27.000Z" title="2024-01-09T08:52:27.000Z">3h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77785443/why-is-my-put-request-not-working-in-flutter" target="_blank">Why is my PUT request not working in Flutter?</a>
+        <div class="feed-item-description">It doesn't work of PUT requests in Flutter so I know it isn't a problem serverside, I checked with Postman and server side is working very well.
+My raw data :
 
-clas</div>
+My send method to the server:
+  Future addProductType(
+      {required String productID,
+      required String title,
+      required String </div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-09T04:48:30.000Z" title="2024-01-09T04:48:30.000Z">11m</time>
+      <time datetime="2024-01-09T10:54:15.000Z" title="2024-01-09T10:54:15.000Z">1h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77784421/how-to-resolve-the-problem-of-clientexception-xmlhttprequest-error" target="_blank">How to resolve the problem of ClientException: XMLHttpRequest error</a>
-        <div class="feed-item-description">Im try to Call the HTTP request for flutter web application showing error:
-ClientException: XMLHttpRequest error., uri=http:192.168.xxx.xxx;xxx
-In my test I used web (Chrome) as my target platform.
-Im using flutter http package.</div>
+        <a href="https://stackoverflow.com/questions/77786210/flutter-how-to-auto-run-a-process-2-seconds-after-a-form-is-displayed" target="_blank">Flutter - how to auto run a process 2 seconds after a form is displayed?</a>
+        <div class="feed-item-description">I have a Flutter form where I want to auto run a process 2 seconds after a form is displayed.
+How can I do this?</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-09T00:57:53.000Z" title="2024-01-09T00:57:53.000Z">4h</time>
+      <time datetime="2024-01-09T11:11:05.000Z" title="2024-01-09T11:11:05.000Z">49m</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77783866/how-to-color-specific-parts-of-svg-image-using-flutter-and-flutter-svg" target="_blank">How to Color Specific Parts of SVG Image using Flutter and flutter_svg?</a>
-        <div class="feed-item-description">I am developing a Flutter application where I need to display a human body silhouette with muscles, and I want users to dynamically color specific muscles based on their input. I am using the flutter_svg package to work with SVG images.
-Here is a simplified version of the SVG representing the human </div>
+        <a href="https://stackoverflow.com/questions/77786320/image-not-fit-in-container-in-flutter" target="_blank">image not fit in container in flutter</a>
+        <div class="feed-item-description">in this code i have to fit image into container. but not fit in container. the image may be cover with width or either the height not both cover in container.
+child: AspectRatio(
+                  aspectRatio: 5/7,
+                child: Container(
+                  color: Colors.black,
+            </div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-09T00:15:03.000Z" title="2024-01-09T00:15:03.000Z">4h</time>
+      <time datetime="2024-01-09T11:06:17.000Z" title="2024-01-09T11:06:17.000Z">53m</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77783765/how-to-stop-the-game-when-they-win" target="_blank">How to stop the game when they win</a>
-        <div class="feed-item-description">I just want to know how to put a function to stop the game when it finished.
-I already put one when it completed in wrong way.
-I want to put a message to congratulate the player after finish
-import 'package:flutter/material.dart';
-import 'package:hangman/components/colors.dart';
-import 'package:hang</div>
+        <a href="https://stackoverflow.com/questions/77786286/how-to-notify-users-whenever-an-item-added-to-a-list-without-refreshing-the-whol" target="_blank">How to notify users whenever an item added to a list without refreshing the whole list in flutter</a>
+        <div class="feed-item-description">in flutter i have a listView that gets it's item from a list and the list is downloded from the internet, whenever a new item added to the list i have an event that tells the app a new item added, and for that i use notifyListners() to refresh the list view to display the new item,
+my problem with t</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-09T00:18:42.000Z" title="2024-01-09T00:18:42.000Z">4h</time>
+      <time datetime="2024-01-09T11:01:06.000Z" title="2024-01-09T11:01:06.000Z">58m</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77783769/generating-a-new-sha-1-for-google-cloud-oauth-credential" target="_blank">Generating a new SHA-1 for Google Cloud OAuth Credential?</a>
-        <div class="feed-item-description">I had a Firebase project using an Android debug SHA-1 located at ~/.android/debug.keystore for authentication. I deleted the project, and realized after when trying to create an OAuth 2.0 credential in Google Cloud that I cannot use the same package name and SHA-1 key since it's being used by Fireba</div>
+        <a href="https://stackoverflow.com/questions/77786253/why-flutter-ios-app-crash-with-impeller-error" target="_blank">Why Flutter iOS app crash with impeller error?</a>
+        <div class="feed-item-description">A weird problem in flutter app, after running on iOS simulator with iOS 16.1 it crash after launch with the following error: [ERROR:flutter/shell/platform/darwin/graphics/FlutterDarwinContextMetalImpeller.mm(42)] Using the Impeller rendering backend.
+I've already tried the various solutions, like di</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-09T00:28:09.000Z" title="2024-01-09T00:28:09.000Z">4h</time>
+      <time datetime="2024-01-09T10:52:43.000Z" title="2024-01-09T10:52:43.000Z">1h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77783792/is-flutter-a-recommended-choice-for-web-development-in-2024" target="_blank">Is Flutter a Recommended Choice for Web Development in 2024? [closed]</a>
-        <div class="feed-item-description">I am in the early stages of planning a database management app and considering Flutter as the development framework. I've already tried it in mobile, and desktop development, and the result is nothing but great, but I'm interested in understanding whether Flutter is a recommended choice for building</div>
+        <a href="https://stackoverflow.com/questions/77786200/branch-sdk-generates-very-long-links-when-adding-custom-params" target="_blank">Branch sdk generates very long links when adding custom params</a>
+        <div class="feed-item-description">Bug:
+When I add custom parameters to link properties while generating a short link, I receive a very large link like: https://app.evershop.ai/a/key_live_jFaxviWaBE0ynGU8luXU5jchyzn9QkHS?%24randomized_bundle_token=1253323032068742588&amp;tags=influencer&amp;alias=u/testuser7140&amp;channel=influencer</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-09T00:09:01.000Z" title="2024-01-09T00:09:01.000Z">4h</time>
+      <time datetime="2024-01-09T10:39:31.000Z" title="2024-01-09T10:39:31.000Z">1h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77783754/arguments-of-a-constant-creation-must-be-constant-expressions" target="_blank">Arguments of a constant creation must be constant expressions</a>
-        <div class="feed-item-description">I extracted a method, just so I would not have to type out the same lines of code over and over again. The method is a container with set colors and a fixed height. Well, I want the Text inside the Container to be inputted manually, i.e, I do not want it to be a fixed value. I want to be able to cha</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-08T20:43:58.000Z" title="2024-01-08T20:43:58.000Z">8h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77783074/why-dialog-in-flutter-web-closed-when-i-click-on-textfield-from-iphone-or-ipad" target="_blank">Why Dialog in Flutter web closed when i click on TextField from Iphone or Ipad</a>
-        <div class="feed-item-description">I have a dialog with a login form and when I want to enter text from my cell phone when I open the keyboard, the dialog closes, this bug is not present when I run flutter on ios or android, I do it in the web
-showDialog(
-                      context: context,
-                      barrierDismissibl</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-08T22:42:47.000Z" title="2024-01-08T22:42:47.000Z">6h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77783525/flutter-ontap-location-is-not-in-the-path-of-image-generated-by-custompainter" target="_blank">Flutter-Ontap location is not in the path of image generated by CustomPainter</a>
-        <div class="feed-item-description">I am trying to get the properties of CustomPainter elements when tapped. However, the location generated by onTapUp is not within the path created by CustomPainter Path.
+        <a href="https://stackoverflow.com/questions/77786091/flutter-upgradealert-works-ok-but-with-upgrader-parameter-not" target="_blank">Flutter: UpgradeAlert works OK, but with "upgrader: ..." parameter NOT?</a>
+        <div class="feed-item-description">When the code is:
+UpgradeAlert(
+    child: Scaffold...
+  )
 
-import 'package:flutter/material.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  Offset _tapP</div>
+Application detects new version in PlayStore and shows prompt.
+When I add parameters:
+UpgradeAlert(
+  upgrader: Upgrader( messages: UpgraderMessages(code: 'pl'),
+            showLater: false,
+            showIgnore: false,
+            durat</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-08T22:19:56.000Z" title="2024-01-08T22:19:56.000Z">6h</time>
+      <time datetime="2024-01-09T08:10:47.000Z" title="2024-01-09T08:10:47.000Z">3h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77783439/i-have-problem-with-assets-in-flutter-web-on-ngnix-server" target="_blank">I have problem with assets in flutter web on ngnix server</a>
-        <div class="feed-item-description">I release flutter app
-And when I run it locally (with pyhton server) it works well
-but when I put it on server (I have problem with images)
-this is my ngnix config
-user  nginx;
-worker_processes  auto;
-
-error_log  /var/log/nginx/error.log notice;
-pid        /var/run/nginx.pid;
-
-
-events {
-    worker_c</div>
+        <a href="https://stackoverflow.com/questions/77785188/hot-restart-on-flutter-web-gives-exception-in-console-to-load-images-failed-to-e" target="_blank">Hot Restart on Flutter web gives exception in console to load images Failed to execute measure on performance The mark 24listenerbegin doesn't exist</a>
+        <div class="feed-item-description">dart-sdk/lib/developer/timeline.dart 295:10                             finish
+packages/flutter/src/painting/image_cache.dart 434:13                   
+packages/flutter/src/painting/image_cache.dart 440:28                   listener
+packages/flutter/src/painting/image_stream.dart 711:25             </div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-01-09T09:02:19.000Z" title="2024-01-09T09:02:19.000Z">2h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77785492/image-not-displaying-in-the-container-using-future-function-but-is-display-when" target="_blank">Image not displaying in the container using Future Function but is display when i use image Widget</a>
+        <div class="feed-item-description">The code is suppose to display a picture in the container but its not displaying anything! other than the text. I used Image.asser() and that works and displays an image in the container but when i use SelectedImage and store a picture in it using Future Function from gallery or camera that doesn't </div>
       </div>
       <div class="share" title="copy url"></div>
     </div>

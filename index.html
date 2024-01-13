@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Dart Planet" />
   <meta name="twitter:description" content="One-Stop Dart/Flutter News" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="planet-rendered" content="2024-01-12T19:00:05.573881" />
+  <meta name="planet-rendered" content="2024-01-13T05:00:08.244787" />
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -154,7 +154,36 @@
         <h2><a name="dart-so" href="https://stackoverflow.com/questions/tagged/?tagnames=dart+-flutter&sort=active" target="_blank">Dart SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-01-12T16:52:59.000Z" title="2024-01-12T16:52:59.000Z">2h</time>
+      <time datetime="2024-01-12T20:14:49.000Z" title="2024-01-12T20:14:49.000Z">8h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77809110/how-do-i-use-dartlang-iooverrides-particularly-createfile" target="_blank">How do I use Dartlang IOOverrides, particularly createFile?</a>
+        <div class="feed-item-description">I'd like to use the Dart IOOverrides to run some code in a tweaked environment. Particularly, I want to take some tests which were running a Dart program as a separate executable, and run it by invoking the main() within the test. I need to intercept stdout and stderr, which I can do with IOOverride</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-01-12T21:12:43.000Z" title="2024-01-12T21:12:43.000Z">7h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77809309/how-to-test-a-stream-made-from-a-series-of-callback-invocations" target="_blank">How to test a stream made from a series of callback invocations</a>
+        <div class="feed-item-description">Given the following repository class:
+class Repository {
+Repository({required Client client}) : _client = client;
+
+final Client _client;
+final StreamController _controller =
+      StreamController.broadcast();
+
+Stream get isEnabled async* {
+    try {
+      await _client.registerListener(
+        cal</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-01-12T16:52:59.000Z" title="2024-01-12T16:52:59.000Z">12h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77808133/error-unsendable-when-passing-sendport-to-isolate-spawn" target="_blank">Error "unsendable" when passing SendPort to Isolate.spawn()</a>
         <div class="feed-item-description">This is a piece of code I have written:
@@ -171,7 +200,7 @@ class IsolateTask {
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-11T20:36:54.000Z" title="2024-01-11T20:36:54.000Z">22h</time>
+      <time datetime="2024-01-11T20:36:54.000Z" title="2024-01-11T20:36:54.000Z">1d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77802908/what-are-the-benefits-of-writing-a-bignum-lib-in-dart" target="_blank">What are the benefits of writing a BigNum lib in Dart? [closed]</a>
         <div class="feed-item-description">I like C++ and initially wanted to use it, but then I learned about Dart, which looks very promising as a C++/JS mashup that compiles to native code. I have some minimal BigNum code in C++, but nothing is actually ready to use. What are the advantages of switching to Dart while I can?
@@ -181,7 +210,7 @@ My main concer</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-09T22:38:43.000Z" title="2024-01-09T22:38:43.000Z">2d</time>
+      <time datetime="2024-01-09T22:38:43.000Z" title="2024-01-09T22:38:43.000Z">3d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77790085/issue-including-files-from-different-directories-in-a-dart-code-generator-with-b" target="_blank">Issue including files from different directories in a Dart code generator with build_runner (aggregate builder)</a>
         <div class="feed-item-description">First of all, I would like to emphasize that I am just learning about Aggregate Builder.I am working on a Dart code generator using build_runner, and I've encountered an issue when trying to include files from different directories in the code generation process. My goal is to examine all .dart file</div>
@@ -213,7 +242,7 @@ I can</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-10T00:14:15.000Z" title="2024-01-10T00:14:15.000Z">2d</time>
+      <time datetime="2024-01-10T00:14:15.000Z" title="2024-01-10T00:14:15.000Z">3d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77790337/dart-ffi-lookup-asfunction-does-not-accept-generic-type-that-extends-nativetype" target="_blank">Dart FFI lookup/asFunction does not accept generic type that extends NativeType</a>
         <div class="feed-item-description">This code snippet defines a generic function that has a type parameter T extends NativeType. Then T is used to define a C function signature to look up symbols from a dynamic library.
@@ -275,42 +304,6 @@ class sync_put_if
 {
 public:
   b</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2021-04-13T12:56:28.000Z" title="2021-04-13T12:56:28.000Z">2Y</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/67075344/how-to-take-input-from-user-in-dart" target="_blank">How to take input from user in dart?</a>
-        <div class="feed-item-description">some changes in Dart 2.0 so refer this code.
-void main() {
-  int n = int.parse(stdin.readLineSync()!); // stdin.readLineSync() used for int value
-  String? name = stdin.readLineSync()!; // stdin.readLineSync() used for String value
-  print("enter name: ${name}");
-  print("enter number: ${n}");
-}</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2022-06-27T23:14:15.000Z" title="2022-06-27T23:14:15.000Z">1Y</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/72779176/dart-in-constant-expressions-operands-of-this-operator-must-be-of-type-num" target="_blank">Dart: In constant expressions, operands of this operator must be of type 'num'</a>
-        <div class="feed-item-description">I created a const class like so:
-class MyClass {
-  const MyClass(this.x, this.y);
-  final double x;
-  final double y;
-
-  MyClass operator +(MyClass other) {
-    return MyClass(x + other.x, y + other.y);
-  }
-}
-
-Now if I try to create a new class by adding two const values:
-const objectA = MyClass(1, </div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
@@ -392,7 +385,7 @@ const objectA = MyClass(1, </div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-08-16T00:00:00.000Z" title="2023-08-16T00:00:00.000Z">4M</time>
+      <time datetime="2023-08-16T00:00:00.000Z" title="2023-08-16T00:00:00.000Z">5M</time>
       <div class="item">
         <a href="https://groups.google.com/a/dartlang.org/g/announce/c/jTY9LxVmhUc" target="_blank">Dart 3.1 released</a>
         
@@ -508,7 +501,7 @@ const objectA = MyClass(1, </div>
         <h2><a name="dart-ghw" href="http://mshibanami.github.io/GitHubTrendingRSS" target="_blank">Dart Weekly Package</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-01-11T05:00:01.218844Z" title="2024-01-11T05:00:01.218844Z">1d</time>
+      <time datetime="2024-01-11T05:00:01.218844Z" title="2024-01-11T05:00:01.218844Z">2d</time>
       <div class="item">
         <a href="https://github.com/isar/hive" target="_blank">isar/hive</a>
         <div class="feed-item-description">Lightweight and blazing fast key-value database written in pure Dart.   
@@ -524,7 +517,7 @@ Features 🌟
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-07T05:00:01.793985Z" title="2024-01-07T05:00:01.793985Z">5d</time>
+      <time datetime="2024-01-07T05:00:01.793985Z" title="2024-01-07T05:00:01.793985Z">6d</time>
       <div class="item">
         <a href="https://github.com/babakcode/flutter_gemini" target="_blank">babakcode/flutter_gemini</a>
         <div class="feed-item-description">Flutter Google Gemini SDKFlutter Gemini 
@@ -649,7 +642,7 @@ This repo contains the source code for Flutter first-party plugins developed by 
         <h2><a name="flutter-blog" href="https://medium.com/flutter?source=rss----4da7dfd21a33---4" target="_blank">Flutter Blog</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-01-09T19:46:22.000Z" title="2024-01-09T19:46:22.000Z">2d</time>
+      <time datetime="2024-01-09T19:46:22.000Z" title="2024-01-09T19:46:22.000Z">3d</time>
       <div class="item">
         <a href="https://medium.com/flutter/announcing-the-globalgamers-challenge-2c5315c87898?source=rss----4da7dfd21a33---4" target="_blank">Announcing the #GlobalGamers Challenge</a>
         
@@ -743,26 +736,48 @@ This repo contains the source code for Flutter first-party plugins developed by 
         <h2><a name="flutter-so" href="https://stackoverflow.com/questions/tagged/?tagnames=flutter&sort=active" target="_blank">Flutter SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-01-12T18:57:12.000Z" title="2024-01-12T18:57:12.000Z">2m</time>
+      <time datetime="2024-01-13T04:46:36.000Z" title="2024-01-13T04:46:36.000Z">13m</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77808752/in-compatible-version-for-kotlin-in-flutter-project" target="_blank">In-compatible version for Kotlin in Flutter project?</a>
-        <div class="feed-item-description">I have a Flutter project which using the following configuration of Kotlin and Gradle versions
-android/build.gradle
-buildscript {
-    ext.kotlin_version = '1.7.10'
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7</div>
+        <a href="https://stackoverflow.com/questions/77810321/flutter-mp3-audio-file-not-detetcted" target="_blank">Flutter Mp3 audio file not detetcted</a>
+        <div class="feed-item-description">My android studio is not able to understand the file extension(.mp3). it gives (The asset does not exist or has empty data.) error even though files are present and path is correct . i rechecked the
+pubpsec.yaml folder. it shows no error and i got Question mark (?) in front of my audio files and not</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-12T18:51:55.000Z" title="2024-01-12T18:51:55.000Z">8m</time>
+      <time datetime="2024-01-13T03:54:40.000Z" title="2024-01-13T03:54:40.000Z">1h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77810252/how-to-customize-scrolling-animation-flip-page-depth-page-transformer-on-folio" target="_blank">How to customize scrolling animation Flip page, Depth page transformer on Folio Reader Epub</a>
+        <div class="feed-item-description">I want to customize Flip Page, Depth page transformer scrolling when horizontal in Epub Folio reader library, I added transition animation to ViewPage but some pages still not working, it't still slide.
+Folio library use: https://github.com/FolioReader/FolioReader-Android
+Here is a video : https://d</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-01-13T01:25:33.000Z" title="2024-01-13T01:25:33.000Z">3h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77809999/how-can-i-adjust-the-background-color-of-the-native-android-buttons-to-be-compat" target="_blank">How can I adjust the background color of the native Android buttons to be compatible with the BottomNavigationBar background?</a>
+        <div class="feed-item-description">I'm creating an app in Flutter and I would like the background color of the native Android buttons to be the same background color as the BottomNavigationBar widget, in a similar way to how the Play Store achieves it, this is my example code: 
+import 'package:flutter/material.dart';
+import 'package:</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-01-12T20:31:24.000Z" title="2024-01-12T20:31:24.000Z">8h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77809169/flutter-define-last-frame-event-when-scrolling-in-listview-builder" target="_blank">Flutter - Define last frame event when scrolling in ListView.Builder</a>
+        <div class="feed-item-description">There is a ListView.Builder that creates a list of 100,000 rows. Each line contains an icon and a Container with the text "index - N". I need that when shifting or scrolling (swipe), the text in the Container is written only on the last frame of the shift or scrolling (swipe) -  not on the last line</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-01-12T18:51:55.000Z" title="2024-01-12T18:51:55.000Z">10h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77808730/fetching-data-but-cannot-display-on-the-screen-in-flutter" target="_blank">Fetching data but cannot display on the screen in Flutter</a>
         <div class="feed-item-description">I am attempting to write code that retrieves news from a free API and organizes them into categories for display. I have successfully implemented the news fetching functionality, as I can see the news being printed on the console. However, when it comes to displaying them on the emulator screen, I e</div>
@@ -771,110 +786,56 @@ buildscript {
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-12T18:25:34.000Z" title="2024-01-12T18:25:34.000Z">34m</time>
+      <time datetime="2024-01-12T22:32:37.000Z" title="2024-01-12T22:32:37.000Z">6h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77808598/flutter-failed-in-version-solving-pubget" target="_blank">Flutter: Failed in version solving pubget</a>
-        <div class="feed-item-description">Note: meta is pinned to version 1.10.0 by integration_test from the flutter SDK.
-See https://dart.dev/go/sdk-version-pinning for details.
-
-
-Because every version of integration_test from sdk depends on meta 1.10.0 and every version of split_bills from path depends on meta 1.9.1, integration_test fro</div>
+        <a href="https://stackoverflow.com/questions/77809596/flutter-suddenly-stopped-working-with-no-known-errors-in-the-project-code" target="_blank">Flutter suddenly stopped working with no known errors in the project code</a>
+        <div class="feed-item-description">I was working on my flutter app and when I called "flutter run" I suddenly got these error messages. Everything has been working fine for hours and this has never happened before. As far as I know, I didn't do anything that would've caused a problem.
+Invalid depfile: C:\flutterapps\example\.dart_too</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-12T18:33:27.000Z" title="2024-01-12T18:33:27.000Z">26m</time>
+      <time datetime="2024-01-13T00:25:09.000Z" title="2024-01-13T00:25:09.000Z">4h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77808626/setstate-not-redrawing-widget-tree-when-updating-statefulwidget-property" target="_blank">setState not redrawing widget tree when updating StatefulWidget Property</a>
-        <div class="feed-item-description">I'm building a simple list app where a user can add items to the list. Here is the full code.
-class ItemsListView extends StatefulWidget {
-  final List items;
-  const ItemsListView({super.key, required this.items});
-  static const routeName = '/';
+        <a href="https://stackoverflow.com/questions/77809894/flutter-authenticate-using-play-games-in-firebase" target="_blank">Flutter: Authenticate using Play Games in Firebase</a>
+        <div class="feed-item-description">I have Facebook and Google authentication working fine:
 
-  @override
-  State createState() {
-    return _Ite</div>
+Recently I added also Play Games (this is configured and working fine in my app) but I can't find how to sign in using this. Some articles have Google's code to singing and the only reference I found is this, but not Flutter related:
+https://f</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-12T17:50:15.000Z" title="2024-01-12T17:50:15.000Z">1h</time>
+      <time datetime="2024-01-12T23:20:46.000Z" title="2024-01-12T23:20:46.000Z">5h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77808439/how-to-update-variables-between-widgets" target="_blank">How to Update Variables Between Widgets?</a>
-        <div class="feed-item-description">I want to continuously update the x and y values in the TabScanning widget and use these updated values in the MapPage widget. When I print x and y on the TabScanning page, the values are updated. But the values in MapPage always remain 0.0.
-TabScanning Widget:
-class TabScanning extends StatefulWidg</div>
+        <a href="https://stackoverflow.com/questions/77809746/flutter-upgrade-to-3-16-and-now-it-doesnt-run" target="_blank">Flutter Upgrade to 3.16 and now it doesn't run</a>
+        <div class="feed-item-description">Hey 👋🏼, I updated my flutter version to 3.16 and now I can't run my apps, can someone help me?
+The error is the following:
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+&gt; Error while evaluating property 'filteredArgumentsMap' of task ':app:compileDebugKotlin'
+   &gt; C</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-12T17:54:28.000Z" title="2024-01-12T17:54:28.000Z">1h</time>
+      <time datetime="2024-01-12T20:59:46.000Z" title="2024-01-12T20:59:46.000Z">8h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77808457/flutter-shake-error-no-implementation-found-for-method-setaccelerationsampling" target="_blank">Flutter Shake Error: 'No implementation found for method setAccelerationSamplingPeriod on channel dev.fluttercommunity.plus/sensors/method'</a>
-        <div class="feed-item-description">I think I'm having the issue described in [this][1] forum. I recently added the shake package to my Flutter app. Although it was working fine the first couple times I ran it, now it does not start most of the time because it throws this MissingPluginException:
-'No implementation found for method set</div>
+        <a href="https://stackoverflow.com/questions/77809269/circularprogressindicator-value-not-updated" target="_blank">CircularProgressIndicator value not updated</a>
+        <div class="feed-item-description">For the code shown below, I think that just calculating a new value for _progress should cause the CircularProgressIndicator to redraw.  That does not appear to be happening.  It never updates, although I have verified in the debugger that _progress is changed.
+What do I need to do to get it to upda</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-12T14:52:47.000Z" title="2024-01-12T14:52:47.000Z">4h</time>
+      <time datetime="2024-01-12T21:14:38.000Z" title="2024-01-12T21:14:38.000Z">7h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77807420/aes-encryption-galois-counter-mode-trying-to-login-sever-side-getting-invalid-cr" target="_blank">Aes Encryption Galois/Counter Mode trying to login sever side getting invalid credential issue ,</a>
-        <div class="feed-item-description">Here below the code of dart Aes encryption logic
-  static String encryptAESGCM(String plaintext, String key) {
-    try {
-      final keyBytes = Uint8List.fromList(utf8.encode(key));
-      // SecureRandom secureRandom = getSecureRandom();
-      // Uint8List data = secureRandom.nextBytes(12);
-        </div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-12T17:17:00.000Z" title="2024-01-12T17:17:00.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77808280/how-to-add-pull-to-refresh-to-a-flutter-app" target="_blank">how to add pull to refresh to a flutter app</a>
-        <div class="feed-item-description">I'm relatively inexperienced with flutter/dart and working on a project of wrapping an app around an existing website. I'm using this repo as a starting point (https://github.com/bettysteger/flutter_pwa_wrapper). That being said, I'd like to add a "pull to refresh" option to the app, but I can't see</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-12T17:43:30.000Z" title="2024-01-12T17:43:30.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77808410/why-my-flutter-app-is-not-running-in-ios-while-working-in-android" target="_blank">Why my Flutter app is not running in iOS while working in Android?</a>
-        <div class="feed-item-description">I have created an app and this is working perfectly on Android devices. Now I setup everything for ios and while running the app on ios, I am getting my app crashed on App launch with error in xcode
-- [I-ACS036001] Analytics screen reporting is disabled. UIViewController transitions will not be logg</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-12T16:14:08.000Z" title="2024-01-12T16:14:08.000Z">2h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77807915/flutter-unexpected-null-value" target="_blank">flutter Unexpected null value</a>
-        <div class="feed-item-description">ImageSlider.dart
-
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/material.dart';
-
-class ImageSlider extends StatefulWidget {
-  final List imgList;
-
-  // final url;
-  const ImageSlider({
-    super.key,
-    // required this.url,
-    required this.imgList,
-  });
-
-  @over</div>
+        <a href="https://stackoverflow.com/questions/77809317/statewelcomepage-createstate-welcomepagestate" target="_blank">State<WelcomePage> createState() => _WelcomePageState(); }</a>
+        <div class="feed-item-description">im new to coding/flutter/dart and im trying to pick things up as im going along. im trying to build a welcome page for an app. All is well until I try to add functionality to a show password field. the error is that the names are conflicting. How do I get around this issue, any help would be greatly</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>

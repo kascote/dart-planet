@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Dart Planet" />
   <meta name="twitter:description" content="One-Stop Dart/Flutter News" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="planet-rendered" content="2024-01-17T19:00:06.215079" />
+  <meta name="planet-rendered" content="2024-01-18T05:00:09.615115" />
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -154,7 +154,22 @@
         <h2><a name="dart-so" href="https://stackoverflow.com/questions/tagged/?tagnames=dart+-flutter&sort=active" target="_blank">Dart SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-01-17T07:59:40.000Z" title="2024-01-17T07:59:40.000Z">11h</time>
+      <time datetime="2024-01-18T01:02:41.000Z" title="2024-01-18T01:02:41.000Z">3h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77836330/extracting-the-gs1-company-prefix-from-a-gtin" target="_blank">Extracting the GS1 Company Prefix from a GTIN</a>
+        <div class="feed-item-description">I am trying to get the company prefix from barcodes using dart:
+String extractCompanyPrefix(String gtin) {
+  // Ensure the GTIN is a string to handle leading zeros and perform string operations
+  String gtinStr = gtin.padLeft(14, '0');
+
+  String prefix = gtinStr.substring(0, 8);
+  // remove leading </div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-01-17T07:59:40.000Z" title="2024-01-17T07:59:40.000Z">21h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77830768/where-can-i-find-the-history-of-type-promotion-rules-except-for-local-variables" target="_blank">Where can I find the history of type promotion rules except for local variables?</a>
         <div class="feed-item-description">I'm a seasoned C/C++/Java/Python developer, but a novice Dart learner. I tested the type promotion with the following code using Dart 3.2.3.
@@ -176,7 +191,7 @@ class C {
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-16T02:44:07.000Z" title="2024-01-16T02:44:07.000Z">1d</time>
+      <time datetime="2024-01-16T02:44:07.000Z" title="2024-01-16T02:44:07.000Z">2d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77823224/should-override-add-addall-when-using-dart-listmixin" target="_blank">Should override add, addAll when using dart ListMixin?</a>
         <div class="feed-item-description">I'm just trying to use ListMixin and there's words like this in official documentation.
@@ -229,7 +244,7 @@ Let's assume we are developing an app storing users animals data for veterinary 
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-13T20:53:43.000Z" title="2024-01-13T20:53:43.000Z">3d</time>
+      <time datetime="2024-01-13T20:53:43.000Z" title="2024-01-13T20:53:43.000Z">4d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77813061/how-to-deal-with-shared-modules-in-a-micro-apps-architecture" target="_blank">How to deal with shared modules in a micro-apps architecture</a>
         <div class="feed-item-description">I've been looking at micro-app approaches for building applications in Flutter and I had questions about how to properly separate shared interface modules.
@@ -239,7 +254,7 @@ Given this project as an example. It is separated into a base app, a home micro 
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-12T20:14:49.000Z" title="2024-01-12T20:14:49.000Z">4d</time>
+      <time datetime="2024-01-12T20:14:49.000Z" title="2024-01-12T20:14:49.000Z">5d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77809110/how-do-i-use-dartlang-iooverrides-particularly-createfile" target="_blank">How do I use Dartlang IOOverrides, particularly createFile?</a>
         <div class="feed-item-description">I'd like to use the Dart IOOverrides to run some code in a tweaked environment. Particularly, I want to take some tests which were running a Dart program as a separate executable, and run it by invoking the main() within the test. I need to intercept stdout and stderr, which I can do with IOOverride</div>
@@ -248,7 +263,7 @@ Given this project as an example. It is separated into a base app, a home micro 
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-12T21:12:43.000Z" title="2024-01-12T21:12:43.000Z">4d</time>
+      <time datetime="2024-01-12T21:12:43.000Z" title="2024-01-12T21:12:43.000Z">5d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77809309/how-to-test-a-stream-made-from-a-series-of-callback-invocations" target="_blank">How to test a stream made from a series of callback invocations</a>
         <div class="feed-item-description">Given the following repository class:
@@ -280,16 +295,6 @@ class IsolateTask {
   IsolateTask(String name, ReceivePort eventReceivePort)
       : _name = name,
         _eventReceivePort = eventRe</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-11T20:36:54.000Z" title="2024-01-11T20:36:54.000Z">5d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77802908/what-are-the-benefits-of-writing-a-bignum-lib-in-dart" target="_blank">What are the benefits of writing a BigNum lib in Dart? [closed]</a>
-        <div class="feed-item-description">I like C++ and initially wanted to use it, but then I learned about Dart, which looks very promising as a C++/JS mashup that compiles to native code. I have some minimal BigNum code in C++, but nothing is actually ready to use. What are the advantages of switching to Dart while I can?
-My main concer</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
@@ -487,35 +492,7 @@ My main concer</div>
         <h2><a name="dart-ghw" href="http://mshibanami.github.io/GitHubTrendingRSS" target="_blank">Dart Weekly Package</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-01-17T05:00:01.505735Z" title="2024-01-17T05:00:01.505735Z">14h</time>
-      <div class="item">
-        <a href="https://github.com/xiaoyaocz/flutter_dmzj" target="_blank">xiaoyaocz/flutter_dmzj</a>
-        <div class="feed-item-description">动漫之家Flutter客户端   
-动漫之家X 
- 使用Flutter编写的动漫之家跨平台第三方客户端  
- 
- 
-支持平台 
- 
-  Android 
-  iOS 
-  Windows Beta 
-  MacOS Beta 
-  Linux Beta 
- 
-请到Releases下载最新版本，iOS请下载ipa文件自行签名安装。 
-反馈问题、相关讨论请到Discussions，代码改进请直接提交PR。 
-声明 
- 
-  本项目为动漫之家第三方开源APP  
-  本项目仅用于学习交流编程技术，严禁将本项目用于商业目的。如有任何商业行为，均与本项目无关。  
-  本项目内所有资源版权均归属于其著作</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-16T05:00:01.353276Z" title="2024-01-16T05:00:01.353276Z">1d</time>
+      <time datetime="2024-01-16T05:00:01.353276Z" title="2024-01-16T05:00:01.353276Z">2d</time>
       <div class="item">
         <a href="https://github.com/opxica/modular-ui" target="_blank">opxica/modular-ui</a>
         <div class="feed-item-description">ModularUI : Pre-built beautiful flutter widgets Inspired by material-tailwind and shadcn/ui 
@@ -528,7 +505,7 @@ Here are some of the examples </div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-11T05:00:01.218844Z" title="2024-01-11T05:00:01.218844Z">6d</time>
+      <time datetime="2024-01-11T05:00:01.218844Z" title="2024-01-11T05:00:01.218844Z">7d</time>
       <div class="item">
         <a href="https://github.com/isar/hive" target="_blank">isar/hive</a>
         <div class="feed-item-description">Lightweight and blazing fast key-value database written in pure Dart.   
@@ -568,7 +545,7 @@ A package that allows you to use the native file explorer to pick single or mult
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-18T05:00:01.810242Z" title="2023-12-18T05:00:01.810242Z">4w</time>
+      <time datetime="2023-12-18T05:00:01.810242Z" title="2023-12-18T05:00:01.810242Z">1M</time>
       <div class="item">
         <a href="https://github.com/fleaflet/flutter_map" target="_blank">fleaflet/flutter_map</a>
         <div class="feed-item-description">A versatile mapping package for Flutter. Simple and easy to learn, yet completely customizable and configurable, it's the best choice for mapping in your Flutter app.flutter_map 
@@ -609,15 +586,6 @@ This repository contains c</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-12-03T05:00:01.443971Z" title="2023-12-03T05:00:01.443971Z">1M</time>
-      <div class="item">
-        <a href="https://github.com/CarGuo/gsy_github_app_flutter" target="_blank">CarGuo/gsy_github_app_flutter</a>
-        <div class="feed-item-description">Flutter 超完整的开源项目，功能丰富，适合学习和日常使用。GSYGithubApp系列的优势：我们目前已经拥有Flutter、Weex、ReactNative、kotlin 四个版本。 功能齐全，项目框架内技术涉及面广，完成度高，持续维护，配套文章，适合全面学习，对比参考。跨平台的开源Github客户端App，更好的体验，更丰富的功能，旨在更好的日常管理和维护个人Github，提供更好更方便的驾车体验Σ(￣。￣ﾉ)ﾉ。同款Weex版本 ： https://github.com/CarGuo/GSYGithubAppWeex 、同款React Native版本 ： https://gith</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
       <time datetime="2023-12-02T05:00:01.098653Z" title="2023-12-02T05:00:01.098653Z">1M</time>
       <div class="item">
         <a href="https://github.com/jamesblasco/modal_bottom_sheet" target="_blank">jamesblasco/modal_bottom_sheet</a>
@@ -631,12 +599,45 @@ Sheet is a new package that reimplements the modal bottom sheet behavior from sc
       <div class="share" title="copy url"></div>
     </div>
     
+    <div class="feed-item">
+      <time datetime="2023-12-02T05:00:01.098653Z" title="2023-12-02T05:00:01.098653Z">1M</time>
+      <div class="item">
+        <a href="https://github.com/flutter/plugins" target="_blank">flutter/plugins</a>
+        <div class="feed-item-description">Plugins for Flutter maintained by the Flutter teamFlutter plugins 
+ 
+  
+   
+   ARCHIVED 
+   
+  
+  
+   
+   This repository is no longer in use; all source has moved to flutter/packages and future development work will be done there. 
+   
+  
+ 
+ARCHIVED CONTENT 
+This repo is a companion repo to the mai</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2023-12-01T05:00:01.486165Z" title="2023-12-01T05:00:01.486165Z">1M</time>
+      <div class="item">
+        <a href="https://github.com/cph-cachet/flutter-plugins" target="_blank">cph-cachet/flutter-plugins</a>
+        <div class="feed-item-description">A collection of Flutter plugins developed by CACHETCACHET Flutter plugins 
+This repo contains the source code for Flutter first-party plugins developed by developers at the Copenhagen Center for Health Technology (CACHET) at The Technical University of Denmark. Check the packages directory for all p</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
 </div></div>
       <div class="feed">
         <h2><a name="flutter-blog" href="https://medium.com/flutter?source=rss----4da7dfd21a33---4" target="_blank">Flutter Blog</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-01-09T19:46:22.000Z" title="2024-01-09T19:46:22.000Z">7d</time>
+      <time datetime="2024-01-09T19:46:22.000Z" title="2024-01-09T19:46:22.000Z">1w</time>
       <div class="item">
         <a href="https://medium.com/flutter/announcing-the-globalgamers-challenge-2c5315c87898?source=rss----4da7dfd21a33---4" target="_blank">Announcing the #GlobalGamers Challenge</a>
         
@@ -730,125 +731,125 @@ Sheet is a new package that reimplements the modal bottom sheet behavior from sc
         <h2><a name="flutter-so" href="https://stackoverflow.com/questions/tagged/?tagnames=flutter&sort=active" target="_blank">Flutter SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-01-17T17:37:53.000Z" title="2024-01-17T17:37:53.000Z">1h</time>
+      <time datetime="2024-01-18T04:25:12.000Z" title="2024-01-18T04:25:12.000Z">34m</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77834468/running-flutter-app-after-name-change-is-not-working" target="_blank">Running flutter app after name change is not working</a>
-        <div class="feed-item-description">I have recently changed the name of my flutter app. Now, when I try to run the app, the app won't install on the virtual device.
-I run it through the flutter run command and this is all I get:
-Using hardware rendering with device sdk gphone64 x86 64. If you notice graphics artifacts, consider
-enabli</div>
+        <a href="https://stackoverflow.com/questions/77836888/how-to-redirect-next-page-after-successfully-login-with-flutter" target="_blank">How to redirect next page after successfully login with flutter?</a>
+        <div class="feed-item-description">I create a simple login app with flutter. Backend is simple Jwt. After successfully login, Can not redirect to other page please help
+This is login page code
+            //login buttom
+            SizedBox(
+              width: 360,
+              child: Padding(
+                padding: const EdgeIn</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-17T18:40:19.000Z" title="2024-01-17T18:40:19.000Z">19m</time>
+      <time datetime="2024-01-18T03:42:42.000Z" title="2024-01-18T03:42:42.000Z">1h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77834791/how-to-add-a-flutter-screen-to-an-android-app" target="_blank">How to Add a Flutter screen to an Android app</a>
-        <div class="feed-item-description">The official guide on how to Add a Flutter screen to an Android app explains how to add a simple page but what about a screen which gets data from native side through flutter channel.
-Issue with native calls inside flutter aar : -
-After converting module into flutter aar , native code is not include</div>
+        <a href="https://stackoverflow.com/questions/77836770/after-compiling-and-packaging-with-flutter-build-web-and-deploying-the-server-a" target="_blank">After compiling and packaging with Flutter build web and deploying the server, a blank page appears on the Alipay app</a>
+        <div class="feed-item-description">Projects created with Flutter, after being compiled and packaged with Flutter build web -- web renderer html, are deployed to nginx servers. They can be opened normally on PC browsers, in mobile browsers, and on WeChat apps, but they are blank when opened on Alipay, Alibaba sellers apps, Test addres</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-17T18:01:03.000Z" title="2024-01-17T18:01:03.000Z">59m</time>
+      <time datetime="2024-01-18T02:33:59.000Z" title="2024-01-18T02:33:59.000Z">2h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77834594/my-json-file-why-cant-asda-print-the-file" target="_blank">my json file why can't asda print the file?</a>
-        <div class="feed-item-description">i have a json file in the flutter i wrote general code but this code only work for "Hi" and "See you" but i need other question
-enter image description here
-it looks like this but after the what is cat types it should print the cat types after the "what is cat types" question</div>
+        <a href="https://stackoverflow.com/questions/77836582/unexpected-dwds-error-for-callserviceextension-wiperror-32000-execution-contex" target="_blank">Unexpected DWDS error for callServiceExtension: WipError -32000 Execution context was destroyed</a>
+        <div class="feed-item-description">I am using zegocloud for chat app and running on  web.When i run on web it gives error as:
+ext.flutter.connectedVmServiceUri: (-32603) Unexpected DWDS error for callServiceExtension: WipError -32000 Execution context was destroyed.
+Failed to set vm service URI: ext.flutter.connectedVmServiceUri: (-3</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-17T13:18:16.000Z" title="2024-01-17T13:18:16.000Z">5h</time>
+      <time datetime="2024-01-17T20:49:58.000Z" title="2024-01-17T20:49:58.000Z">8h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77832743/dart-missingpluginexceptionno-implementation-found-for-method-on-channel-medi" target="_blank">Dart - MissingPluginException(No implementation found for method on channel media_scanner)</a>
-        <div class="feed-item-description">Kotlin:
-class MainActivity: FlutterActivity() {    
- val CHANNEL = "media_scanner"
+        <a href="https://stackoverflow.com/questions/77835432/flutter-card-component-doesnt-turn-to-white-color" target="_blank">flutter Card component doesn't turn to white color</a>
+        <div class="feed-item-description">I have a flutter app, I am running it on Android studio HedgeHog patch 1. And the latest flutter as well. I can run my android app fine with no errors, however I have a card component
 
-override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
-    super.configureFlutterEngine(flutterEngine)
-    MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL)
-        .setMethodCallHandler</div>
+That doesn't turn white, instead, it has that light green color.
+On the card component, if I set the color: Colors.</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-17T17:12:26.000Z" title="2024-01-17T17:12:26.000Z">1h</time>
+      <time datetime="2024-01-18T01:49:40.000Z" title="2024-01-18T01:49:40.000Z">3h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77834311/cant-decode-jwt-on-dart-using-dart-jsonwebtoken-library" target="_blank">Can't decode JWT on Dart using dart_jsonwebtoken library</a>
-        <div class="feed-item-description">I am trying to set up a JWT auth system for a website. On the server side(where I use Python/Flask) I generate the token using the library PyJWT. On the frontend/app I am using Flutter(dart) with the library dart_jsonwebtoken for verification.
-I am encoding the JWT with a RSA key of 4096 bytes. I ge</div>
+        <a href="https://stackoverflow.com/questions/77836454/how-to-embedding-a-link-youtube-video-in-flutter-web-for-multiple-platforms-at" target="_blank">How to embedding a link Youtube video in Flutter Web for multiple platforms ( at least for web , window)</a>
+        <div class="feed-item-description">I have used libraries like media_kit, youtube_player_iframe... but the problem is that it uses the form https://xxxxx.mp4 , what I want is that I can embed a youtube link form https://www. youtube.com/watch?v=2Vv-BfVoq4g...
+I hope there will be a library that supports youtube video links, I've found</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-17T16:02:29.000Z" title="2024-01-17T16:02:29.000Z">2h</time>
+      <time datetime="2024-01-18T00:21:07.000Z" title="2024-01-18T00:21:07.000Z">4h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77833824/my-live-on-play-store-flutter-app-transmits-advertising-id-for-children-or-u" target="_blank">My (live on play store) Flutter App transmits "Advertising ID" for children or users of unknown age, but I don't know where</a>
-        <div class="feed-item-description">I'm way past Google's deadline (I was busy past few months) to resolve this issue but that's irrelevant for this question.
+        <a href="https://stackoverflow.com/questions/77836223/how-to-write-podfile-in-flutterios" target="_blank">How to write "Podfile" in flutter(ios)</a>
+        <div class="feed-item-description">First code I use the Podfile below
+platform :ios, '11.0'
+  use_frameworks!
+  target 'RunnerTests' do
+    inherit! :search_paths
+    ## dart: PermissionGroup.camera
+      'PERMISSION_CAMERA=1'
+  end
+end
 
-"Action Required: Your app is not compliant with Google Play Policies"
-"Issue found: Families Data Practices"
-"Issue: Google Play Policy Violation" (quote from an email from Go</div>
+And then 'pod install'. The result message is 'Pod installation complete! There are 0 dependencie</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-17T15:27:58.000Z" title="2024-01-17T15:27:58.000Z">3h</time>
+      <time datetime="2024-01-18T00:20:23.000Z" title="2024-01-18T00:20:23.000Z">4h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77833624/error-in-return-function-in-bool-data-type" target="_blank">Error in return function in bool data type</a>
-        <div class="feed-item-description">recently, I update my flutter sdk and directly found out that some of my code get error. I have already fixed some of them, but I can not solve this one.
-Here is some part of my code:
-class LoginPage extends StatefulWidget {
-  @override
-  _LoginPageState createState() =&gt; _LoginPageState();
-}
-
-cla</div>
+        <a href="https://stackoverflow.com/questions/77836219/flutter-about-using-mediaquery" target="_blank">Flutter About using Mediaquery</a>
+        <div class="feed-item-description">I have a quetion : is it a good practice to use Mediaquery for all kind of dimentions, I mean for padding,margin, border , When I should use and When I should use some fixed Values</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-17T16:27:21.000Z" title="2024-01-17T16:27:21.000Z">2h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77833985/make-listview-content-become-part-of-superview-in-flutter" target="_blank">Make listview content become part of superview in flutter</a>
-        <div class="feed-item-description">I have a modal view where I am adding some widgets and a listview. The content of the modal view will require scrolling and I want listview to scroll along with other data. Currently listview is scrolling because of long content in a fix size but other content is not scrolling with it. Following is </div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-17T15:02:42.000Z" title="2024-01-17T15:02:42.000Z">3h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77833452/i-am-using-java-sdk-version-of-19-and-gradle-version-7-6-but-my-flutter-projects" target="_blank">I am using java sdk version of 19 and gradle version 7.6 but my flutter projects gives as a mismatch in gradle error</a>
-        <div class="feed-item-description">* What went wrong:
-A problem occurred configuring root project 'android'.
-&gt; Could not resolve all files for configuration ':classpath'.
-   &gt; Could not find com.android.tools.build:gradle:7.6.1.
-     Searched in the following locations:
-       - https://dl.google.com/dl/android/maven2/com/andro</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-17T15:32:24.000Z" title="2024-01-17T15:32:24.000Z">3h</time>
+      <time datetime="2024-01-17T15:32:24.000Z" title="2024-01-17T15:32:24.000Z">13h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77833646/the-following-sdk-component-was-not-installed-google-apis-intel-x86-64-atom-sys" target="_blank">The following SDK component was not installed: Google APIs Intel x86_64 Atom System Image</a>
-        <div class="feed-item-description">enter image description hereim facing this issue from one week please anyone help
-im trying from one week to solve this problem but i can't plese if anyone know about this guide me proper
-im trying from one week to solve this problem but i can't plese if anyone know about this guide me proper
-im try</div>
+        <div class="feed-item-description">I'm facing this issue. I'm trying to solve this problem.</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-01-17T23:30:25.000Z" title="2024-01-17T23:30:25.000Z">5h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77836112/httpclient-looses-session-cookies" target="_blank">HttpClient looses Session cookies</a>
+        <div class="feed-item-description">i have a php Server, that (on a certain request) sets $_SESSION['user'].
+In my Flutter App i use a single HttpClient that i store in a static variable:
+static String serverUrl = 'https://myServerURL.de';
+
+static HttpClient client = HttpClient();
+
+static String query(String f, Map d, Function(dynamic</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-01-17T22:52:39.000Z" title="2024-01-17T22:52:39.000Z">6h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77835979/need-to-solved-this-problem-flutter-in-mac" target="_blank">need to solved this problem flutter in mac</a>
+        <div class="feed-item-description">Building flutter tool...
+Failed to start the Dart CLI isolate. Could not resolve DartDev snapshot or kernel.
+(null).
+Error: Unable to 'pub upgrade' flutter tool. Retrying in five seconds... (9 tries left)
+Failed to start the Dart CLI isolate. Could not resolve DartDev snapshot or kernel.
+(null).
+Err</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>

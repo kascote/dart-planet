@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Dart Planet" />
   <meta name="twitter:description" content="One-Stop Dart/Flutter News" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="planet-rendered" content="2024-01-31T19:00:06.562883" />
+  <meta name="planet-rendered" content="2024-02-01T05:00:06.293034" />
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -154,7 +154,30 @@
         <h2><a name="dart-so" href="https://stackoverflow.com/questions/tagged/?tagnames=dart+-flutter&sort=active" target="_blank">Dart SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-01-30T23:09:09.000Z" title="2024-01-30T23:09:09.000Z">19h</time>
+      <time datetime="2024-01-31T19:49:53.000Z" title="2024-01-31T19:49:53.000Z">9h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77916066/how-to-handle-errors-coming-back-from-futures-when-i-am-not-awaiting-the-future" target="_blank">How to handle errors coming back from Futures when I am not awaiting the Future?</a>
+        <div class="feed-item-description">I have something like this:
+Future f1() { ... }
+Future f2() { ... }
+Future f3() { ... }
+
+void main() async
+{
+  f1();
+  f2(); // might throw an Exception
+
+  await f3();
+}
+
+Note - I am deliberately not awaiting f1 or f2, I am only awaiting the consequences in f3.
+How do I handle the possibility of an </div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-01-30T23:09:09.000Z" title="2024-01-30T23:09:09.000Z">1d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77909927/why-does-the-implementation-imports-linting-rule-only-work-in-lib-directory" target="_blank">Why does the implementation_imports linting rule only work in lib directory?</a>
         <div class="feed-item-description">I'm pretty new to dart and as far as I understand you should never import from the lib/src directory of other packages, as it is (by convention) implementation code of the respective package. This should be checked by the implementation_imports linting rule.
@@ -164,7 +187,7 @@ So I added the rule to my analysis_option</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-31T10:07:22.000Z" title="2024-01-31T10:07:22.000Z">8h</time>
+      <time datetime="2024-01-31T10:07:22.000Z" title="2024-01-31T10:07:22.000Z">18h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77912429/dart-mirrors-not-supported-when-compiling-using-arm64v8-dart-docker-image" target="_blank">Dart Mirrors Not Supported When Compiling Using arm64v8/dart Docker Image</a>
         <div class="feed-item-description">Have a pure Dart server app which is currently using 'dart:mirrors' in a class to do a bit of light reflection work at runtime. The server app compiles and runs absolutely fine in development Ubuntu machine with x86 architecture but, the same server app fails to compile as part of a Docker build on </div>
@@ -173,7 +196,7 @@ So I added the rule to my analysis_option</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-31T07:03:30.000Z" title="2024-01-31T07:03:30.000Z">11h</time>
+      <time datetime="2024-01-31T07:03:30.000Z" title="2024-01-31T07:03:30.000Z">21h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77911378/how-to-use-intl-in-a-dart-only-project" target="_blank">How to use Intl in a dart only project?</a>
         <div class="feed-item-description">I have a dart only package that does not dependence on Flutter, it contains common code and business logic code, some business logic will return the data that should be localized.
@@ -184,7 +207,7 @@ Let me say, I have a DataResponse class In this dart package, and this dart pack
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-30T20:08:40.000Z" title="2024-01-30T20:08:40.000Z">22h</time>
+      <time datetime="2024-01-30T20:08:40.000Z" title="2024-01-30T20:08:40.000Z">1d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77909144/updating-this-in-a-extension-on-a-typdef" target="_blank">Updating `this` in a extension on a typdef</a>
         <div class="feed-item-description">I have this code:
@@ -203,7 +226,7 @@ Is it possible to update the value of the typedef in the</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-30T19:16:44.000Z" title="2024-01-30T19:16:44.000Z">23h</time>
+      <time datetime="2024-01-30T19:16:44.000Z" title="2024-01-30T19:16:44.000Z">1d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77908880/non-functional-tools-dart-language" target="_blank">non functional tools (dart language )</a>
         <div class="feed-item-description">I have a software engineering project in Flutter flow, and I want non-functional tools that support dart language, and how to use it, other than Load testing because I already found it.
@@ -232,7 +255,7 @@ The behavior happens when a completer has been created and futures are awaiting 
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-25T22:17:31.000Z" title="2024-01-25T22:17:31.000Z">5d</time>
+      <time datetime="2024-01-25T22:17:31.000Z" title="2024-01-25T22:17:31.000Z">6d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/77883239/dart-trying-to-write-to-file-always-get-empty-file" target="_blank">Dart: trying to write to file, always get empty file</a>
         <div class="feed-item-description">I'm just trying to write some text to a file. But for some reason I always get a blank file created. Here's my code:
@@ -265,21 +288,20 @@ void main() =&gt; runApp(MaterialAp</div>
       <div class="share" title="copy url"></div>
     </div>
     
-    <div class="feed-item">
-      <time datetime="2024-01-25T05:48:12.000Z" title="2024-01-25T05:48:12.000Z">6d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77877761/how-to-convert-a-broadcast-stream-to-a-single-subscription-stream-in-dart" target="_blank">How to convert a broadcast stream to a single subscription stream in Dart?</a>
-        <div class="feed-item-description">How do I convert an existing broadcast stream to a single subscription stream in Dart?
-I want to avoid adding multiple listeners by accident.</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
 </div></div>
       <div class="feed">
         <h2><a name="dart-announce" href="https://groups.google.com/a/dartlang.org/g/announce" target="_blank">Dart Announcements</a></h2>
         <div class="feed-items">
           <div class="feed-item">
+      <time datetime="2024-02-01T05:00:04.000Z" title="2024-02-01T05:00:04.000Z">2s</time>
+      <div class="item">
+        <a href="http://bridge.easter.fr/?action=display&bridge=GoogleGroupsBridge&group=announce&account=dartlang.org&format=Atom" target="_blank">Bridge returned error 500! (19754)</a>
+        
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
       <time datetime="2024-01-16T19:00:04.000Z" title="2024-01-16T19:00:04.000Z">2w</time>
       <div class="item">
         <a href="https://groups.google.com/a/dartlang.org/g/announce/c/vk5b6r-z2-8" target="_blank">Breaking Change 54640: Fix pattern context type schema for cast patterns.</a>
@@ -360,21 +382,12 @@ I want to avoid adding multiple listeners by accident.</div>
       <div class="share" title="copy url"></div>
     </div>
     
-    <div class="feed-item">
-      <time datetime="2023-08-18T00:00:00.000Z" title="2023-08-18T00:00:00.000Z">5M</time>
-      <div class="item">
-        <a href="https://groups.google.com/a/dartlang.org/g/announce/c/MYzn75sJ07Q" target="_blank">breaking change #53264: HtmlElement cannot be extended</a>
-        
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
 </div></div>
       <div class="feed">
         <h2><a name="dart-wiki" href="https://github.com/dart-lang/sdk/wiki" target="_blank">Dart Sdk Wiki</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-01-30T00:16:30.000Z" title="2024-01-30T00:16:30.000Z">1d</time>
+      <time datetime="2024-01-30T00:16:30.000Z" title="2024-01-30T00:16:30.000Z">2d</time>
       <div class="item">
         <a href="https://github.com/dart-lang/sdk/wiki/Dart-GSoC-2024-Project-Ideas" target="_blank">Dart GSoC 2024 Project Ideas</a>
         
@@ -481,7 +494,7 @@ Here are some of the examples </div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-11T05:00:01.218844Z" title="2024-01-11T05:00:01.218844Z">2w</time>
+      <time datetime="2024-01-11T05:00:01.218844Z" title="2024-01-11T05:00:01.218844Z">3w</time>
       <div class="item">
         <a href="https://github.com/isar/hive" target="_blank">isar/hive</a>
         <div class="feed-item-description">Lightweight and blazing fast key-value database written in pure Dart.   
@@ -707,114 +720,142 @@ This repo contains the source code for Flutter first-party plugins developed by 
         <h2><a name="flutter-so" href="https://stackoverflow.com/questions/tagged/?tagnames=flutter&sort=active" target="_blank">Flutter SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-01-31T17:50:15.000Z" title="2024-01-31T17:50:15.000Z">1h</time>
+      <time datetime="2024-02-01T02:54:05.000Z" title="2024-02-01T02:54:05.000Z">2h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77915458/not-being-able-to-save-image-path-to-db" target="_blank">Not being able to save image path to DB</a>
-        <div class="feed-item-description">I'm working on a Flutter application where I'm encountering an issue with creating a car through an API request. The API response indicates a redirection (status code 302), and the redirected URL is http://macbook-pro-van-jesse-2.local:8000. I'm having trouble understanding and handling this redirec</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-31T18:50:04.000Z" title="2024-01-31T18:50:04.000Z">10m</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77915783/how-to-use-flutter-provider-in-main-dart" target="_blank">How to use flutter provider in main.dart</a>
-        <div class="feed-item-description">This is my code  of my main.dart where I wrapping with multiprovider also using socket io . I want that as soons as socket payload comes provider list is populated with the data
-import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter/material.dart';
-import 'package:provider/provider</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-31T17:58:20.000Z" title="2024-01-31T17:58:20.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77915510/code-cant-read-the-document-that-has-a-studentid-field" target="_blank">Code cant read the document that has a studentID field</a>
-        <div class="feed-item-description">I have the studentID string field in each of the documents of my Students Collection
-Future fetchStudentDetails(String studentID, String subjectID) async {
-    try {
-      // Replace this with your actual code to fetch student details from Firestore
-      DocumentSnapshot studentSnapshot = await Fir</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-31T14:00:28.000Z" title="2024-01-31T14:00:28.000Z">4h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77913934/flutter-widget-is-visible-to-user" target="_blank">Flutter widget is visible to user</a>
-        <div class="feed-item-description">I'm experimenting with masking select types of widgets in app screenshots. It works relatively well based on global positioning, but there's an issue when apps overlay widgets one on top of another, such as here with a menu that's actually always visible, but a "page" slides over it when it's not "o</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-31T18:33:57.000Z" title="2024-01-31T18:33:57.000Z">26m</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77915699/xcode-fails-to-build-working-flutter-project" target="_blank">Xcode fails to build working flutter project</a>
-        <div class="feed-item-description">I'm working on a Flutter project with a team. I've mostly been working on Windows, where I test on Android and everything runs smoothly. I got myself a Mac specifically to be able to test on iPhone, but my Xcode keeps failing to build the iOS app.
-One of my teammates is working on Mac and managing t</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-31T18:22:44.000Z" title="2024-01-31T18:22:44.000Z">37m</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77915643/cannot-get-tabbar-to-swap-page-programaticly-animateto-to-workflutter-dart" target="_blank">Cannot get TabBar to swap page programaticly (AnimateTo ) to work(Flutter, Dart)</a>
-        <div class="feed-item-description">I have tried so many times, but I cannot get the flutter TabBar AniMateTo (the code to switch  to other page) to work. I have tried many different examples. I am passing the function setTabView(int) to a sub page, and on that page change page index. It triggers, but nothing happens. Stays on the sam</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-01-31T18:00:54.000Z" title="2024-01-31T18:00:54.000Z">59m</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/77915526/how-to-convert-this-willpopscope-into-popscope" target="_blank">How to convert this WillPopScope into PopScope?</a>
-        <div class="feed-item-description">WillPopScope(
-    onWillPop: () {
+        <a href="https://stackoverflow.com/questions/77917484/how-to-get-data-from-api-into-listview-using-model-class-in-flutter" target="_blank">how to get data from API into listview using model class in Flutter</a>
+        <div class="feed-item-description">I am trying to get data from the TMDB API using the model class. I can retrieve the data but I can not show it on listview.
+model classes;
+top_rated_movies.dart
+import 'package:movipedia/model/top_rated_movies/results.dart';
 
-      if (isSearching) {
-        isSearching = !isSearching;
-        return Future.value(false);
-      } else {
-        return Future.value(true);
-      }
-    },
-    child:child,)
+class TopRatedMovies {
+  int? page;
+  List? results;
+  int? totalPages;
+  </div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-02-01T03:54:05.000Z" title="2024-02-01T03:54:05.000Z">1h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77917629/unsafe-cryptographic-encryption-patterns-how-i-can-fixed-this-error" target="_blank">Unsafe cryptographic encryption patterns" - How I can fixed this error?</a>
+        <div class="feed-item-description">Few days ago, In "Pre-launch report for APK" in Google Play Console, it start to flag me
+This example my code i need to solution fixed
+Future login(
+  {required String nationalId, required String pin}) async {
+try {
+  print(pin);
+  final response = await _client.post('/login',
+      data: {
+        </div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-02-01T03:13:34.000Z" title="2024-02-01T03:13:34.000Z">1h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77917535/unable-to-build-project-in-simulator-flutter" target="_blank">Unable to build project in simulator flutter</a>
+        <div class="feed-item-description">I am trying to build new project but Podfile always unable to created, so I do pod init to create it and when I run in simulator always getting
+Target debug_unpack_ios failed: Exception: Binary /mine/Documents/trial/build/ios/Debug-iphonesimulator/Flutter.framework/Flutter does not exist, cannot thi</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-02-01T02:56:13.000Z" title="2024-02-01T02:56:13.000Z">2h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77917488/success-run-ios-app-but-got-failed-when-archive-to-upload-in-appstore" target="_blank">Success run IOS App, but got failed when archive to upload in AppStore</a>
+        <div class="feed-item-description">i was build app using flutter. and i can run it on simulator, buat when i try to archive for upload to App Store via xcode i got some error, like:
 
-WillPopScope was deprecated I want to convert this WillPopScope into a new PopScope.</div>
+.../ios/Pods/Target Support Files/sqflite/sqflite-umbrella.h:13:9
+double-quoted include "SqfliteCursor.h" in framework header, expected
+angle-bracketed </div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-31T18:05:46.000Z" title="2024-01-31T18:05:46.000Z">54m</time>
+      <time datetime="2024-02-01T02:20:20.000Z" title="2024-02-01T02:20:20.000Z">2h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77915557/flutter-web-compiled-package-method-throws-a-typeerror-but-doesnt-in-developmen" target="_blank">Flutter web compiled package method throws a typeError but doesn't in development</a>
-        <div class="feed-item-description">Our app runs fine on web when running locally in deveopment but the moment we run release we get an error from one of our packages:
-Uncaught TypeError: Cannot read properties of undefined (reading 'gh8')
-I've verified that the type is running correctly in dev and in the fork of the package I'm runni</div>
+        <a href="https://stackoverflow.com/questions/77917396/how-do-i-retrieve-the-balance-of-a-goerli-testnet-wallet-using-code" target="_blank">How do I retrieve the balance of a Goerli testnet wallet using code?</a>
+        <div class="feed-item-description">I want to use this code to fetch the wallet balance, but the balance is not being retrieved. What could be the problem?
+  Future getCAMTBalance(String publickey) async {
+    final httpClient = Client();
+    final ethClient = Web3Client(goerliEndPoint, httpClient);
+    final camtAbi = await rootBundl</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-31T16:25:51.000Z" title="2024-01-31T16:25:51.000Z">2h</time>
+      <time datetime="2024-01-31T22:10:51.000Z" title="2024-01-31T22:10:51.000Z">6h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77914902/flutter-pageview-swipe-doesnt-work-with-textfield-as-a-child" target="_blank">Flutter - PageView swipe doesn't work with TextField as a child</a>
-        <div class="feed-item-description">I have a PageView widget which has as children some pages where there is TextField in it. When I try to swipe to change page, the swipe only works if I swipe outsize the TextField area, as if the widget is stealing the gesture.
-How can I prevent that? I already tried to wrap the children in a Ignore</div>
+        <a href="https://stackoverflow.com/questions/77916695/error-when-using-flutter-with-firebase-auth-on-web" target="_blank">Error When Using Flutter With firebase_auth on Web</a>
+        <div class="feed-item-description">I hope this post finds you well.
+I'm having a problem with Firebase in Flutter. I'm very new so I apologize if this is an obvious question. I followed the instuctions from the official firebase website:
+https://firebase.google.com/docs/flutter/setup?platform=web
+They are not that complicated, I did </div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-01-31T17:21:24.000Z" title="2024-01-31T17:21:24.000Z">1h</time>
+      <time datetime="2024-02-01T01:53:14.000Z" title="2024-02-01T01:53:14.000Z">3h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/77915260/adding-sha-1-key-to-firebase-project-after-cli-database-connection" target="_blank">Adding SHA-1 Key to Firebase Project After CLI Database Connection</a>
-        <div class="feed-item-description">I recently connected my Flutter project to Firebase using the CLI, but SHA-1 key wasn't prompted during the process. I understand that the SHA-1 key is necessary for certain Firebase features like Authentication. How can I manually add the SHA-1 key to my Firebase project after connecting the databa</div>
+        <a href="https://stackoverflow.com/questions/77917331/audioquery-doesnt-wait-for-checking-storage-permisson" target="_blank">audioQuery doesn't wait for checking storage permisson</a>
+        <div class="feed-item-description">class _HomeState extends State {
+  @override
+  void initState() {
+    super.initState();
+    checkPermission();
+  }
+
+  final audioQuery = OnAudioQuery();
+
+FutureBuilder&gt;(
+        future: audioQuery.querySongs(
+          sortType: null,
+          orderType: OrderType.ASC_OR_SMALLER,
+          uriT</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-02-01T01:51:12.000Z" title="2024-02-01T01:51:12.000Z">3h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77917327/how-to-make-a-polyline-invisible" target="_blank">How to make a polyline invisible?</a>
+        <div class="feed-item-description">Am using flutter_map and at first i set up couple of markers and polylines in a way that a when a certain marker is pressed a certain polyline would show up but my problem is after that whenever i click anywhere else the polyline doesn't become invisible again and just stays there forever, this is p</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-02-01T00:42:20.000Z" title="2024-02-01T00:42:20.000Z">4h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77917157/is-there-an-easy-way-to-make-a-clickable-border-for-a-card-in-flutter" target="_blank">Is there an easy way to make a clickable border for a card in flutter?</a>
+        <div class="feed-item-description">I'm looking for a way to highlight the border when I hover on it and I can click on the border, which gives me a starting point to draw lines. (Something we often see in a workflow app, a plus sign on the border when we hover on the border)</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-01-31T21:58:04.000Z" title="2024-01-31T21:58:04.000Z">7h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/77916639/expected-a-value-of-type-javascriptobject-but-got-one-of-type-null" target="_blank">Expected a value of type 'JavaScriptObject', but got one of type 'Null' [duplicate]</a>
+        <div class="feed-item-description">I randomly started getting this error in my Flutter app when trying to call await FirebaseAuth.instance.currentUser?.getIdTokenResult() on Flutter web.
+
+Expected a value of type 'JavaScriptObject', but got one of type
+'Null'
+
+Has anyone else seen this?
+My app uses firebase-auth: 4.11.0
+
+Edit
+Here is</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>

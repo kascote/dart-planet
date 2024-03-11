@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Dart Planet" />
   <meta name="twitter:description" content="One-Stop Dart/Flutter News" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="planet-rendered" content="2024-03-11T12:00:07.465027" />
+  <meta name="planet-rendered" content="2024-03-11T19:00:06.628215" />
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -154,7 +154,40 @@
         <h2><a name="dart-so" href="https://stackoverflow.com/questions/tagged/?tagnames=dart+-flutter&sort=active" target="_blank">Dart SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-03-11T09:53:03.000Z" title="2024-03-11T09:53:03.000Z">2h</time>
+      <time datetime="2024-03-11T14:26:04.000Z" title="2024-03-11T14:26:04.000Z">4h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78141365/why-do-i-need-an-explicit-downcast-in-an-exhaustive-switch-expression" target="_blank">Why do I need an explicit downcast in an exhaustive switch expression?</a>
+        <div class="feed-item-description">Here's some dart code that seems interesting to me:
+void main() {
+  var someA = B();
+  A value = switch (someA) {
+      B() =&gt; B(),
+      C() =&gt; C(),
+  };
+}
+
+sealed class A {}
+final class B extends A {}
+final class C extends A {}
+
+If you try to compile this, you get an error about the switch s</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-03-11T16:24:22.000Z" title="2024-03-11T16:24:22.000Z">2h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78142133/json-serialization-using-stormberry-orm-package-dart" target="_blank">JSON serialization using stormberry ORM package — Dart</a>
+        <div class="feed-item-description">I am using the stormberry v0.14.0 ORM package. As I know, there should be annotations for JSON serialization.
+I found code with using @View annotations, but it seems they have been removed in the latest version.
+Are there any ways to generate toJson, fromJson methods for stormberry View classes?</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-03-11T09:53:03.000Z" title="2024-03-11T09:53:03.000Z">9h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78139718/api-routers-one-api-serving-other-apis" target="_blank">API routers, one API serving other APIs</a>
         <div class="feed-item-description">I want to develop one API to be only the entrance point to the other APIs, this way, clients will call the main API route and this will call other API based on the route address.
@@ -192,7 +225,7 @@ I will show my answer after you try and share your answer?</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-09T14:15:00.000Z" title="2024-03-09T14:15:00.000Z">1d</time>
+      <time datetime="2024-03-09T14:15:00.000Z" title="2024-03-09T14:15:00.000Z">2d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78132650/is-it-okay-to-change-the-value-of-parameter-inside-of-method-in-dart" target="_blank">is it okay to change the value of parameter inside of method in Dart?</a>
         <div class="feed-item-description">In Dart, it is allowed that change the value of parameter in method like this
@@ -210,7 +243,7 @@ Is it okay to change the</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-07T18:40:56.000Z" title="2024-03-07T18:40:56.000Z">3d</time>
+      <time datetime="2024-03-07T18:40:56.000Z" title="2024-03-07T18:40:56.000Z">4d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78123665/why-cant-i-use-the-generic-type-of-class-as-the-method-parameter-type" target="_blank">Why can't I use the generic type of class as the method parameter type?</a>
         <div class="feed-item-description">here is what I want to try to achieve
@@ -232,7 +265,7 @@ class Normalized with _$Normalized {
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-07T17:27:21.000Z" title="2024-03-07T17:27:21.000Z">3d</time>
+      <time datetime="2024-03-07T17:27:21.000Z" title="2024-03-07T17:27:21.000Z">4d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78123301/is-solving-this-regular-expression-error-in-dart-code-and-getting-my-goal-done-p" target="_blank">Is solving this regular expression error in Dart code and getting my goal done possible? [duplicate]</a>
         <div class="feed-item-description">I have the following code:
@@ -271,44 +304,6 @@ The API sends regexes as strings something like ^[a-zA-Z0-9 _-]+$
 Here is my code in Dart:
 void main() {
   String rege</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-03-06T03:46:12.000Z" title="2024-03-06T03:46:12.000Z">5d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78111716/setting-and-accessing-environment-variables-in-dart-globe" target="_blank">Setting and accessing environment variables in Dart Globe</a>
-        <div class="feed-item-description">I'm trying to set an environment variable on the Globe platform for Dart server apps.
-To isolate the problem I created the following Shelf server app:
-import 'dart:io';
-import 'package:shelf/shelf.dart';
-import 'package:shelf/shelf_io.dart';
-import 'package:shelf_router/shelf_router.dart';
-
-final _r</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-03-06T03:09:10.000Z" title="2024-03-06T03:09:10.000Z">5d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78111631/platform-environment-not-available-in-dart" target="_blank">Platform.environment not available in Dart</a>
-        <div class="feed-item-description">If I have the Dart program:
-import 'dart:io';
-
-void main() {
-  final keyEnv = Platform.environment['KEY'];
-  const keyString = String.fromEnvironment('KEY');
-  print('keyEnv: $keyEnv');
-  print('keyString: $keyString');
-}
-
-And run it like so:
-dart run --define=KEY=hello bin/main.dart
-
-This is the re</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
@@ -412,7 +407,7 @@ This is the re</div>
         <h2><a name="dart-wiki" href="https://github.com/dart-lang/sdk/wiki" target="_blank">Dart Sdk Wiki</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-03-05T14:28:16.000Z" title="2024-03-05T14:28:16.000Z">5d</time>
+      <time datetime="2024-03-05T14:28:16.000Z" title="2024-03-05T14:28:16.000Z">6d</time>
       <div class="item">
         <a href="https://github.com/dart-lang/sdk/wiki/Cherry-picks-to-a-release-channel" target="_blank">Cherry picks to a release channel</a>
         
@@ -421,7 +416,7 @@ This is the re</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-05T14:28:10.000Z" title="2024-03-05T14:28:10.000Z">5d</time>
+      <time datetime="2024-03-05T14:28:10.000Z" title="2024-03-05T14:28:10.000Z">6d</time>
       <div class="item">
         <a href="https://github.com/dart-lang/sdk/wiki/Dart-GSoC-2024-Project-Ideas" target="_blank">Dart GSoC 2024 Project Ideas</a>
         
@@ -484,7 +479,7 @@ This is the re</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-02-12T12:57:50.000Z" title="2024-02-12T12:57:50.000Z">3w</time>
+      <time datetime="2024-02-12T12:57:50.000Z" title="2024-02-12T12:57:50.000Z">4w</time>
       <div class="item">
         <a href="https://github.com/dart-lang/sdk/wiki/Dart-GSoC-2024-Project-Ideas" target="_blank">Dart GSoC 2024 Project Ideas</a>
         
@@ -506,7 +501,7 @@ This is the re</div>
         <h2><a name="dart-ghw" href="http://mshibanami.github.io/GitHubTrendingRSS" target="_blank">Dart Weekly Package</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-03-11T05:00:01.756509Z" title="2024-03-11T05:00:01.756509Z">7h</time>
+      <time datetime="2024-03-11T05:00:01.756509Z" title="2024-03-11T05:00:01.756509Z">14h</time>
       <div class="item">
         <a href="https://github.com/kby-ai/FaceRecognition-Flutter" target="_blank">kby-ai/FaceRecognition-Flutter</a>
         <div class="feed-item-description">Face recognition Flutter demo project with face liveness detection     
@@ -751,44 +746,104 @@ Character</div>
         <h2><a name="flutter-so" href="https://stackoverflow.com/questions/tagged/?tagnames=flutter&sort=active" target="_blank">Flutter SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-03-11T10:22:14.000Z" title="2024-03-11T10:22:14.000Z">1h</time>
+      <time datetime="2024-03-11T18:55:22.000Z" title="2024-03-11T18:55:22.000Z">4m</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78139903/syncfusion-flutter-datagrid-how-to-enable-drag-and-drop-column-reordering-and-c" target="_blank">Syncfusion Flutter DataGrid: How to Enable Drag and Drop Column Reordering and Column Resizing</a>
-        <div class="feed-item-description">Syncfusion Flutter DataGrid: How to Enable Drag and Drop Column Reordering and Column Resizing
+        <a href="https://stackoverflow.com/questions/78142862/error-execution-failed-for-task-appminifyreleasewithr8" target="_blank">ERROR: Execution failed for task ':app:minifyReleaseWithR8'</a>
+        <div class="feed-item-description">I am facing a problem, when I run into teminal flutter build appbundle --release this error occurs :(
+Is there any good angel who can help me?
 
-I am unable to create Syncfusion's Flutter DataGrid widget with drag-and-drop column and resize column functionalities. I have attempted to do so, but it is not giving me the expected output, as the resiz</div>
+FAILURE: Build failed with an exception.
+Execution failed for task ':app:minifyReleaseWithR8'.
+A failure occurred while executing com.android.build.gradle.i</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-11T11:33:51.000Z" title="2024-03-11T11:33:51.000Z">26m</time>
+      <time datetime="2024-03-11T18:44:18.000Z" title="2024-03-11T18:44:18.000Z">15m</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78140321/how-to-scroll-a-row-vertically-having-two-expanded-widgets-inside-it-with-layout" target="_blank">How to Scroll a Row vertically having two expanded widgets inside it with LayoutBuilder nested in those expanded widgets?</a>
-        <div class="feed-item-description">I am developing a web app. The screen is divided into two expanded widgets nested in Row() widget with LayoutBuilder nested in each.
-What I need:
-1 When the user changes the height of web app, the UI should not overflow from bottom instead it must scroll.
-Problems I faced While Achieving that:
+        <a href="https://stackoverflow.com/questions/78142817/flutter-to-nest-routers-or-not-to-nest" target="_blank">Flutter to nest routers or not to nest</a>
+        <div class="feed-item-description">I have a Flutter/Firebase app. Except for the login page, all other pages depend on the user being logged in. So I designed the app to have two routers: one root router and a nested logged-in router. The advantage of that is that I have providers that are only applicable when the user is logged in, </div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-03-11T18:15:36.000Z" title="2024-03-11T18:15:36.000Z">44m</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78142680/how-to-set-a-property-only-in-the-flutter-package-but-not-in-the-parent-applica" target="_blank">How to set a property only in the Flutter package, but not in the parent application</a>
+        <div class="feed-item-description">My flutter package uses dataBinding. But it only works if my example application has it in the config
+buildFeatures {
+    dataBinding true
+}
 
-I us</div>
+Is it possible to set this property only inside the build.gradle file of flutter android package? My app doesn't compile unless I set it in example/android/bu</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-11T11:33:21.000Z" title="2024-03-11T11:33:21.000Z">26m</time>
+      <time datetime="2024-03-11T17:58:53.000Z" title="2024-03-11T17:58:53.000Z">1h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78140314/flutter-dio-or-http-multipartrequest-post-http-status-error-301-uploading-an-i" target="_blank">Flutter Dio or http.MultipartRequest post Http status error [301] uploading an Image</a>
-        <div class="feed-item-description">I´m working my first project in flutter. I have a web server with mysql, and I'm loading and sending there the data with REST API PHP.
-Now I have an upload folder located here:
-https:///wp-content/my_app/avatars
-In flutter on Android or iPhone, I take a photo from user library, and I want upload tha</div>
+        <a href="https://stackoverflow.com/questions/78142589/firestore-accessing-collection-named-after-uid-via-flutter" target="_blank">Firestore accessing collection named after UID via flutter</a>
+        <div class="feed-item-description">Trying to create a collection named after the UID right after registration via firebase authentication. Somehow the Authentication UID and the collecten name do not match at all. If i try to fetch the document by the current Users UID "Document does not exist", if i simply copy the collection name -</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-11T11:32:56.000Z" title="2024-03-11T11:32:56.000Z">27m</time>
+      <time datetime="2024-03-11T15:07:11.000Z" title="2024-03-11T15:07:11.000Z">3h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78141644/when-i-try-to-add-the-intl-dependenceis-on-my-flutter-project-i-got-error" target="_blank">When I try to add the intl dependenceis on my flutter project I got error</a>
+        <div class="feed-item-description">flutter pub get --intl: ^0.19.0
+Resolving dependencies...
+Error on line 42, column 5 of pubspec.yaml: A dependency may only have one source.
+╷
+42 │ ┌     sdk: flutter
+43 │ │     intl: ^0.19.0
+44 │ │
+45 │ │
+46 │ │   # The "flutter_lints" package below contains a set of recommended lints to
+47 │ │   #</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-03-11T17:34:03.000Z" title="2024-03-11T17:34:03.000Z">1h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78142472/flutter-bluetooth-low-energy-custom-characteristic-and-service" target="_blank">Flutter bluetooth low energy: custom characteristic and service</a>
+        <div class="feed-item-description">I am very new to flutter so maybe this is a silly question but I have been stucked for long time so I would like to have some help here. I am trying to develop an app for android which could connect to a bluetooth low energy device.
+I have tried to achieve this by using the bluetooth_low_energy: ^5.</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-03-11T17:05:51.000Z" title="2024-03-11T17:05:51.000Z">1h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78142345/issue-when-migrating-android-build-files-to-declarative-form" target="_blank">Issue when migrating Android build files to declarative form</a>
+        <div class="feed-item-description">Due to the changes in Flutter 3.19 regarding the Deprecated imperative apply of Flutter's Gradle plugins, I had to migrate my files in order to work with the new version. However, after following the guide, I keep running into this issue:
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-03-11T16:48:13.000Z" title="2024-03-11T16:48:13.000Z">2h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78142259/how-to-integrate-visual-studio-solution-build-into-flutter-build-system" target="_blank">How to integrate Visual Studio solution build into flutter build system</a>
+        <div class="feed-item-description">I have a couple of DLL library projects created with Visual Studio. One of them is using C# and the other is using C++/CLI. The library written in C++/CLI provides a C interface to the C# library so it can be called from Dart through FFI.
+I would like to create a Flutter plugin using FFI to wrap the</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-03-11T11:32:56.000Z" title="2024-03-11T11:32:56.000Z">7h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78140312/how-to-fetch-data-from-this-nested-json-using-get-method-in-flutter-using-data-m" target="_blank">How to fetch data from this Nested JSON using GET method in flutter using Data Model?</a>
         <div class="feed-item-description">I am trying to print the value of JSON in Future Builder using List Tile Builder. But I don't Know how to get the particular value from Nested JSON to the List Tile Text widget. Can someone help me?
@@ -803,73 +858,15 @@ This is the JSON File and Link for it:
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-11T10:49:45.000Z" title="2024-03-11T10:49:45.000Z">1h</time>
+      <time datetime="2024-03-11T15:26:04.000Z" title="2024-03-11T15:26:04.000Z">3h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78140058/i-got-some-errors-with-dependencys-but-there-is-no-dependencys-with-that-name" target="_blank">I got some errors with dependency's But there is no dependency's with that name in puspec.yaml But has in pubspec.lock file</a>
-        <div class="feed-item-description">The Error Message Is:
-/C:/Users/user/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_layout_grid-1.0.6/lib/src/widgets/placement.dart:133:58: Error: The method 'markNeedsPlacement' isn't defined for the class 'AbstractNode?'.
-
-'AbstractNode' is from 'package:flutter/src/foundation/node.dart' ('../../</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-03-11T11:23:45.000Z" title="2024-03-11T11:23:45.000Z">36m</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78140269/why-flutter-deep-links-in-production-dont-work" target="_blank">Why Flutter Deep links in production don't work?</a>
-        <div class="feed-item-description">I tested the deep links in development and it works very well. When I click on the share link, my Flutter mobile application opens without problem but in production, nothing works. What to do ??</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-03-11T11:10:30.000Z" title="2024-03-11T11:10:30.000Z">49m</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78140174/flutter-packages-offline-development-with-any" target="_blank">Flutter packages offline development with "any"</a>
-        <div class="feed-item-description">Developing in an air gapped environment. All package dependencies have to be cloned or downloaded separately and then manually transferred to development area.
-This works in pubspec.yaml for most packages so far.
-For Example:
-dependencies:
-  flutter:
-    sdk: flutter
-
-# Animated, highly customizable</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-03-11T10:55:05.000Z" title="2024-03-11T10:55:05.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78140093/flutter-how-to-add-suggestion-text-on-keyboard" target="_blank">Flutter: How to add suggestion text on keyboard?</a>
-        <div class="feed-item-description">I want to add a custom word on keyboard as suggestion.
-The logic is to show a list of suggestion words for some TextFormFields
-TextFormField(
- controller: controller,
- textInputAction: TextInputAction.next,
- inputFormatters: [FilteringTextInputFormatter.digitsOnly],
- onTapOutside: (_) =&gt; FocusSco</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-03-11T10:47:09.000Z" title="2024-03-11T10:47:09.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78140042/how-can-i-implement-screen-tapping-functionality-programmatically-in-flutter-to" target="_blank">How can I implement screen tapping functionality programmatically in Flutter to simulate user clicks?</a>
-        <div class="feed-item-description">screen tapping functionality programmatically auto click, multi click
-programmatically "I'm working on a Flutter application and I'm trying to implement a screen tapping or auto-clicking functionality. I've been exploring different approaches but haven't found a suitable solution yet. Could someone </div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-03-11T10:47:20.000Z" title="2024-03-11T10:47:20.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78140043/how-do-i-change-the-input-shape-of-a-pytorch-resnet50-model-before-training-to-2" target="_blank">How do i change the input shape of a pytorch resnet50 model before training to 224, 224, 3 from 3, 224, 224</a>
-        <div class="feed-item-description">How do i change the input shape of the pytorch resnet50 model before training on my dataset
-I faced an error when i converted the trained model to .tflite format to use in a flutter app, which basically wanted me to change the input tensor of my model to 1, 224, 224, 3 from 1, 3, 224, 224.</div>
+        <a href="https://stackoverflow.com/questions/78141760/flutter-build-ios-error-xcode-unable-to-execute-command-segmentation-faul" target="_blank">Flutter build iOS => Error (Xcode): unable to execute command: Segmentation fault: 11</a>
+        <div class="feed-item-description">I need help as this is my first time to run flutter project on ios "Simulator"
+so i got many error that take me a week to solve it but i can't here's some problems that i have
+sayedmoataz@Sayeds-MacBook-Pro speak % cd ios
+sayedmoataz@Sayeds-MacBook-Pro ios % pod install
+Analyzing dependencies
+cloud_</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>

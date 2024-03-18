@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Dart Planet" />
   <meta name="twitter:description" content="One-Stop Dart/Flutter News" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="planet-rendered" content="2024-03-18T12:00:06.168360" />
+  <meta name="planet-rendered" content="2024-03-18T19:00:07.779930" />
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -154,6 +154,67 @@
         <h2><a name="dart-so" href="https://stackoverflow.com/questions/tagged/?tagnames=dart+-flutter&sort=active" target="_blank">Dart SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
+      <time datetime="2024-03-18T18:07:32.000Z" title="2024-03-18T18:07:32.000Z">52m</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78182227/getting-wrong-warning-in-dart-possible-bug-the-operand-cant-be-null-so-the" target="_blank">Getting wrong warning in Dart (possible bug), (The operand can't be null, so the condition is always 'true'.)</a>
+        <div class="feed-item-description">Here is my Dart program:
+void main() {
+  bool? b;
+  if(b==true){
+    print('b is true');
+  }else if(b==false){
+    print('b is false');
+  }else if(b==null){
+    print('b is null');
+  }else{
+    print('nothing!');
+  }
+}
+
+it outputs this as expected:
+b is null
+but for line,
+else if(b==null)
+
+it's show</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-03-02T14:09:16.000Z" title="2024-03-02T14:09:16.000Z">2w</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78092967/whats-the-difference-between-a-function-returning-a-future-sync-and-an-async" target="_blank">What's the difference between a function returning a Future.sync() and an async function without an await?</a>
+        <div class="feed-item-description">I'm a seasoned developer but a Dart learner.
+I compared a function returning a Future.sync() and an async function without an await, like this.
+Future measure(Future Function() func) async {
+  final watch = Stopwatch()..start();
+  int sum = 0;
+  for (int i = 0; i &lt; 10000000; i++) {
+    sum += awa</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-03-18T13:46:33.000Z" title="2024-03-18T13:46:33.000Z">5h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78180667/unit-testing-a-broadcast-streaming-class" target="_blank">Unit testing a broadcast streaming class</a>
+        <div class="feed-item-description">I want to unit test a broadcast-streaming repo. This repo yields a StateOk at first and StateError on calling onEvent():
+class Repo {
+  final _controller = StreamController.broadcast();
+
+  Stream get changes async* {
+    yield StateOk();
+    yield* _controller.stream;
+  }
+
+  Future onEvent() async {</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
       <time datetime="2024-03-13T08:26:54.000Z" title="2024-03-13T08:26:54.000Z">5d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78152215/class-reference-types-metaclasses-in-dart" target="_blank">Class reference types (metaclasses) in dart?</a>
@@ -165,7 +226,7 @@ type
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-15T18:40:35.000Z" title="2024-03-15T18:40:35.000Z">2d</time>
+      <time datetime="2024-03-15T18:40:35.000Z" title="2024-03-15T18:40:35.000Z">3d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78169034/how-can-i-implement-best-fit-allocation-and-de-allocate-dart" target="_blank">How can i implement Best fit allocation and de allocate (DART)</a>
         <div class="feed-item-description">I have this activity and having a hard time how i could allocate and de allocate using best fit. as well as display it since it will use some list and im not that good at using dart:
@@ -177,7 +238,7 @@ Anyone can simplify the method i could use for best fit allocation and de alloca
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-15T12:02:35.000Z" title="2024-03-15T12:02:35.000Z">2d</time>
+      <time datetime="2024-03-15T12:02:35.000Z" title="2024-03-15T12:02:35.000Z">3d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78166771/what-is-better-for-creating-app-for-pc-and-mobile" target="_blank">What is better for creating app for pc and mobile [closed]</a>
         <div class="feed-item-description">Hi I wanted to ask what is better to create app for management task more complex  I have project for school for my diplom and wanted to ask what is better. First I wanted to create it in wpf but then I would need to create app  for Android. Android app would be pretty much simple it would only show </div>
@@ -210,7 +271,7 @@ class MyClass {}
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-14T14:56:41.000Z" title="2024-03-14T14:56:41.000Z">3d</time>
+      <time datetime="2024-03-14T14:56:41.000Z" title="2024-03-14T14:56:41.000Z">4d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78161439/how-to-disallow-exception-to-curly-braces-in-flow-control-structures-linter-rule" target="_blank">How to disallow exception to curly_braces_in_flow_control_structures linter rule in dart?</a>
         <div class="feed-item-description">Dart linter rule curly_braces_in_flow_control_structures states:
@@ -232,49 +293,6 @@ In Dart, there are three conditions for creating a const object from a class:
 The constructor should be a const constructor
 Every attribute of the class should be final
 The con</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-03-11T14:26:04.000Z" title="2024-03-11T14:26:04.000Z">6d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78141365/why-do-i-need-an-explicit-downcast-in-an-exhaustive-switch-expression" target="_blank">Why do I need an explicit downcast in an exhaustive switch expression?</a>
-        <div class="feed-item-description">Here's some dart code that seems interesting to me:
-void main() {
-  A someA = B();
-  A value = switch (someA) {
-      B() =&gt; B(),
-      C() =&gt; C(),
-  };
-}
-
-sealed class A {}
-final class B extends A {}
-final class C extends A {}
-
-If you try to compile this, you get an error about the switch sta</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-03-11T16:24:22.000Z" title="2024-03-11T16:24:22.000Z">6d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78142133/json-serialization-using-stormberry-orm-package-dart" target="_blank">JSON serialization using stormberry ORM package — Dart</a>
-        <div class="feed-item-description">I am using the stormberry v0.14.0 ORM package. As I know, there should be annotations for JSON serialization.
-I found code with using @View annotations, but it seems they have been removed in the latest version.
-Are there any ways to generate toJson, fromJson methods for stormberry View classes?</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-03-11T09:53:03.000Z" title="2024-03-11T09:53:03.000Z">7d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78139718/api-routers-one-api-serving-other-apis" target="_blank">API routers, one API serving other APIs [closed]</a>
-        <div class="feed-item-description">I want to develop one API to be only the entrance point to the other APIs, this way, clients will call the main API route and this will call other API based on the route address.
-The APIs are developed using dart, and they are for internal use only (intranet), the number of users are very small ( &l</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
@@ -472,7 +490,7 @@ The APIs are developed using dart, and they are for internal use only (intranet)
         <h2><a name="dart-ghw" href="http://mshibanami.github.io/GitHubTrendingRSS" target="_blank">Dart Weekly Package</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-03-18T05:00:01.195922Z" title="2024-03-18T05:00:01.195922Z">7h</time>
+      <time datetime="2024-03-18T05:00:01.195922Z" title="2024-03-18T05:00:01.195922Z">14h</time>
       <div class="item">
         <a href="https://github.com/aws-amplify/amplify-flutter" target="_blank">aws-amplify/amplify-flutter</a>
         <div class="feed-item-description">A declarative library with an easy-to-use interface for building Flutter applications on AWS. 
@@ -713,141 +731,145 @@ Character</div>
         <h2><a name="flutter-so" href="https://stackoverflow.com/questions/tagged/?tagnames=flutter&sort=active" target="_blank">Flutter SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-03-18T11:41:29.000Z" title="2024-03-18T11:41:29.000Z">18m</time>
+      <time datetime="2024-03-18T17:57:14.000Z" title="2024-03-18T17:57:14.000Z">1h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78179938/dart-flutter-no-named-parameter-with-the-name-primary" target="_blank">dart flutter : No named parameter with the name 'primary'</a>
-        <div class="feed-item-description">I have this block of code
-              TextButton(
-                onPressed: () {},
-                child: Text('Forgot your password?'),
-                style: TextButton.styleFrom(
-                  primary: Theme.of(context).colorScheme.primary,
-                ),
-              ),
-
-Yet I get th</div>
+        <a href="https://stackoverflow.com/questions/78182164/how-i-can-know-if-the-user-cancel-the-subscription-from-google-play-store-using" target="_blank">How I can know if the user cancel the subscription from google play store using in_app_purchase Flutter?</a>
+        <div class="feed-item-description">In internal testing if I make a subscription and then unsubscribe it from the play store the product is still showing purchased. I want to know, how can I check if the user unsubscribe the product from play store ?
+This is the initialization function
+  Future initiazlize() async {
+    final Stream&g</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-18T11:47:11.000Z" title="2024-03-18T11:47:11.000Z">12m</time>
+      <time datetime="2024-03-18T15:58:41.000Z" title="2024-03-18T15:58:41.000Z">3h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78179965/upgrade-to-latest-kotlin-version-error-flutter" target="_blank">Upgrade to latest kotlin version error flutter</a>
-        <div class="feed-item-description">When I try to run my flutter project it shows me to upgrade to latest version of kotlin but I have already upgraded to latest version of kotlin.
-This is the error message:
-The binary version of its metadata is 1.9.0, expected version is 1.7.1.  
-Flutter Fix ──────────────────────────────────────────</div>
+        <a href="https://stackoverflow.com/questions/78181446/can-not-find-asset-when-flame-game-is-used-as-a-dependency" target="_blank">Can not find asset when Flame Game is used as a Dependency</a>
+        <div class="feed-item-description">I'm developing a game using the Flutter Flame engine and have packaged the game to be used in another Flutter app. However, I'm encountering an issue where the game, when used as a package dependency in the host app, cannot find its image assets.
+My Flame game has its assets located in assets/images</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-18T11:35:49.000Z" title="2024-03-18T11:35:49.000Z">24m</time>
+      <time datetime="2024-03-18T18:24:36.000Z" title="2024-03-18T18:24:36.000Z">35m</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78179897/how-to-parse-json-with-a-variable-as-any-type-cast-in-flutter-dart" target="_blank">How to parse json with a variable as any type cast in flutter dart</a>
-        <div class="feed-item-description">Below is my JSON that i am getting in api response. I want to parse below json in flutter dart using json_serializable.
-[
+        <a href="https://stackoverflow.com/questions/78182323/im-trying-to-filter-a-list-by-using-list-map-and-than-put-the-result-in-a-new-l" target="_blank">I'm trying to filter a list by using list.map and than put the result in a new list in flutter</a>
+        <div class="feed-item-description">I'm trying to filter a list by using list.map and than put the result in a new list in flutter ,
+the problem is when i try to print the filtered list every thing is ok but in my app it's just display the first item wrong but the rest is right it always display the first item in the unfiltered list n</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-03-18T17:42:04.000Z" title="2024-03-18T17:42:04.000Z">1h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78182080/firestore-update-specific-element-of-an-array" target="_blank">Firestore: update specific element of an array</a>
+        <div class="feed-item-description">I have a 2 players game. The structure of the document is this:
+{
+ status: string,
+ create_by: string,
+ players: [
   {
-    "id": 1,
-    "email": "godger0@google.fr",
-    "gender": "Female",
-    "ip_address": "101.34.28.146",
-    "name": "Gerry",
-    "retro": true
+   id: string,
+   time: int
   },
   {
-    "id": 2,
-    "em</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-03-18T10:30:26.000Z" title="2024-03-18T10:30:26.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78179523/in-my-flutter-app-how-to-slove-problem-type-listdynamic-is-not-a-subtype-of" target="_blank">In my flutter app how to slove problem type 'List<dynamic>' is not a subtype of type 'Response<dynamic>'</a>
-        <div class="feed-item-description">dart
-//model
+   id: string,
+   time: int
+  } 
+ ]
+}
 
-class PostModel  {
-final int?  id ;
-final string? title;
-final string?body;
-   PostModel({ this.id, this.title , this.body});
+To create the session I do this:
+Future createGameSession() async {
+    final user = AuthProvider().getUs</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-03-18T15:59:58.000Z" title="2024-03-18T15:59:58.000Z">3h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78181457/flutter-android-could-not-resolve-org-jetbrains-kotlinkotlin-stdlib-jdk81-7-1" target="_blank">Flutter android: Could not resolve org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10</a>
+        <div class="feed-item-description">I installed Flutter, android studio, java, and created environment variable and android virtual machine. I created my firt app and got the error bellow when run command flutter run
+please help me how to fix this issue.
+Thank you!
+Launching lib\main.dart on sdk gphone64 x86 64 in debug mode...
+Runnin</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-03-18T16:31:06.000Z" title="2024-03-18T16:31:06.000Z">2h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78181657/getting-error-while-running-me-flutter-project" target="_blank">Getting error while running me flutter project</a>
+        <div class="feed-item-description">FAILURE: Build failed with an exception.
 
-  factory PostModel.fromJson(Map json) {
-    return PostModel(id: json['id'], title: json['title'], body: json['body']);
-  }
+What went wrong:
+Execution failed for task ':agora_rtc_engine:generateDebugRFile'.
 
-  Map toJson() {
-    return {'id'</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-03-18T10:44:17.000Z" title="2024-03-18T10:44:17.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78179600/how-to-implement-draggble-date-in-flutter-using-show-datepicker" target="_blank">How to implement draggble date in flutter using show datepicker</a>
-        <div class="feed-item-description">I am using showdaterangepicker one of the flutter widget. I made change in the library to achieve the way UI I want but now I want draggable feature in the application how to do it. I think I have to do it in
-dayWidget = InkResponse(
-        focusNode: _dayFocusNodes[day - 1],
 
-        onTap: () =&g</div>
+Could not resolve all files for configuration ':agora_rtc_engine:debugCompileClasspath'.
+Failed to transform full-sdk-4.2.1.aar (io.agora.rtc:full-sdk:4.2.1) to match attrib</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-18T07:39:40.000Z" title="2024-03-18T07:39:40.000Z">4h</time>
+      <time datetime="2024-03-18T17:12:10.000Z" title="2024-03-18T17:12:10.000Z">1h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78178624/android-studio-command-line-skd-is-not-showing-in-the-sdk-manager" target="_blank">Android Studio Command Line SKD is not showing in the SDK Manager</a>
-        <div class="feed-item-description">I'm new to Flutter and I installed successfully Android Studio v2.3.1 and in the SDK Manager, I wanted to turn on the checkbox of Android SDK Command Line Tools but it does not there!
-Here is the screenshot of my Android Studio Sdk Manager:
+        <a href="https://stackoverflow.com/questions/78181912/how-to-relate-canvas-drawing-objects-with-canvas-controller-objects-in-flutter" target="_blank">How to relate canvas drawing objects with canvas controller objects in flutter (in SOLID correspondence)?</a>
+        <div class="feed-item-description">I need to create a simple 2D designer where use can draw simple shapes (triangles, rectagles etc) and also change already created shapes. I have three main classes:
 
-So what's going wrong here, how can I install this sdk pro</div>
+Entity class Area. Contains name, list of points (offsets)
+Listenable AreaController which exposes AreaControllerState.
+AreaController</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-18T11:15:00.000Z" title="2024-03-18T11:15:00.000Z">45m</time>
+      <time datetime="2024-03-18T17:03:14.000Z" title="2024-03-18T17:03:14.000Z">1h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78179789/type-mapstring-dynamic-is-not-a-subtype-of-type-string" target="_blank">type '_Map<String, dynamic>' is not a subtype of type 'String'</a>
-        <div class="feed-item-description">{id: 67, exercise_name: Exercise 1 (B), exercise_solution: https://odishacollege.in/elements/11th/ch1-B.pdf}, {id: 92, exercise_name: Exercise 14 (A), exercise_solution: https://odishacollege.in/elements/11th/ch14-A.pdf}, {id: 93, exercise_name: Exercise 14 (B), exercise_solution: https://odishacoll</div>
+        <a href="https://stackoverflow.com/questions/78181855/this-my-code-produce-this-error-type-null-is-not-a-subtype-of-type-databaseno" target="_blank">this my code produce this error type 'Null' is not a subtype of type 'DatabaseNotes' in type cast can you identify the error</a>
+        <div class="feed-item-description">import 'package:flutter/material.dart';
+
+import 'package:mynote/auth_service.dart';
+
+import 'package:mynote/services/notes_service.dart';
+
+class NewNoteView extends StatefulWidget {
+  const NewNoteView({super.key});
+
+  @override
+  State createState() =&gt; _NewNoteViewState();
+}
+
+class _NewNoteViewS</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-18T11:13:28.000Z" title="2024-03-18T11:13:28.000Z">46m</time>
+      <time datetime="2024-03-18T15:21:24.000Z" title="2024-03-18T15:21:24.000Z">3h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78179781/flutter-firebase-does-work-on-my-main-setup-but-not-on-my-second-although-its-th" target="_blank">Flutter Firebase does work on my main setup but not on my second although its the same app</a>
-        <div class="feed-item-description">I use two different Systems for coding. At home, I have an iMac and while I am traveling or on business trips I have a Windows laptop. When working from home, I don't have any problems running and developing my flutter app on both, iOS and Android.
-However, when I am traveling I use my Windows Lapto</div>
+        <a href="https://stackoverflow.com/questions/78181212/get-values-from-ble-device-understanding-data-conversion-ieee-11073-16-bit" target="_blank">get values from ble device (Understanding Data Conversion (ieee-11073 16 bit) )</a>
+        <div class="feed-item-description">Please, I am a beginner in this field and I need someone to explain to me in detail through my questions (it's for my Final Year Project), please. I used the 'flutter_reactive_ble' package to integrate my medical device into my Flutter application to read blood pressure, and here is what I received </div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-18T11:11:45.000Z" title="2024-03-18T11:11:45.000Z">48m</time>
+      <time datetime="2024-03-18T14:25:22.000Z" title="2024-03-18T14:25:22.000Z">4h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78179773/im-trying-to-use-firebase-to-auth-by-using-email-password-and-found-this-error" target="_blank">I'm trying to use Firebase to auth by using email/password and found this error</a>
-        <div class="feed-item-description">I/FirebaseAuth(11262): Logging in as test@gmail.com with empty reCAPTCHA token
-W/System  (11262): Ignoring header X-Firebase-Locale because its value was null.
-W/System  (11262): Ignoring header X-Firebase-Locale because its value was null.
-D/FirebaseAuth(11262): Notifying id token listeners about u</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-03-18T11:11:44.000Z" title="2024-03-18T11:11:44.000Z">48m</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78179772/my-project-is-not-running-try-everything-flutter-clean-upgrade-flutter-build-not" target="_blank">my project is not running try everything flutter clean upgrade flutter build nothings works</a>
-        <div class="feed-item-description">You are applying Flutter's app_plugin_loader Gradle plugin imperatively using the apply script method, which is deprecated and will be removed in a future release. Migrate to applying Gradle plugins with the declarative plugins block: https://flutter.dev/go/flutter-gradle-plugin-apply
-Note: Some inp</div>
+        <a href="https://stackoverflow.com/questions/78180896/store-and-fetch-md-formatted-data-from-firebase" target="_blank">Store and fetch MD formatted data from Firebase</a>
+        <div class="feed-item-description">We are trying to store this data into Firebase which doesnt seem to be an issue using a String field
+### Whether you’ve posted a task or you’ve completed one, what should reviews provide?
+
+Well-written reviews should provide constructive feedback on your experience, helping community members make be</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>

@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Dart Planet" />
   <meta name="twitter:description" content="One-Stop Dart/Flutter News" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="planet-rendered" content="2024-04-18T19:00:10.738776" />
+  <meta name="planet-rendered" content="2024-04-19T05:00:08.679445" />
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -154,7 +154,38 @@
         <h2><a name="dart-so" href="https://stackoverflow.com/questions/tagged/?tagnames=dart+-flutter&sort=active" target="_blank">Dart SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-04-18T07:30:09.000Z" title="2024-04-18T07:30:09.000Z">11h</time>
+      <time datetime="2024-04-18T21:59:33.000Z" title="2024-04-18T21:59:33.000Z">7h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78350488/dart-refactoring-async-function" target="_blank">Dart refactoring async function</a>
+        <div class="feed-item-description">New to Dart, apologies.
+Given the original function:
+  Future setAppKeyClickEnabled(bool value) async {
+    await _sharedPreferences.setBool(_appKeyClickEnabledKey, value);
+    notifyListeners();
+  }
+
+I want to refactor it to:
+  Future set(String key, bool value) async {
+    await _sharedPreferences</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-04-19T02:34:28.000Z" title="2024-04-19T02:34:28.000Z">2h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78351093/listen-to-firestore-count" target="_blank">Listen to Firestore count()</a>
+        <div class="feed-item-description">Is it possible to listen to count() changes of a Firestore collection?
+The example below fetches the current count of unread messages.
+I could listen to the complete messages-collection and trigger a call to count() everytime the collection is updated.
+Is there a more elegant way?
+final unreadCount </div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-04-18T07:30:09.000Z" title="2024-04-18T07:30:09.000Z">21h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78345622/no-payment-option-found-in-flutter-ios-for-payu-payment-gateway" target="_blank">no payment option found in flutter iOS for payu payment gateway</a>
         <div class="feed-item-description">showPaymentOption() {
@@ -173,7 +204,7 @@ merchantKey = e</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-04-18T05:33:28.000Z" title="2024-04-18T05:33:28.000Z">13h</time>
+      <time datetime="2024-04-18T05:33:28.000Z" title="2024-04-18T05:33:28.000Z">23h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78345064/high-amount-of-data-points-block-the-whole-app" target="_blank">high amount of data points block the whole app</a>
         <div class="feed-item-description">Rendering 1000 LineSeries, each with 10000 data points, in a single SfCartesianChart.
@@ -266,39 +297,20 @@ I suppose I can solve this task by using function forEach(). But I  d</div>
       <div class="share" title="copy url"></div>
     </div>
     
-    <div class="feed-item">
-      <time datetime="2024-04-12T12:52:11.000Z" title="2024-04-12T12:52:11.000Z">6d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78316412/how-to-access-fields-of-inherited-objects" target="_blank">How to access fields of inherited objects</a>
-        <div class="feed-item-description">I understand how to use inheritance to access methods, but I don't understand how to access fields of a child object when the type of the object is the parent.
-(My question is purely about architecture, so the language should not matter, but only FYI, I am using Dart)
-I have a parent object and 2 ot</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-04-02T05:47:30.000Z" title="2024-04-02T05:47:30.000Z">2w</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78259177/how-can-i-mock-a-final-class-variable-in-dart-for-unit-testing" target="_blank">How can I mock a final class variable in Dart for unit testing?</a>
-        <div class="feed-item-description">I'm working on a Dart project where I need to write unit tests for a class that uses a final class variable for making API calls. The class is structured like this:
-class MyClass {
-  final MyApi _api;
-
-  MyClass(this._api);
-
-  Future myMethod() async {
-    final response = await _api.getData();
-    </div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
 </div></div>
       <div class="feed">
         <h2><a name="dart-announce" href="https://groups.google.com/a/dartlang.org/g/announce" target="_blank">Dart Announcements</a></h2>
         <div class="feed-items">
           <div class="feed-item">
+      <time datetime="2024-04-18T00:00:00.000Z" title="2024-04-18T00:00:00.000Z">1d</time>
+      <div class="item">
+        <a href="https://groups.google.com/a/dartlang.org/g/announce/c/oB2C88Brzr8" target="_blank">Breaking Changes 55267 and 55508: Change the types of isTruthy, not, and importModule in dart:js_interop</a>
+        
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
       <time datetime="2024-04-11T12:00:05.000Z" title="2024-04-11T12:00:05.000Z">7d</time>
       <div class="item">
         <a href="https://groups.google.com/a/dartlang.org/g/announce/c/umy1oowrCyg" target="_blank">Breaking change 55436: Make type inference of `e1 ?? e2` consistent.</a>
@@ -374,15 +386,6 @@ class MyClass {
       <time datetime="2024-02-21T05:00:05.000Z" title="2024-02-21T05:00:05.000Z">1M</time>
       <div class="item">
         <a href="http://bridge.easter.fr/?action=display&bridge=GoogleGroupsBridge&group=announce&account=dartlang.org&format=Atom" target="_blank">Bridge returned error 500! (19774)</a>
-        
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-02-20T19:00:05.000Z" title="2024-02-20T19:00:05.000Z">1M</time>
-      <div class="item">
-        <a href="https://groups.google.com/a/dartlang.org/g/announce/c/zm-00G3-cTo" target="_blank">Dart 3.3 released</a>
         
       </div>
       <div class="share" title="copy url"></div>
@@ -487,7 +490,7 @@ class MyClass {
         <h2><a name="dart-ghw" href="http://mshibanami.github.io/GitHubTrendingRSS" target="_blank">Dart Weekly Package</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-03-29T05:00:01.440856Z" title="2024-03-29T05:00:01.440856Z">2w</time>
+      <time datetime="2024-03-29T05:00:01.440856Z" title="2024-03-29T05:00:01.440856Z">3w</time>
       <div class="item">
         <a href="https://github.com/devtodollars/startup-boilerplate" target="_blank">devtodollars/startup-boilerplate</a>
         <div class="feed-item-description">Everything you need to build a startup from the CTO of a YC-backed startupProduction Boilerplate for Startups 
@@ -636,7 +639,7 @@ Here are some of the examples </div>
         <h2><a name="flutter-blog" href="https://medium.com/flutter?source=rss----4da7dfd21a33---4" target="_blank">Flutter Blog</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-04-16T21:02:08.000Z" title="2024-04-16T21:02:08.000Z">1d</time>
+      <time datetime="2024-04-16T21:02:08.000Z" title="2024-04-16T21:02:08.000Z">2d</time>
       <div class="item">
         <a href="https://medium.com/flutter/flutter-and-dart-at-google-cloud-next-b4921946d0d1?source=rss----4da7dfd21a33---4" target="_blank">Flutter and Dart at Google Cloud Next</a>
         
@@ -730,122 +733,111 @@ Here are some of the examples </div>
         <h2><a name="flutter-so" href="https://stackoverflow.com/questions/tagged/?tagnames=flutter&sort=active" target="_blank">Flutter SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-04-18T18:54:32.000Z" title="2024-04-18T18:54:32.000Z">5m</time>
+      <time datetime="2024-04-19T03:41:15.000Z" title="2024-04-19T03:41:15.000Z">1h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78349740/flutter-not-receiving-signalr-messages-from-c-sharp-web-api" target="_blank">Flutter not receiving SignalR messages from C# Web API</a>
-        <div class="feed-item-description">I have a C# backend app and a Flutter frontend. In my backend I have a SignalR service that I want to consume in my Flutter app. My backend setup:
-public class DangerReportHub : Hub
-{
-    public async Task SendDangerReport(object message)
-    {
-        // Broadcast the danger report to all connected</div>
+        <a href="https://stackoverflow.com/questions/78351250/cast-a-string-of-a-documentreference-to-a-documentreference" target="_blank">Cast a String of a DocumentReference, to a DocumentReference</a>
+        <div class="feed-item-description">I encoded a DocumentReference inside a json
+"subscriber_document_reference" : "${subscriber.subscriberDocumentReference}"
+
+Once I decode it, I get map with String key and also a String value. I want to change  this String to an actual DocumentReference I can use.
+naturally a direct cast fails with t</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-04-18T18:40:03.000Z" title="2024-04-18T18:40:03.000Z">20m</time>
+      <time datetime="2024-04-19T01:37:03.000Z" title="2024-04-19T01:37:03.000Z">3h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78349660/is-there-a-way-to-specify-a-salt-in-dart-flutter-so-i-can-use-wordpress-salt" target="_blank">Is there a way to specify a salt in dart/flutter so I can use wordpress' salt?</a>
-        <div class="feed-item-description">I have a wordpress website. I am making a flutter/dart app.
-I need to process logins, resetting of passwords, and sending of emails. I want to make sure this is secure.
-I have had issues using the wordpress API via postman so I am thinking about using MySQL_Client: https://pub.dev/packages/mysql_cli</div>
+        <a href="https://stackoverflow.com/questions/78350959/padding-as-a-percentage-of-child-height-unknown-height" target="_blank">Padding as a percentage of child height (unknown height)</a>
+        <div class="feed-item-description">I am trying to add padding to a child element in Flutter, but I want the padding to be a percentage of the child's height. The problem is that the child's height is unknown at the time of building the widget.
+For example, if the child's height is 500px, I want to add 20% padding (100px) to the top a</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-04-18T18:30:05.000Z" title="2024-04-18T18:30:05.000Z">30m</time>
+      <time datetime="2024-04-19T04:02:46.000Z" title="2024-04-19T04:02:46.000Z">57m</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78349605/flutter-ios-initialize-multiple-firebase-projects-without-multiple-google-serv" target="_blank">Flutter iOS - Initialize multiple Firebase projects without multiple Google Services plist files</a>
-        <div class="feed-item-description">questions similar to this has been asked multiple times but I can't seem to find one that matches what I need.
-Using my app on an Android device, I am able to initialize Firebase projects with its options and name without having to put in a Google Services file but on an iOS device it doesn't work.
+        <a href="https://stackoverflow.com/questions/78351291/how-can-i-make-the-system-center-my-flutter-app-in-landscape-mode-on-a-tablet" target="_blank">How can I make the system center my Flutter app in landscape mode on a tablet?</a>
+        <div class="feed-item-description">I want to center my Flutter app in landscape mode on a tablet, just like in the image</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-04-19T04:31:14.000Z" title="2024-04-19T04:31:14.000Z">28m</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78351363/possible-to-disable-opening-app-when-fcm-notification-is-clicked-in-flutter" target="_blank">Possible to disable opening app when FCM notification is clicked in flutter?</a>
+        <div class="feed-item-description">I would like some notifications to just be information to the user but which don't open the app when clicked on. It looks like click_action is ignored by flutterfire now so I can't use this to tell the device not to open the app when user clicks on the notification.
+Is there a way to do it?</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-04-19T04:00:15.000Z" title="2024-04-19T04:00:15.000Z">59m</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78351287/flutter-app-crashes-on-physical-device-when-dialog-button-is-clicked-to-close" target="_blank">Flutter App crashes on physical device when dialog button is clicked to close</a>
+        <div class="feed-item-description">Here is my Code
+import 'package:dibs/Services/firebase_collections.dart';
+import 'package:dibs/generated/assets.dart';
+import 'package:dibs/helpers/widgets/custom_form_field.dart';
+import 'package:dibs/localization/app_localization.dart';
+import 'package:dibs/providers/dashboard.dart';
+import 'packa</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-04-19T03:20:44.000Z" title="2024-04-19T03:20:44.000Z">1h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78351199/how-to-solve-rejection-of-app-on-meta-developers-for-facebook-login-platform-te" target="_blank">How to solve rejection of app on meta developers for Facebook login: Platform Term 7.e.i.2 - Negatively impacting platform, products, data, or users [closed]</a>
+        <div class="feed-item-description">My app has been rejected by facebook and they do not provide clear reasons for why they rejected. The only reason they provided is as below:
+Platform Term 7.e.i.2
+Platform Term 7.e.i.2 - Negatively impacting platform, products, data, or users
+We determined that your app is negatively impacting the p</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-04-19T03:11:21.000Z" title="2024-04-19T03:11:21.000Z">1h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78351176/android-disable-screen-with-app-icon-before-splash-screen" target="_blank">Android - Disable screen with app icon before splash screen</a>
+        <div class="feed-item-description">I am working on a Flutter project for Android and iOS platforms. I have a customized splash screen for the project and when I run the project, there would be a black/white screen (depending on dark/light theme) with my app icon appearing on the screen before the splash screen appears when running on</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-04-19T01:16:35.000Z" title="2024-04-19T01:16:35.000Z">3h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78350918/do-mixins-really-slow-down-compilation-time" target="_blank">Do Mixins really slow down compilation time?</a>
+        <div class="feed-item-description">Was earlier dealing with mixins, but i felt a slow down in compilation time after adding it to the existing code.
+right now, i was reading an article that mentioned the following :
+Disadvantages of mixins
+Mixins are a useful technique, but hardly a panacea. There are some significant disadvantages:
 </div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-04-18T18:19:16.000Z" title="2024-04-18T18:19:16.000Z">40m</time>
+      <time datetime="2024-04-19T02:47:19.000Z" title="2024-04-19T02:47:19.000Z">2h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78349561/how-do-i-store-my-user-details-into-a-collection-on-firebase-database-while-usin" target="_blank">How do I store my user details into a collection on firebase database while using the flutter fire ui authentication</a>
-        <div class="feed-item-description">I want to store the details of the user in a collection in my firestore database when I signup with the flutter fire UI auth package. so I can update the user details when I click on the profile screen
-Here is my code:
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/materi</div>
+        <a href="https://stackoverflow.com/questions/78351121/static-variables-memory-gb-in-dart" target="_blank">static variables, (memory-gb) in Dart</a>
+        <div class="feed-item-description">I have a question about static variables. As far as I know they are never deleted from memory(?). I wanted to ask how correct it is to use the following methods to write clean code. When I go to the colors class in Flutter, we can see that colors are static const. I can use this for colors, but when</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-04-18T18:14:51.000Z" title="2024-04-18T18:14:51.000Z">45m</time>
+      <time datetime="2024-04-19T01:23:42.000Z" title="2024-04-19T01:23:42.000Z">3h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78349541/flutter-json-login-issue" target="_blank">Flutter json login issue</a>
-        <div class="feed-item-description">I made login system in flutter using locally stored json file when a user registers it adds their information in json file and when they login it checks the json it works perfectly fine in visual studio but after i build an exe and tried it doesn't work it's says email or password is incorrect
-here </div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-04-18T16:10:48.000Z" title="2024-04-18T16:10:48.000Z">2h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78348917/move-widget-to-right-in-stack" target="_blank">Move widget to right in Stack</a>
-        <div class="feed-item-description">How to move the image to the right?
- Stack(
-  alignment: Alignment.centerRight,
-  children: [
-    Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15),
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.topRight,
-    </div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-04-18T15:41:58.000Z" title="2024-04-18T15:41:58.000Z">3h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78348733/trying-to-save-reviews-in-hive-is-there-a-way-to-convert-data-to-binary-inlin" target="_blank">Trying to save "reviews" in hive. Is there a way to convert data to binary inline?</a>
-        <div class="feed-item-description">:)
-Rating and combination is an unknown type for hive.
-I'm trying to avoid classes (though it's fine, anything that makes this work...). I just want to save the progress, and at start loading it back.
-import 'package:dolphinsr_dart/dolphinsr_dart.dart';
-import 'package:flutter/material.dart';
-import</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-04-18T17:16:08.000Z" title="2024-04-18T17:16:08.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78349272/how-to-change-the-mouse-cursor-when-a-widget-in-flutter-is-drag-and-drop" target="_blank">How to change the mouse cursor when a widget in Flutter is drag (and drop)?</a>
-        <div class="feed-item-description">in Flutter I have a LongPressDraggable.
-I want to change my cursor to a SystemMouseCursors.grabbing when I’m grabbing and moving around the widget how to do this?
-I tried to set ignoringFeedbackPointer to false and added a MouseRegion to the feedback widget and this created the behavior I wanted but</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-04-18T17:05:59.000Z" title="2024-04-18T17:05:59.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78349215/extending-functionality-of-existing-compiled-flutter-app-without-full-recompilat" target="_blank">Extending functionality of existing compiled flutter app without full recompilation</a>
-        <div class="feed-item-description">See here I have a screenshot of basic UI of my app and it consists of two sections on the left is NavigationRail and its different components are representing different functionality and by clicking on which the container on the right side gets updated.
-Here the root widget is the NavigationRail and</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-04-18T16:09:19.000Z" title="2024-04-18T16:09:19.000Z">2h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78348912/how-we-can-mirror-ios-device-for-flutter-in-android-studio" target="_blank">How we can mirror iOS device for flutter in android studio?</a>
-        <div class="feed-item-description">I want to mirror iOS device in android studio for flutter development.</div>
+        <a href="https://stackoverflow.com/questions/78350930/use-firestore-in-both-flutter-module-and-native-ios" target="_blank">Use Firestore in both Flutter module and native iOS</a>
+        <div class="feed-item-description">We have a native iOS app and we're migrating it to Flutter incrementally as rewriting the entire app in Flutter is not viable at the moment. We heavily depend upon Firebase resources, such as auth, Firestore, etc. and we need to use them both in native code and Flutter code.
+We were able to initiali</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>

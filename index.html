@@ -21,7 +21,7 @@
   <meta name="twitter:title" content="Dart Planet" />
   <meta name="twitter:description" content="One-Stop Dart/Flutter News" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="planet-rendered" content="2024-05-07T19:00:07.319545" />
+  <meta name="planet-rendered" content="2024-05-08T05:00:08.247538" />
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -105,7 +105,7 @@
     </div>
     
     <div class="feed-item">
-      <time datetime="2023-06-12T21:38:43.000Z" title="2023-06-12T21:38:43.000Z">10M</time>
+      <time datetime="2023-06-12T21:38:43.000Z" title="2023-06-12T21:38:43.000Z">11M</time>
       <div class="item">
         <a href="https://medium.com/dartlang/dart-devtools-analyzing-application-performance-with-the-cpu-profiler-3e94a0ec06ae?source=rss----23738d481ce8---4" target="_blank">Dart DevTools: Analyzing application performance with the CPU Profiler</a>
         
@@ -154,15 +154,49 @@
         <h2><a name="dart-so" href="https://stackoverflow.com/questions/tagged/?tagnames=dart+-flutter&sort=active" target="_blank">Dart SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-05-07T17:45:41.000Z" title="2024-05-07T17:45:41.000Z">1h</time>
+      <time datetime="2024-05-08T03:23:17.000Z" title="2024-05-08T03:23:17.000Z">1h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78445944/dart-typeerror-type-is-not-a-subtype-of-type-never" target="_blank">Dart TypeError: type is not a subtype of type 'Never'</a>
+        <div class="feed-item-description">I'm mystified why the following Dart code generates a runtime error:
+class Store {
+  Store({Map values = const {}}) : _cache = values;
+
+  final Map _cache;
+
+  void put(ID id, T value) {
+    _cache[id] = value;
+  }
+}
+
+...
+final foo = Store&gt;();
+
+// Runtime error inside `Store.put`:
+// TypeError: 7:</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-05-08T00:28:29.000Z" title="2024-05-08T00:28:29.000Z">4h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78445597/dart-deserializing-a-long-from-uint8list-returns-wrong-value" target="_blank">Dart deserializing a long from Uint8List returns wrong value</a>
+        <div class="feed-item-description">I am needing help in figuring out why my code is returning wrong values. I'm creating my own UUID class in the dart programming language. When setting the values, I can observe everything in the byte array is infact correct. Only when I read the Long or Unsigned Long from the array does it go wrong.</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-05-07T17:45:41.000Z" title="2024-05-07T17:45:41.000Z">11h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78444251/error-when-i-change-dart-to-2-9-3-version" target="_blank">Error when I change dart to 2.9.3. version</a>
         <div class="feed-item-description">Running pub upgrade...
 Error: Error when reading 'pub': The system cannot find the file specified.
+
 pub:1:1: Error: The specified language version is too high. The highest supported language version is 2.9.
 /* Error when reading 'pub': The system cannot find the file specified.
 ^
-Error (254): Unable </div>
+Error (254): Unable</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
@@ -207,7 +241,7 @@ extension MyIterable on Iterable {
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-05-06T04:05:01.000Z" title="2024-05-06T04:05:01.000Z">1d</time>
+      <time datetime="2024-05-06T04:05:01.000Z" title="2024-05-06T04:05:01.000Z">2d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78434487/an-instance-of-a-class-that-is-initialized-with-data-from-a-file-in-dart" target="_blank">An instance of a class that is initialized with data from a file in Dart</a>
         <div class="feed-item-description">i am new to dart I would like to find out how to write a code in dart for An instance of a class that is initialized with data from a file
@@ -222,7 +256,7 @@ void main() async {
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-05-04T04:03:43.000Z" title="2024-05-04T04:03:43.000Z">3d</time>
+      <time datetime="2024-05-04T04:03:43.000Z" title="2024-05-04T04:03:43.000Z">4d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/78427733/implement-copywith-for-a-generic-class-that-has-a-field-that-is-a-generic-func" target="_blank">Implement `copyWith` for a Generic class that has a field that is a generic function</a>
         <div class="feed-item-description">Consider the following class:
@@ -273,52 +307,23 @@ Is there something wrong with the command?
       <div class="share" title="copy url"></div>
     </div>
     
-    <div class="feed-item">
-      <time datetime="2024-05-02T13:08:04.000Z" title="2024-05-02T13:08:04.000Z">5d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78419373/dart-stream-future-delayed-incorrect-delay" target="_blank">Dart Stream Future.delayed incorrect delay</a>
-        <div class="feed-item-description">I'm trying to make a Stream modifier function which adds 'latency' to all items going through it:
-extension SE on Stream {
-  Stream delayed(Duration latency) {
-    return this.transform(StreamTransformer.fromHandlers(
-      handleData: (T element, EventSink sink) {
-        Future.delayed(latency).th</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-05-02T07:18:13.000Z" title="2024-05-02T07:18:13.000Z">5d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78417485/qualify-class-name-in-dart" target="_blank">Qualify class name in dart [duplicate]</a>
-        <div class="feed-item-description">How do I qualify a class name in dart? I've got the following code:
-
-import '../../grpc_channel/Protos/Compiled/Common/Messages/Types.pb.dart';
-import '../../grpc_channel/Protos/Compiled/SensorTypeDetection/Messages/SensorType.pb.dart';
-import '../../grpc_channel/SensorTypeDetectionService.dart';
-
-c</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
 </div></div>
       <div class="feed">
         <h2><a name="dart-announce" href="https://groups.google.com/a/dartlang.org/g/announce" target="_blank">Dart Announcements</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-04-11T12:00:05.000Z" title="2024-04-11T12:00:05.000Z">3w</time>
+      <time datetime="2024-04-10T12:00:04.000Z" title="2024-04-10T12:00:04.000Z">3w</time>
       <div class="item">
-        <a href="https://groups.google.com/a/dartlang.org/g/announce/c/umy1oowrCyg" target="_blank">Breaking change 55436: Make type inference of `e1 ?? e2` consistent.</a>
+        <a href="https://groups.google.com/a/dartlang.org/g/announce/c/QsNPu9jPg70" target="_blank">Breaking change 55418: Make the context for await expressions consistent</a>
         
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-04-10T12:00:04.000Z" title="2024-04-10T12:00:04.000Z">3w</time>
+      <time datetime="2024-04-11T12:00:05.000Z" title="2024-04-11T12:00:05.000Z">3w</time>
       <div class="item">
-        <a href="https://groups.google.com/a/dartlang.org/g/announce/c/QsNPu9jPg70" target="_blank">Breaking change 55418: Make the context for await expressions consistent</a>
+        <a href="https://groups.google.com/a/dartlang.org/g/announce/c/umy1oowrCyg" target="_blank">Breaking change 55436: Make type inference of `e1 ?? e2` consistent.</a>
         
       </div>
       <div class="share" title="copy url"></div>
@@ -352,7 +357,7 @@ c</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-03-09T05:00:05.000Z" title="2024-03-09T05:00:05.000Z">1M</time>
+      <time datetime="2024-03-09T05:00:05.000Z" title="2024-03-09T05:00:05.000Z">2M</time>
       <div class="item">
         <a href="http://bridge.easter.fr/?action=display&bridge=GoogleGroupsBridge&group=announce&account=dartlang.org&format=Atom" target="_blank">Bridge returned error 500! (19791)</a>
         
@@ -495,6 +500,54 @@ c</div>
         <h2><a name="dart-ghw" href="http://mshibanami.github.io/GitHubTrendingRSS" target="_blank">Dart Weekly Package</a></h2>
         <div class="feed-items">
           <div class="feed-item">
+      <time datetime="2024-05-08T05:00:01.315213Z" title="2024-05-08T05:00:01.315213Z">6s</time>
+      <div class="item">
+        <a href="https://github.com/KNKPA/KNKPAnime" target="_blank">KNKPA/KNKPAnime</a>
+        <div class="feed-item-description">KNKPAnime：支持多番剧源与弹幕的看番软件。knkpanime 
+还在写... 姑且算是个介绍： 
+支持多番剧源和弹幕的看番软件。 
+（虽然说理论上甚至能已经接入电视剧的网站 甚至已经接入了电视剧网站） 
+关于平台：开发过程中只在Windows上测试过，也对安卓做了一点适配，但由于没有安卓设备，所以不知道能跑成什么样。欢迎安卓用户测试。 
+有问题或建议可以通过issue反馈。我真的想要issue到不行了，有没有好心人能给我提一个issue啊 
+下载链接 
+另：macOS版可以在预览版中下载，但不知为什么，github workflow编译的macOS版在我的mac上打开视频播放页时会崩溃</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-05-08T05:00:01.315213Z" title="2024-05-08T05:00:01.315213Z">6s</time>
+      <div class="item">
+        <a href="https://github.com/ksh-b/raven" target="_blank">ksh-b/raven</a>
+        <div class="feed-item-description">News Aggregatorraven 
+News Reader 
+This app uses APIs and web scraping to fetch news articles. RSS feeds are not supported. 
+Features 
+ 
+ Multiple sources 
+ Category selection 
+ Translation 
+ No ads / paywalls 
+ 
+Installation 
+Get it on 
+ 
+  
+  
+ Or via Obtanium 
+ 
+Screenshots 
+ 
+ 
+   
+    
+    
+   </div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
       <time datetime="2024-03-29T05:00:01.440856Z" title="2024-03-29T05:00:01.440856Z">1M</time>
       <div class="item">
         <a href="https://github.com/devtodollars/startup-boilerplate" target="_blank">devtodollars/startup-boilerplate</a>
@@ -624,43 +677,12 @@ Features 🌟
       <div class="share" title="copy url"></div>
     </div>
     
-    <div class="feed-item">
-      <time datetime="2024-01-07T05:00:01.793985Z" title="2024-01-07T05:00:01.793985Z">4M</time>
-      <div class="item">
-        <a href="https://github.com/babakcode/flutter_gemini" target="_blank">babakcode/flutter_gemini</a>
-        <div class="feed-item-description">Flutter Google Gemini SDKFlutter Gemini 
-Google Gemini is a set of cutting-edge large language models (LLMs) designed to be the driving force behind Google's future AI initiatives. 
- 
-This package provides a powerful bridge between your Flutter application and Google's revolutionary Gemini AI. It em</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2023-12-08T05:00:01.784087Z" title="2023-12-08T05:00:01.784087Z">5M</time>
-      <div class="item">
-        <a href="https://github.com/GetStream/stream-chat-flutter" target="_blank">GetStream/stream-chat-flutter</a>
-        <div class="feed-item-description">Flutter Chat SDK - Build your own chat app experience using Dart, Flutter and the Stream Chat Messaging API.Official Flutter packages for Stream Chat 
- 
-  
-Quick Links 
- 
- Register to get an API key for Stream Chat 
- Flutter Chat SDK Tutorial 
- Chat UI Kit 
- Sample apps 
- 
-This repository contains c</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
 </div></div>
       <div class="feed">
         <h2><a name="flutter-blog" href="https://medium.com/flutter?source=rss----4da7dfd21a33---4" target="_blank">Flutter Blog</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-05-07T15:02:05.000Z" title="2024-05-07T15:02:05.000Z">3h</time>
+      <time datetime="2024-05-07T15:02:05.000Z" title="2024-05-07T15:02:05.000Z">13h</time>
       <div class="item">
         <a href="https://medium.com/flutter/cross-platform-development-with-flutter-how-google-classroom-gets-teachers-and-students-on-the-597d4f3b450c?source=rss----4da7dfd21a33---4" target="_blank">Cross Platform development with Flutter — How Google Classroom gets teachers and students on the…</a>
         
@@ -678,7 +700,7 @@ This repository contains c</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-04-16T21:02:08.000Z" title="2024-04-16T21:02:08.000Z">2w</time>
+      <time datetime="2024-04-16T21:02:08.000Z" title="2024-04-16T21:02:08.000Z">3w</time>
       <div class="item">
         <a href="https://medium.com/flutter/flutter-and-dart-at-google-cloud-next-b4921946d0d1?source=rss----4da7dfd21a33---4" target="_blank">Flutter and Dart at Google Cloud Next</a>
         
@@ -754,142 +776,138 @@ This repository contains c</div>
         <h2><a name="flutter-so" href="https://stackoverflow.com/questions/tagged/?tagnames=flutter&sort=active" target="_blank">Flutter SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-05-07T18:13:44.000Z" title="2024-05-07T18:13:44.000Z">46m</time>
+      <time datetime="2024-05-07T20:10:11.000Z" title="2024-05-07T20:10:11.000Z">8h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78444391/flutter-streambuilder-not-streaming-to-ui-responses-stream-from-grpc-method" target="_blank">Flutter StreamBuilder not streaming to UI responses stream from gRPC method</a>
-        <div class="feed-item-description">I can't determine why the Flutter StreamBuilder doesn't work with the gRPC async watch method even though I've confirmed that:
-
-the gRPC watch method works (using a standalone Dart app)
-I can use StreamBuilder with very a similiar async pingpong method.
-
-The known working Dart gRPC client:
-import "p</div>
+        <a href="https://stackoverflow.com/questions/78444853/flutter-how-to-handle-null-context-error-when-cancelling-user-account-deletion" target="_blank">Flutter: How to Handle Null Context Error When Cancelling User Account Deletion?</a>
+        <div class="feed-item-description">Updated code with new error when press on delete button
+    [ERROR:flutter/runtime/dart_vm_initializer.cc(41)] Unhandled Exception: Looking up a deactivated widget's ancestor is unsafe.
+At this point the state of the widget's element tree is no longer stable.
+To safely refer to a widget's ancestor i</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-05-07T17:51:25.000Z" title="2024-05-07T17:51:25.000Z">1h</time>
+      <time datetime="2024-05-08T04:16:27.000Z" title="2024-05-08T04:16:27.000Z">43m</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78444279/flutter-dart-what-should-be-inside-a-data-model" target="_blank">Flutter / Dart - What should be inside a data model?</a>
-        <div class="feed-item-description">I am a beginner Flutter / Dart developer.
-While I was watching and reading tutorials, I came across the concept of a data model.
-Initially, most tutorials were consistent, and a Model was typically defined as something like this:
-class UserModel {
-  final int id;
+        <a href="https://stackoverflow.com/questions/78446067/custom-floating-rounded-appbar" target="_blank">Custom Floating Rounded Appbar</a>
+        <div class="feed-item-description">I want to make a rounded container search bar that opens a drawer similar to in the Google Chats app (see screenshot).  Not sure how to make the floating app bar and rounded borders for the AppBar.
+Here is a screenshot of what I would like it to look like.  The menu will open a drawer.</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-05-08T04:12:01.000Z" title="2024-05-08T04:12:01.000Z">48m</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78446061/how-to-prevent-navigate-by-url-in-flutter-web" target="_blank">How to prevent navigate by url in flutter web</a>
+        <div class="feed-item-description">I currently build a flutter web then i show the url which create by Go_router.
+basicly like : Login-&gt; save id user -&gt; checl id!= null -&gt; do navigate
+How to do it? I have search and try redict but it seem not worl for me, and how to declare in main.dart file
+here is the route
+GoRouter router</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-05-08T02:56:30.000Z" title="2024-05-08T02:56:30.000Z">2h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78445888/whats-the-different-between-textstyle-merge-and-textstyle-copywith-in-flutter" target="_blank">what's the different between TextStyle.merge and TextStyle.copyWith in flutter?</a>
+        <div class="feed-item-description">TextStyle.merge and TextStyle.copyWith have different description but I seem to get the same result.
+If merge behaves same as copyWith,then there is no need for adding the method merge to TextStyle.Are there any differences between them?
+
+class TestView extends StatelessWidget {
+  @override
+  Widget</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-05-08T03:31:15.000Z" title="2024-05-08T03:31:15.000Z">1h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78445970/error-unhandled-exception-converting-object-to-an-encodable-object-failed-inst" target="_blank">Error Unhandled Exception: Converting object to an encodable object failed: Instance of 'listActivities' when i am trying to add new data to list</a>
+        <div class="feed-item-description">so i am trying to add a new object to activity and i store it in local storage, the code looks like this
+ pushObjectWisata(selectedIndex, selectedObjectId) async {
+
+    PengunjungModel dataObjectWisata = listObjectWisata
+        .firstWhere((element) =&gt; element.id == selectedObjectId);
+
+
+    list</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-05-07T22:04:01.000Z" title="2024-05-07T22:04:01.000Z">6h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78445280/how-to-get-single-map-instance-from-json-response-in-flutter" target="_blank">How to get Single Map Instance from json response in flutter</a>
+        <div class="feed-item-description">I have Map Model as:
+class Users {
+  final int userID;
+  final String name;
   final String username;
-  final Str</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-05-07T17:39:15.000Z" title="2024-05-07T17:39:15.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78444232/problems-integrating-capturesdk-flutter-in-flutter-project" target="_blank">Problems integrating capturesdk_flutter in Flutter project</a>
-        <div class="feed-item-description">After adding capturesdk_flutter in pubspec.yaml when I initiate flutter run then got error
-the Plugin project :capturesdk_flutter not found. Please update settings.gradle.
-and when I add include ':capturesdk_flutter' in settings.gradle I got
-FAILURE: Build failed with an exception.
+  final String email;
+  final Address address;
 
-What went wrong:</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-05-07T17:37:41.000Z" title="2024-05-07T17:37:41.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78444227/how-to-plot-charts-on-flutter-with-datetime-on-axis-x" target="_blank">How to plot charts on Flutter with DateTime on Axis x</a>
-        <div class="feed-item-description">I have to implement a chart on my app that has DateTime values on the x axis. I am currently using fl_chart, but has some open issue regarding charts with DateTime values on the x axis which prevent me from continuing to use this library (#462, #438).
-Which library can I use to plot this kid of grap</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-05-07T17:16:30.000Z" title="2024-05-07T17:16:30.000Z">1h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78444116/flutter-not-getting-address" target="_blank">Flutter Not Getting Address [closed]</a>
-        <div class="feed-item-description">I'm new to flutter/dart. I'm currently unable to continue because of this error. Still not getting the address. Can you look at my code? The owner of this project said that my API key is restricted due to my console Google account doesn't have attached billing account but I enabled all API I need.
-T</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-05-07T16:58:01.000Z" title="2024-05-07T16:58:01.000Z">2h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78444041/i-need-custom-slider-in-flutter" target="_blank">I need custom slider in Flutter</a>
-        <div class="feed-item-description">i already post this issue in stackoverflow.
-so i give that link.
-https://stackoverflow.com/a/78443873/11055623
-I tried to add an image to slider thumb, but I haven't an idea of how it should work. At SliderThemeData we haven't parameters for adding thumb image.
-Please help any one.
-same as design in</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-05-07T16:28:59.000Z" title="2024-05-07T16:28:59.000Z">2h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78443908/when-i-work-it-rings-on-chrome-i-dont-get-an-error-this-flutter-project" target="_blank">When I work, it rings on Chrome I don't get an error this flutter project [closed]</a>
-        <div class="feed-item-description">Target kernel_snapshot failed: ProcessException: Operation did not complete successfully because the file contains a virus or potentially unwanted software.
-Command: "C:\New folder\flutter\bin\cache\dart-sdk\bin\dartaotruntime.exe" --disable-dart-dev "C:\New folder\flutter\bin\cache\dart-sdk\bin\sna</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-05-07T15:50:48.000Z" title="2024-05-07T15:50:48.000Z">3h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78443736/i-am-getting-an-error-bottom-navigation-bar-widget-in-flutter" target="_blank">i am getting an error bottom navigation bar Widget in flutter</a>
-        <div class="feed-item-description">so i am having this error
-══════ Exception caught by widgets library ═══════════════════════════════════ 'package:flutter/src/widgets/framework.dart': Failed assertion: line 6750 pos 12: 'child == _child': is not true.
-The relevant error-causing widget was:
-══════════════════════════════════════════</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2024-05-07T13:05:17.000Z" title="2024-05-07T13:05:17.000Z">5h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/78442735/how-can-i-fix-this-error-when-i-trying-to-debugging-on-android-emulator-this-er" target="_blank">How can i fix this error? When i trying to debugging on android emulator this error comes out</a>
-        <div class="feed-item-description">Even i tried flutter clean
-pub get
-cache clean it's not working at all.
-FAILURE: Build failed with an exception.
+  Users({this.userID, this.name, this.username, this.email, this.address});
 
-* Where:
-Build file 'C:\dev\last_try\last_try\android\build.gradle' line: 9
-
-* What went wrong:
-A problem occurred evaluating root project 'android'.
-&gt; Could not find method classpath</div>
+  factory Users.fromJson(Map usersjson)=&gt; Users(
+      userID: usersjso</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2024-05-07T13:57:08.000Z" title="2024-05-07T13:57:08.000Z">5h</time>
+      <time datetime="2024-05-08T02:30:49.000Z" title="2024-05-08T02:30:49.000Z">2h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/78443022/i-want-it-to-show-a-modalbottom-sheet-when-the-add-persistentnavbaritem-is-click" target="_blank">i want it to show a modalbottom sheet when the add persistentnavbarItem is clicked</a>
-        <div class="feed-item-description">PersistentBottomNavBarItem(
-        onPressed: _openRatingsLayer,
+        <a href="https://stackoverflow.com/questions/78445834/flutter-background-image-border-with-bg" target="_blank">Flutter Background Image Border with Bg</a>
+        <div class="feed-item-description">Hello can someone help me with this. I try to code(on the image)
+I am not sure if i should use cardbox or container here or anyother widget
+import 'package:flutter/material.dart';
 
-        icon: Icon(
-          Icons.add,
-          color: Colors.white,
-          size: 35,
-        ),
-        title: ("Add"),
-        activeColorPrimary: Colors.orange.shade800,
-        inactiveColorPrimary: Colors.grey,
-      ),
+class AppHome extends StatefulWidget {
+  const AppHome({super.key});
 
-v</div>
+  @override
+  State createState() =&gt; _AppHomeS</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-05-07T23:39:09.000Z" title="2024-05-07T23:39:09.000Z">5h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78445506/flutter-speechtotextprovider-with-form" target="_blank">Flutter: SpeechToTextProvider with Form</a>
+        <div class="feed-item-description">I'm going crazy with speech_to_text.
+In my app I have various forms, each with various TextFormFields.
+For each input I have to attach a microphone that allows me to transcribe what is said.
+I had implemented everything with basic SpeechToText, but it gave some problems due to the various initializa</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-05-08T02:15:19.000Z" title="2024-05-08T02:15:19.000Z">2h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78445800/flutter-getx-obs-data-not-showing-in-first-build" target="_blank">Flutter GetX Obs data not showing in first build</a>
+        <div class="feed-item-description">Why my UI widget not showing data after the first build. But when navigate to other screen and back to HomeScrren, the widget will show data (User widget at top)? is there anything i missed?
+My app demo video
+Here is the Homescreen code:
+class HomeScreen extends GetView {
+  const HomeScreen({Key? ke</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2024-05-08T01:37:47.000Z" title="2024-05-08T01:37:47.000Z">3h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/78445726/how-to-use-upi-india-dependency-v3-0-1-in-flutter-project-after-jcenter-deprec" target="_blank">How to use upi_india dependency (v3.0.1) in Flutter project after JCenter deprecation?</a>
+        <div class="feed-item-description">"I'm developing a Flutter application that requires UPI (Unified Payments Interface) integration for seamless transactions. I'm currently using the upi_india dependency (version 3.0.1) to achieve this functionality.
+However, I'm encountering errors during the build process due to the recent deprecat</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
@@ -899,7 +917,7 @@ v</div>
         <h2><a name="flutter-wotw" href="https://youtube.com" target="_blank">Widget of the Week</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2024-04-23T19:02:45.000Z" title="2024-04-23T19:02:45.000Z">1w</time>
+      <time datetime="2024-04-23T19:02:45.000Z" title="2024-04-23T19:02:45.000Z">2w</time>
       <div class="item">
         <a href="https://www.youtube.com/watch?v=PPwJ75vqP_s" target="_blank">Isolates (Technique of the Week)</a>
         <div class="feed-item-description">If your Flutter app has jank due to a heavy computation, use Isolate.run() to move that computation to a new isolate.

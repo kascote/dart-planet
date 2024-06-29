@@ -17,7 +17,17 @@ extension StringExt on String {
   String take(int n) {
     return substring(0, length > n ? n : length);
   }
+
+  String centerIn(int width) {
+    final pad = (width - length) ~/ 2;
+    return ' ' * pad + this + ' ' * pad;
+  }
 }
+
+/// Function to get the current date in ISO format
+String isoToday() => isoDate(DateTime.now())!;
+
+String? isoDate(DateTime? date) => date?.toUtc().toIso8601String();
 
 // function to parse a date like 2023-06-30T00:10:15.000Z to a time ago
 // format like 2h, 3d, 1w, 2m, 1y

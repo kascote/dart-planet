@@ -28,7 +28,7 @@ echo 'flutter reddit'
 $CWD/$BIN/$EXEC feed add -u 'https://www.reddit.com/r/FlutterDev/.rss' -j flutter-reddit -b 'https://reddit.com'
 
 echo 'dart stackoverlow'
-$CWD/$BIN/$EXEC feed add -u 'https://stackoverflow.com/feeds/tag/dart%20-flutter' -j dart-so -b 'https://stackoverflow.com/tags/dart%20-flutter'
+$CWD/$BIN/$EXEC feed add -u 'https://stackoverflow.com/feeds/tag?tagnames=dart+-flutter&sort=newest' -j dart-so -b 'https://stackoverflow.com/tags/dart%20-flutter'
 
 echo 'flutter stackoverlow'
-$CWD/$BIN/$EXEC feed add -u 'https://stackoverflow.com/feeds/tag/flutter' -j flutter-so -b 'https://stackoverflow.com/tags/flutter'
+$CWD/$BIN/$EXEC feed add -u 'https://stackoverflow.com/feeds/tag/flutter&sort=newest' -j flutter-so -b 'https://stackoverflow.com/tags/flutter'

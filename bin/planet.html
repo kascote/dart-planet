@@ -1,116 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" itemscope id="page_home" itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{planetName}}</title>
+    <link rel="canonical" href="{{planetUrl}}" />
+    <link rel="preload" href="web/style.css" as="style" />
+    <link rel="manifest" href="manifest.json" />
+    <link href="web/style.css" rel="stylesheet" />
+    <link rel="icon" href="web/favicon.png" type="image/png" sizes="256x256" />
+    <meta name="keywords" content="{{keywords}}" />
+    <meta name="description" content="{{description}}" />
+    <meta property="og:site_name" content="{{planetName}}" />
+    <meta property="og:title" content="{{planetName}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{planetUrl}}" />
+    <meta property="og:description" content="{{description}}" />
+    <meta name="twitter:title" content="{{planetName}}" />
+    <meta name="twitter:description" content="{{description}}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="planet-rendered" content="{{dateRendered}}" />
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "website",
+        "name": "{{planetName}}",
+        "url": "{{planetUrl}}",
+        "description": "{{description}}",
+        "about": {
+          "@type": "{{planetName}}",
+          "description": "{{description}}"
+        }
+      }
+    </script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta property="og:locale" content="en_US" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{planetName}}</title>
-  <link rel="canonical" href="{{planetUrl}}" />
-  <link rel="preload" href="web/style.css" as="style" />
-  <link rel="manifest" href="manifest.json" />
-  <link href="web/style.css" rel="stylesheet">
-  <link rel="icon" href="web/favicon.png" type="image/png" sizes="256x256" />
-  <meta name="keywords" content="{{keywords}}" />
-  <meta name="description" content="{{description}}" />
-  <meta property="og:site_name" content="{{planetName}}" />
-  <meta property="og:title" content="{{planetName}}" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{planetUrl}}" />
-  <meta property="og:description" content="{{description}}" />
-  <meta name="twitter:title" content="{{planetName}}" />
-  <meta name="twitter:description" content="{{description}}" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="planet-rendered" content="{{dateRendered}}" />
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "website",
-    "name": "{{planetName}}",
-    "url": "{{planetUrl}}",
-    "description": "{{description}}",
-    "about": {
-      "@type": "{{planetName}}",
-      "description": "{{description}}"
-    }
-  }
-  </script>
+  <body>
+    <div class="container">
+      <h1>Dart Planet</h1>
+      <div id="container">{{ content }}</div>
+      <footer class="footer">
+        <small>
+          <a href="https://github.com/kascote/dart-planet" target="_blank">Source Code</a>
+          |
+          <a href="https://github.com/kascote/dart-planet/issues" target="_blank">Report Issue</a>
+          |
+          <a href="https://github.com/kascote/dart-planet/issues" target="_blank">Suggestions</a>
+        </small>
+      </footer>
+    </div>
 
-</head>
+    <div class="notification hide">
+      <p>Link copied to clipboard.</p>
+    </div>
 
-<body>
-  <div class="layout">
-    <h1>Dart Planet</h1>
-    <header class="header sidebar">
-      <p>Dart</p>
-      <a href="#dart-blog">Medium Blog</a>
-      <a href="#dart-reddit">Reddit</a>
-      <a href="#dart-so">Stack Overflow</a>
-      <a href="#dart-announce">Google Group Announce</a>
-      <a href="#dart-wiki">Dart Wiki Updates</a>
-      <a href="#dart-ghw">Github Weekly</a>
-
-      <p>Flutter</p>
-      <a href="#flutter-blog">Medium Blog</a>
-      <a href="#flutter-reddit">Reddit</a>
-      <a href="#flutter-so">Stack Overflow</a>
-      <a href="#flutter-wotw">Widget of the Week</a>
-    </header>
-    <div id="container" class="container">{{ content }}</div>
-    <aside class="aside sidebar">
-      <p>Dart</p>
-      <a href="https://dart.dev/guides/whats-new?utm_source=dart-planet" target="_blank">Release Notes</a>
-      <a href="https://dart.dev/language?utm_source=dart-planet" target="_blank">Language Tour</a>
-      <a href="https://dart.dev/effective-dart?utm_source=dart-planet" target="_blank">Effective Dart</a>
-      <a href="https://dart.dev/guides/libraries/library-tour?utm_source=dart-planet" target="_blank">Library Tour</a>
-      <a href="https://dart.dev/tools/linter-rules?utm_source=dart-planet" target="_blank">Linter Rules</a>
-      <a href="https://api.dart.dev/?utm_source=dart-planet" target="_blank">API Reference</a>
-
-      <p>Flutter</p>
-      <a href="https://docs.flutter.dev/release/release-notes?utm_source=dart-planet" target="_blank">Release Notes</a>
-      <a href="https://docs.flutter.dev?utm_source=dart-planet" target="_blank">Documentation</a>
-      <a href="https://api.flutter.dev/?utm_source=dart-planet" target="_blank">API Reference</a>
-    </aside>
-    <footer class="footer">
-      <small>
-        <a href="https://github.com/kascote/dart-planet" target="_blank">Source Code</a>
-        |
-        <a href="https://github.com/kascote/dart-planet/issues" target="_blank">Report Issue</a>
-        |
-        <a href="https://github.com/kascote/dart-planet/issues" target="_blank">Suggestions</a>
-      </small>
-    </footer>
-  </div>
-
-  <div class="notification hide">
-    <p>Link copied to clipboard.</p>
-  </div>
-
-  <script async>
-    function notify() {
-      const notification = document.querySelector('.notification');
-      notification.classList.remove('hide');
-      setTimeout(() => notification.classList.add('hide'), 2000);
-    }
-
-    function copyUrl(evt) {
-      const t = evt.target;
-      if (!t.classList.contains('share')) {
-        return;
+    <script async>
+      function notify() {
+        const notification = document.querySelector(".notification");
+        notification.classList.remove("hide");
+        setTimeout(() => notification.classList.add("hide"), 2000);
       }
 
-      if (navigator.clipboard) {
-        evt.preventDefault();
-        navigator.clipboard.writeText(t.previousElementSibling.children[0].href).then(() => {
-          notify();
-        }).catch(err => {
-          console.error('Failed to copy: ', err);
-        });
+      function copyUrl(evt) {
+        const t = evt.target;
+        if (!t.classList.contains("share")) {
+          return;
+        }
+
+        if (navigator.clipboard) {
+          evt.preventDefault();
+          navigator.clipboard
+            .writeText(t.previousElementSibling.children[0].href)
+            .then(() => {
+              notify();
+            })
+            .catch((err) => {
+              console.error("Failed to copy: ", err);
+            });
+        }
       }
-    }
 
-    document.getElementsByTagName('body')[0].addEventListener('click', copyUrl);
-  </script>
-</body>
-
+      document.getElementsByTagName("body")[0].addEventListener("click", copyUrl);
+    </script>
+  </body>
 </html>

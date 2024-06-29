@@ -48,7 +48,7 @@ class Planet {
     final (rc, feed, cache) = await fetchFeed(url, '');
     if (rc > 0) return Future.value(rc);
 
-    final today = DateTime.now().toUtc().toIso8601String();
+    final today = isoToday();
     final feedId = await db.into(db.feeds).insert(
           FeedsCompanion.insert(
             name: feed!.title ?? '',
@@ -74,7 +74,7 @@ class Planet {
   /// any value greater than 0 is an error
   Future<int> updateFeed(String handle) async {
     log.finest('updateFeed: $handle');
-    final today = DateTime.now().toUtc().toIso8601String();
+    final today = isoToday();
     final feed = await _getFeedByHandle(handle);
     if (feed == null) return Future.value(ExitCode.error.code);
 
@@ -86,7 +86,7 @@ class Planet {
   /// returns 0 on success
   /// any value greater than 0 is an error
   Future<int> updateFeeds() async {
-    final today = DateTime.now().toUtc().toIso8601String();
+    final today = isoToday();
     final feeds = await db.getActiveFeeds();
     log.finest('feeds to update: ${feeds.length}');
 
@@ -183,8 +183,8 @@ class Planet {
             thumbnail: thumbnail,
             description: description,
             content: '', // item.content.join(' '),
-            createdAt: item.published?.parseValue()?.toUtc().toIso8601String() ?? today,
-            updatedAt: item.updated?.parseValue()?.toUtc().toIso8601String() ?? today,
+            createdAt: isoDate(item.published?.parseValue()) ?? today,
+            updatedAt: isoDate(item.updated?.parseValue()) ?? today,
           ),
         );
   }
@@ -200,7 +200,7 @@ class Planet {
         description: Value(description),
         thumbnail: Value(thumbnail),
         // content: Value(item.content.map((c) => c.value).join(' ')),
-        updatedAt: Value(item.updated?.parseValue()?.toUtc().toIso8601String() ?? ''),
+        updatedAt: Value(isoDate(item.updated?.parseValue()) ?? ''),
       ),
     );
   }
@@ -309,9 +309,12 @@ class Planet {
   }
 
   void _printFeed(List<Feed> feeds) {
+    stdout.writeln(
+      "${'Name'.padRight(40)}   ${'Handle'.padRight(25)}  ${'Active'.padRight(6)}  ${'Errors'.padRight(6)}   URL",
+    );
     for (final feed in feeds) {
       stdout.writeln(
-        '${feed.name.take(38).padRight(40)} - ${feed.handle.padRight(25)} - ${feed.active} - ${feed.errors} - ${feed.xmlLink}',
+        '${feed.name.take(38).padRight(40)} - ${feed.handle.padRight(25)} - ${feed.active.toString().centerIn(6)} - ${feed.errors.toString().centerIn(6)} - ${feed.xmlLink}',
       );
     }
   }

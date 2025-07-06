@@ -20,7 +20,7 @@
     <meta name="twitter:title" content="Dart Planet" />
     <meta name="twitter:description" content="One-Stop Dart/Flutter News" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="planet-rendered" content="2025-07-06T12:00:16.241035" />
+    <meta name="planet-rendered" content="2025-07-06T19:00:17.238166" />
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -137,7 +137,7 @@
         <h2><a name="dart-reddit" href="https://www.reddit.com/r/dartlang/" target="_blank">/r/dartlang</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2025-07-05T19:13:47.000Z" title="2025-07-05T19:13:47.000Z">16h</time>
+      <time datetime="2025-07-05T19:13:47.000Z" title="2025-07-05T19:13:47.000Z">23h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/dartlang/comments/1lshmfr/learning_dart/" target="_blank">Learning Dart</a>
         
@@ -173,7 +173,7 @@
     </div>
     
     <div class="feed-item">
-      <time datetime="2025-07-01T17:31:17.000Z" title="2025-07-01T17:31:17.000Z">4d</time>
+      <time datetime="2025-07-01T17:31:17.000Z" title="2025-07-01T17:31:17.000Z">5d</time>
       <div class="item">
         <a href="https://www.reddit.com/r/dartlang/comments/1lp7vvt/question_regarding_limiting_scope_of_classes/" target="_blank">Question regarding limiting scope of classes</a>
         
@@ -182,7 +182,7 @@
     </div>
     
     <div class="feed-item">
-      <time datetime="2025-06-30T13:41:23.000Z" title="2025-06-30T13:41:23.000Z">5d</time>
+      <time datetime="2025-06-30T13:41:23.000Z" title="2025-06-30T13:41:23.000Z">6d</time>
       <div class="item">
         <a href="https://www.reddit.com/r/dartlang/comments/1lo7tw6/accented_characters_do_not_appear_in_the_console/" target="_blank">accented characters do not appear in the console</a>
         
@@ -231,28 +231,25 @@
         <h2><a name="dart-so" href="https://stackoverflow.com/questions/tagged/?tagnames=dart+-flutter&sort=active" target="_blank">Dart SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2025-07-06T09:26:40.000Z" title="2025-07-06T09:26:40.000Z">2h</time>
+      <time datetime="2025-07-06T09:26:40.000Z" title="2025-07-06T09:26:40.000Z">9h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/79691626/the-test-program-terminates-before-the-logger-finishes-writing-to-the-file" target="_blank">The test program terminates before the logger finishes writing to the file</a>
-        <div class="feed-item-description">I write a logger.dart to use logger everywhere:
+        <a href="https://stackoverflow.com/questions/79691626/logger-write-will-be-terminated-while-testing-in-one-async-method" target="_blank">Logger write will be terminated while testing in one async method</a>
+        <div class="feed-item-description">Here is a dart file code in test directory:
 import 'dart:io';
 
 import 'package:logger/logger.dart';
 import 'package:path/path.dart' as p;
 
-Logger get console =&gt; MyLogger._console;
-
-Logger get logger =&gt; MyLogger._logger;
-
-class MyLogger extends Logger {
-  static final File logFile = File(
- </div>
+File logFile = File(p.Context().join(p.current, 'log', 'log.txt'));
+var logger = Logger(
+  printer: PrettyPrinter(methodCount: 1),
+  output: FileOutput(file: Fil</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2025-06-29T18:12:33.000Z" title="2025-06-29T18:12:33.000Z">6d</time>
+      <time datetime="2025-06-29T18:12:33.000Z" title="2025-06-29T18:12:33.000Z">7d</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/79683940/how-do-i-send-command-line-arguments" target="_blank">How do I send command line arguments?</a>
         <div class="feed-item-description">Have a single dart project and run it using dart run, but when can not pass the arguments like as --help: dart run --help call the dart help, instead of the help of project.</div>
@@ -292,7 +289,7 @@ A p</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2025-06-15T15:40:08.000Z" title="2025-06-15T15:40:08.000Z">2w</time>
+      <time datetime="2025-06-15T15:40:08.000Z" title="2025-06-15T15:40:08.000Z">3w</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/79666682/im-trying-to-sum-of-the-number-in-a-string-but-cant-filter-in-if-condition" target="_blank">I'm trying to sum of the number in a String but can't filter in if() condition</a>
         <div class="feed-item-description">compileNewDDC
@@ -305,7 +302,7 @@ main.dart:418:29: Error: The operator '&lt;=' isn't defined for the c</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2025-06-15T13:04:17.000Z" title="2025-06-15T13:04:17.000Z">2w</time>
+      <time datetime="2025-06-15T13:04:17.000Z" title="2025-06-15T13:04:17.000Z">3w</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/79666566/in-dart-convert-datetime-to-index-of-week-and-back" target="_blank">In Dart convert DateTime to index of week and back</a>
         <div class="feed-item-description">I need help with converting a date to an index and back
@@ -862,7 +859,61 @@ https://se</div>
         <h2><a name="flutter-reddit" href="https://www.reddit.com/r/FlutterDev/" target="_blank">/r/FlutterDev</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2025-07-06T11:42:28.000Z" title="2025-07-06T11:42:28.000Z">17m</time>
+      <time datetime="2025-07-06T18:40:38.000Z" title="2025-07-06T18:40:38.000Z">19m</time>
+      <div class="item">
+        <a href="https://www.reddit.com/r/FlutterDev/comments/1lt8lgp/found_a_free_way_to_handle_the_12_testers_for_14/" target="_blank">Found a Free Way to Handle the “12 Testers for 14 Days” Play Store Rule</a>
+        
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2025-07-06T18:18:27.000Z" title="2025-07-06T18:18:27.000Z">41m</time>
+      <div class="item">
+        <a href="https://www.reddit.com/r/FlutterDev/comments/1lt828z/why_is_there_no_good_flutter_plugin_for_androids/" target="_blank">Why is there no good flutter plugin for Android's ConnectionService and iOS' CallKit?</a>
+        
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2025-07-06T17:45:32.000Z" title="2025-07-06T17:45:32.000Z">1h</time>
+      <div class="item">
+        <a href="https://www.reddit.com/r/FlutterDev/comments/1lt78ze/launched_a_platform_to_help_fellow_indie_devs/" target="_blank">Launched a platform to help fellow indie devs grow without ads or luck</a>
+        
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2025-07-06T17:09:16.000Z" title="2025-07-06T17:09:16.000Z">1h</time>
+      <div class="item">
+        <a href="https://www.reddit.com/r/FlutterDev/comments/1lt6dyk/flutter_scroll_lags_and_shakes_when_list_items/" target="_blank">Flutter scroll lags and shakes when list items have different heights in the list</a>
+        
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2025-07-06T14:46:26.000Z" title="2025-07-06T14:46:26.000Z">4h</time>
+      <div class="item">
+        <a href="https://www.reddit.com/r/FlutterDev/comments/1lt2yzu/whats_your_goto_way_to_create_professional/" target="_blank">What's your go-to way to create professional looking/ user-friendly app store screenshots?</a>
+        
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2025-07-06T12:54:46.000Z" title="2025-07-06T12:54:46.000Z">6h</time>
+      <div class="item">
+        <a href="https://www.reddit.com/r/FlutterDev/comments/1lt0jdx/create_flutter_app_a_new_way_to_create_your/" target="_blank">create_flutter_app a new way to create your flutter projects.</a>
+        
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2025-07-06T11:42:28.000Z" title="2025-07-06T11:42:28.000Z">7h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/1lsz7wi/flutter_video_app_crashes_because_it_uses_it_too/" target="_blank">Flutter video app crashes because it uses it too much memory</a>
         
@@ -871,7 +922,7 @@ https://se</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2025-07-06T09:29:56.000Z" title="2025-07-06T09:29:56.000Z">2h</time>
+      <time datetime="2025-07-06T09:29:56.000Z" title="2025-07-06T09:29:56.000Z">9h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/1lsx6p6/map_with_tilt_and_3d_elements/" target="_blank">Map with tilt and 3D elements</a>
         
@@ -880,7 +931,7 @@ https://se</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2025-07-06T09:12:05.000Z" title="2025-07-06T09:12:05.000Z">2h</time>
+      <time datetime="2025-07-06T09:12:05.000Z" title="2025-07-06T09:12:05.000Z">9h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/1lswxi4/how_to_archive_this_wallpaper_effect_in_flutter/" target="_blank">How to archive this wallpaper effect in flutter?</a>
         
@@ -889,63 +940,9 @@ https://se</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2025-07-06T07:52:09.000Z" title="2025-07-06T07:52:09.000Z">4h</time>
+      <time datetime="2025-07-06T07:52:09.000Z" title="2025-07-06T07:52:09.000Z">11h</time>
       <div class="item">
         <a href="https://www.reddit.com/r/FlutterDev/comments/1lsvrjc/not_static_icons_beautifully_crafted_animated/" target="_blank">not_static_icons – beautifully crafted animated icons for Flutter without Rive or Lottie</a>
-        
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2025-07-06T06:33:31.000Z" title="2025-07-06T06:33:31.000Z">5h</time>
-      <div class="item">
-        <a href="https://www.reddit.com/r/FlutterDev/comments/1lsulbt/does_apple_secretly_wants_to_kill_flutter/" target="_blank">Does Apple secretly wants to kill Flutter?</a>
-        
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2025-07-06T05:26:49.000Z" title="2025-07-06T05:26:49.000Z">6h</time>
-      <div class="item">
-        <a href="https://www.reddit.com/r/FlutterDev/comments/1lstjc2/google_developer_console_account/" target="_blank">Google Developer Console Account</a>
-        
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2025-07-06T04:26:45.000Z" title="2025-07-06T04:26:45.000Z">7h</time>
-      <div class="item">
-        <a href="https://www.reddit.com/r/FlutterDev/comments/1lsskco/created_this_fully_with_claude_in_flutter_never/" target="_blank">Created this fully with Claude in flutter , never knew flutter was this powerful , all the characters , the projectiles animations , fully via Claude in flutter</a>
-        
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2025-07-06T02:23:00.000Z" title="2025-07-06T02:23:00.000Z">9h</time>
-      <div class="item">
-        <a href="https://www.reddit.com/r/FlutterDev/comments/1lsqf20/what_dumb_mistakes_should_i_watch_for/" target="_blank">What dumb mistakes should I watch for?</a>
-        
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2025-07-05T22:27:48.000Z" title="2025-07-05T22:27:48.000Z">13h</time>
-      <div class="item">
-        <a href="https://www.reddit.com/r/FlutterDev/comments/1lslvry/i_built_simtool_a_terminal_ui_for_ios_simulator/" target="_blank">I built SimTool - A terminal UI for iOS Simulator management with file browsing</a>
-        
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2025-07-05T21:47:28.000Z" title="2025-07-05T21:47:28.000Z">14h</time>
-      <div class="item">
-        <a href="https://www.reddit.com/r/FlutterDev/comments/1lsl0zr/package_idea_request_im_a_jr_flutter_dev_looking/" target="_blank">💡 [Package Idea Request] I'm a Jr. Flutter Dev – Looking to Build a Useful Package for the Community!</a>
         
       </div>
       <div class="share" title="copy url"></div>
@@ -956,19 +953,71 @@ https://se</div>
         <h2><a name="flutter-so" href="https://stackoverflow.com/questions/tagged/?tagnames=flutter&sort=active" target="_blank">Flutter SO</a></h2>
         <div class="feed-items">
           <div class="feed-item">
-      <time datetime="2025-07-06T11:04:16.000Z" title="2025-07-06T11:04:16.000Z">56m</time>
+      <time datetime="2025-07-06T11:04:16.000Z" title="2025-07-06T11:04:16.000Z">7h</time>
       <div class="item">
-        <a href="https://stackoverflow.com/questions/79691691/how-to-integrate-a-flutter-module-into-a-flutter-host-app-without-exposing-dart" target="_blank">How to integrate a Flutter module into a Flutter host app without exposing Dart source?</a>
-        <div class="feed-item-description">I’m integrating a Flutter module (built as an .aar) into a Flutter host app. The goal is to keep the module's Dart code hidden (like an SDK), while still allowing UI launch and data exchange via MethodChannel.
+        <a href="https://stackoverflow.com/questions/79691691/how-to-integrate-a-flutter-module-into-a-flutter-host-app-without-exposing-dart" target="_blank">How to integrate a Flutter module into a Flutter host app without exposing Dart source code?</a>
+        <div class="feed-item-description">I'm integrating a Flutter module (built as an .aar) into a Flutter host app. The goal is to keep the module's Dart code hidden (like an SDK), while still allowing UI launch and data exchange via MethodChannel.
+
 Flutter module built with flutter build aar
-AAR added to libs/ in the host app
-Communicati</div>
+.aar added to libs/ in the host app
+Communica</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2025-07-06T10:47:58.000Z" title="2025-07-06T10:47:58.000Z">1h</time>
+      <time datetime="2025-07-06T15:30:43.000Z" title="2025-07-06T15:30:43.000Z">3h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/79691881/using-rive-in-flutter-creates-matrix4-entries-must-be-finite-error" target="_blank">Using Rive in Flutter creates Matrix4 entries must be finite error</a>
+        <div class="feed-item-description">I'm having trouble with Flutter and Rive. I'm pretty new to Flutter and I want to integrate Rive animation into the app.
+Here's my SDK version:
+environment:
+  sdk: ^3.8.1
+
+and this is my Rive version:
+rive: ^0.13.20
+
+
+With my Rive state machine that has transition from idle to animated_x (x is the s</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2025-07-06T14:44:54.000Z" title="2025-07-06T14:44:54.000Z">4h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/79691841/login-request-returns-bad-request-message" target="_blank">Login request returns bad request message</a>
+        <div class="feed-item-description">I get this errors when trying to make login with flutter, I can't undrestand why this error.
+I try to do login with postman and it works good,
+
+But in my application I get this message:
+
+Login failed: DioException [bad response]: This exception was thrown because the response has a status code of 40</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2025-07-06T13:51:26.000Z" title="2025-07-06T13:51:26.000Z">5h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/79691802/flame-audio-is-lagging-the-whole-game-after-playing-for-a-while" target="_blank">Flame Audio is lagging the whole game after playing for a while</a>
+        <div class="feed-item-description">If i use flame audio to play a sound effect, the whole app starts lagging. The sound effects are played continuously but does not overlap. When the performance overlay is turned on the UI graphs gets maxed out slowly even if there is no audio to play, the UI graph stays way below half of the first l</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2025-07-06T12:46:04.000Z" title="2025-07-06T12:46:04.000Z">6h</time>
+      <div class="item">
+        <a href="https://stackoverflow.com/questions/79691754/any-group-chats-or-communities-here-that-tackles-dart-flutter-or-any-like-that" target="_blank">any group chats or communities here that tackles dart/ flutter or any like that? [closed]</a>
+        <div class="feed-item-description">do you know any group chats or communities here that tackles dart/ flutter/ or any like that? just want to know more about this by some prodigy in this aspect. I tried to learn the basic already including the usage of common frontend languages and other google integrated development tools
+hope to fi</div>
+      </div>
+      <div class="share" title="copy url"></div>
+    </div>
+    
+    <div class="feed-item">
+      <time datetime="2025-07-06T10:47:58.000Z" title="2025-07-06T10:47:58.000Z">8h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/79691679/how-to-convert-nested-map-to-formdata-in-flutter-using-dio" target="_blank">How to convert nested Map to FormData in Flutter using Dio?</a>
         <div class="feed-item-description">I'm using Dio in a Flutter app to send a request that includes both files and a deeply nested JSON structure (e.g., device settings). Since I'm uploading an image along with the request, I have to use FormData, not a pure JSON body.
@@ -979,7 +1028,7 @@ final deviceSett</div>
     </div>
     
     <div class="feed-item">
-      <time datetime="2025-07-05T20:39:12.000Z" title="2025-07-05T20:39:12.000Z">15h</time>
+      <time datetime="2025-07-05T20:39:12.000Z" title="2025-07-05T20:39:12.000Z">22h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/79691330/the-flutter-app-restarts-when-switching-theme-mode" target="_blank">The Flutter app restarts when switching theme mode</a>
         <div class="feed-item-description">i am facing an issue in my flutter app that when i am trying to change the theme mode of the app then it automatically restarts the whole app,
@@ -990,7 +1039,7 @@ A Theme constance class consists of all the colours the app uses according to th
     </div>
     
     <div class="feed-item">
-      <time datetime="2025-07-05T19:35:16.000Z" title="2025-07-05T19:35:16.000Z">16h</time>
+      <time datetime="2025-07-05T19:35:16.000Z" title="2025-07-05T19:35:16.000Z">23h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/79691296/how-to-hide-the-link-url-in-statusbar-chrome-show-at-bottom-of-the-page" target="_blank">How to hide the link url in statusbar chrome show at bottom of the page?</a>
         <div class="feed-item-description">I'm creating desktop app for windows and macos and linux. I have a webview in a page, but it's showing link preview at the bottom of the page whenever I hover over a link with href. it's quite undesirable for a desktop app. I want to turn off the link info preview or whatever it's called (google say</div>
@@ -999,7 +1048,7 @@ A Theme constance class consists of all the colours the app uses according to th
     </div>
     
     <div class="feed-item">
-      <time datetime="2025-07-05T21:13:14.000Z" title="2025-07-05T21:13:14.000Z">14h</time>
+      <time datetime="2025-07-05T21:13:14.000Z" title="2025-07-05T21:13:14.000Z">21h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/79691345/how-to-pass-a-callback-to-a-web-video-element" target="_blank">how to pass a callback to a web video element?</a>
         <div class="feed-item-description">Description: My app is playing a video from a url, and is expected to work on both android and web. I'm using BetterPlayer for android, and its controller receives event listeners just fine. But on the web, it throws the following error:
@@ -1010,65 +1059,13 @@ A Theme constance class consists of all the colours the app uses according to th
     </div>
     
     <div class="feed-item">
-      <time datetime="2025-07-05T20:24:09.000Z" title="2025-07-05T20:24:09.000Z">15h</time>
+      <time datetime="2025-07-05T20:24:09.000Z" title="2025-07-05T20:24:09.000Z">22h</time>
       <div class="item">
         <a href="https://stackoverflow.com/questions/79691322/flutter-scroll-lags-and-shakes-when-list-items-have-different-heights-in-the-lis" target="_blank">Flutter scroll lags and shakes when list items have different heights in the list</a>
         <div class="feed-item-description">I'm facing an issue in my Flutter desktop app for Windows when scrolling through a list with items of different heights.
 When I drag the scrollbar, it noticeably lags behind the mouse cursor and sometimes shakes or jitters.
 Gif with shakes on scrolling
 The similar thing happens when scrolling with t</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2025-07-05T16:41:41.000Z" title="2025-07-05T16:41:41.000Z">19h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/79691192/ninja-build-error-for-flutter-destop-app-on-linux-linux-x64-libwebrtc-so" target="_blank">Ninja Build Error for Flutter Destop App on Linux: "...linux-x64/libwebrtc.so', needed by '...libflutter_webrtc_plugin.so', missing and no know</a>
-        <div class="feed-item-description">I'm trying to add version of my app for linux, after run
-flutter create --platform=linux .
-flutter run -d linux --verbose
-
-I met the ninja error like
-
-ninja: error: './linux/flutter/ephemeral/.plugin_symlinks/flutter_webrtc_plus/third_party/libwebrtc/lib/linux-x64/libwebrtc.so', needed by
-'plugins/f</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2025-07-05T12:46:41.000Z" title="2025-07-05T12:46:41.000Z">23h</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/79691054/plugin-id-com-android-application-version-8-7-0-apply-false-was-not-f" target="_blank">Plugin [id: 'com.android.application', version: '8.7.0', apply: false] was not found in any of the following sources</a>
-        <div class="feed-item-description">Im getting this error on a flutter project :
-android studio 2024.3.2
-Launching lib\main.dart on sdk gphone64 x86 64 in debug mode...
-Running Gradle task 'assembleDebug'...
-
-FAILURE: Build failed with an exception.
-
-* Where:
-Settings file 'C:\Users\98913\AndroidStudioProjects\untitled4\android\settin</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2025-07-04T16:19:24.000Z" title="2025-07-04T16:19:24.000Z">1d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/79690460/freezed-flutter" target="_blank">Freezed flutter [closed]</a>
-        <div class="feed-item-description">I have a problem with freezed. I use freezed ^ 3.1.0 and json_serializable ^4.9.0. In my model file there is a problem with classes that is missing overrides.
-I already run flutter pub run build_runner build --delete-conflicting-outputs command and there are .freezed.dart and .g.dart files. Please g</div>
-      </div>
-      <div class="share" title="copy url"></div>
-    </div>
-    
-    <div class="feed-item">
-      <time datetime="2025-07-04T11:04:20.000Z" title="2025-07-04T11:04:20.000Z">2d</time>
-      <div class="item">
-        <a href="https://stackoverflow.com/questions/79690085/getting-notification-when-the-app-is-closed-via-flutter" target="_blank">Getting notification when the app is closed via Flutter [closed]</a>
-        <div class="feed-item-description">I have a Flutter application in which I have integrated FCM for notifications. I want to fetch the transactional SMS of the users and show a notification immediately with the transaction details made by the user. Currently I am fetching messages via an third party aar that scans the messages and sen</div>
       </div>
       <div class="share" title="copy url"></div>
     </div>
